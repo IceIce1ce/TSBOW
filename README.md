@@ -250,6 +250,12 @@ Global warming has intensified the frequency and severity of extreme weather eve
 
 (Upcoming) We will provide **Terms and Conditions** before downloading our **<span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>** dataset.
 
+<details>
+    <summary><b>Submission Guidelines</b></summary>
+    We will provide the guidelines soon.
+</details>
+<br>
+
 (Upcoming) Scripts to download **<span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>** from HuggingFace will be provided. Please refer to the [`download_TSBOW.py`](utils/download_TSBOW.py) script for more details.
 
 
