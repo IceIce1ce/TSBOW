@@ -131,14 +131,14 @@ Global warming has intensified the frequency and severity of extreme weather eve
 
 <div align="center" style="max-width:1000px; margin: 10px auto 20px;">
     <div style="display:flex; gap:18px; justify-content:center; align-items:flex-start; flex-wrap:wrap;">
-        <div style="flex:1 1 440px; max-width:45%; text-align:center;">
+        <div style="flex:1 1 440px; max-width:48%; text-align:center;">
             <img src="images/Chart_TSBOW_Occlusion.png" alt="chart occlusion" style="width:100%; height:auto; display:block; border-radius:6px;">
             <p style="margin:8px 0 0 0; font-weight:600;">Occlusion Ditribution</p>
         </div>
-        <!-- <div style="flex:1 1 440px; max-width:45%; text-align:center;">
-            <img src="images/Chart_SunburstChart_Attributes.png" alt="Video Distribution" style="width:100%; height:auto; display:block; border-radius:6px;">
-            <p style="margin:8px 0 0 0; font-weight:600;">Video Distribution</p>
-        </div> -->
+        <div style="flex:1 1 440px; max-width:45%; text-align:center;">
+            <img src="images/Chart_TSBOW_Traffic.png" alt="chart traffic" style="width:100%; height:auto; display:block; border-radius:6px;">
+            <p style="margin:8px 0 0 0; font-weight:600;">Traffic Distribution</p>
+        </div>
     </div>
 </div>
 
