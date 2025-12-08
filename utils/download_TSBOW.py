@@ -23,6 +23,13 @@ def parse_args():
         required=True,
         help="Type of data to download (videos, annotations, metadata, all)",
     )
+
+    parser.add_argument(
+        "--output_dir",
+        type=str,
+        help="Local directory to save dataset",
+        default="./TSBOW",
+    )
     
     args = parser.parse_args()
     return  args
