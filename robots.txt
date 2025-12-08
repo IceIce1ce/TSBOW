@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://skkuautolab.github.io/TSBOW/sitemap/sitemap.xml
+Sitemap: https://skkuautolab.github.io/TSBOW/sitemaps/sitemap.xml
