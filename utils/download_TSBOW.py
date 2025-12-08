@@ -16,6 +16,14 @@ def main():
         required=True,
         help="Dataset type to download (TSBOW)",
     )
+    
+    parser.add_argument(
+        "--type",
+        type=str,
+        choices=["videos", "annotations", "metadata", "all"],
+        required=True,
+        help="Type of data to download (videos, annotations, metadata, all)",
+    )
 
 if __name__ == "__main__":
     main()
