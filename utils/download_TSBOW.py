@@ -1,8 +1,7 @@
 import argparse
 from huggingface_hub import hf_hub_download, snapshot_download
 
-def main():
-    print("Updating...")
+def parse_args():
     # Setup command line arguments
     parser = argparse.ArgumentParser(
         description="Download TSBOW dataset from Hugging Face."
@@ -16,7 +15,7 @@ def main():
         required=True,
         help="Dataset type to download (TSBOW)",
     )
-    
+
     parser.add_argument(
         "--type",
         type=str,
@@ -24,6 +23,15 @@ def main():
         required=True,
         help="Type of data to download (videos, annotations, metadata, all)",
     )
+    
+    args = parser.parse_args()
+    return  args
+
+
+def main(args):
+    print("Updating...")
+    
 
 if __name__ == "__main__":
-    main()
+    args    = parse_args()
+    main(args=args)
