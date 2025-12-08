@@ -216,6 +216,11 @@ Global warming has intensified the frequency and severity of extreme weather eve
 ## Experiments
 
 <div align="center" style="background:#f4f7fb; padding:18px; border-radius:10px; max-width:1000px; margin: 16px auto;">
+    <img src="images/Table_6.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
+</div>
+<p align="center" style="margin:8px 0 0 0; font-weight:600;">Model performances after training 100 epochs and validating with imgsz=1280 on manually labeled test set. </p>
+
+<div align="center" style="background:#f4f7fb; padding:18px; border-radius:10px; max-width:1000px; margin: 16px auto;">
     <img src="images/Supp_Models_Performances.png" alt="TSBOW Experiments" style="width:100%; height:auto; border-radius:6px; display:block;">
 </div>
 <p align="center" style="margin:8px 0 0 0; font-weight:600;"> Model performances under different weather conditions </p>
@@ -242,12 +247,7 @@ Global warming has intensified the frequency and severity of extreme weather eve
 
 
 <details>
-    <summary>Tables</summary>
-
-<div align="center" style="background:#f4f7fb; padding:18px; border-radius:10px; max-width:1000px; margin: 16px auto;">
-    <img src="images/Table_6.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
-</div>
-<p align="center" style="margin:8px 0 0 0; font-weight:600;">Model performances after training 100 epochs and validating with imgsz=1280 on manually labeled test set. </p>
+    <summary>Ablation Studies</summary>
 
 <div align="center" style="background:#f4f7fb; padding:18px; border-radius:10px; max-width:1000px; margin: 16px auto;">
     <img src="images/Table_8.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
