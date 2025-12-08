@@ -290,7 +290,7 @@ Our repository is licensed under the **Apache 2.0 License**. However, if you use
 
 <!-- MARK: Git Stats -->
 
-<!-- ![Star History Chart](https://api.star-history.com/svg?repos=SKKUAutoLab/TSBOW&type=Date) -->
+![Star History Chart](https://api.star-history.com/svg?repos=SKKUAutoLab/TSBOW&type=Date)
 
 <!-- ![](https://img.shields.io/github/downloads/SKKUAutoLab/TSBOW/total.svg?style=for-the-badge) -->
 
