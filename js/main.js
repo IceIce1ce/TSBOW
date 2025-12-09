@@ -2,19 +2,6 @@
 
 
 // title
-///// TSBOW
-// const title = document.getElementById("tsbow-title");
-// const text = title.textContent.trim();
-
-// title.innerHTML = ""; // clear original
-
-// [...text].forEach(char => {
-//     const span = document.createElement("span");
-//     span.textContent = char;
-//     title.appendChild(span);
-// });
-
-
 ///// Traffic Surveillance Benchmark for Occluded vehicles under various Weather conditions
 // const title = document.getElementById("titleText");
 // title.innerHTML = title.textContent.replace(/([A-Z])/g, '<span class="uuc">$1</span>');
@@ -145,11 +132,11 @@ if (currentScrollPos > 800) // 👈 only start showing after 800px down
 { 
     if (prevScrollPos > currentScrollPos) 
     {
-    header.style.top = "0";       // show when scrolling up
+      header.style.top = "0";       // show when scrolling up
     } 
     else 
     {
-    header.style.top = "0";   // -80px if need hide when scrolling down
+      header.style.top = "0";   // -80px if need hide when scrolling down
     }
 } 
 else 
