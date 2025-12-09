@@ -178,19 +178,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-
-// function select_model(target, dir, dataset, scene) { 
-//     if (dir == "left"){
-//         var img = document.getElementById("left_img" + "_" + dataset + "_" + scene);
-//         var caption = document.getElementById("left_caption" + "_" + dataset + "_" + scene);
-//     }
-//     else if (dir == "right"){
-//         var img = document.getElementById("right_img" + "_" + dataset + "_" + scene);
-//         var caption = document.getElementById("right_caption" + "_" + dataset + "_" + scene);
-//     }
-//     var model = target.value;   
-// 	var frame = document.getElementById("input" + "_" + dataset + "_" + scene).value.toString().padStart(3, '0');
-	
 //     if (model == "TensoRF")
 //         img.src = base_url + dataset + "/" + scene + "/" + "TensoRF" + "/" + frame + ".png"
 // 	else if (model == "GT")
