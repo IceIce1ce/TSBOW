@@ -215,7 +215,7 @@ Global warming has intensified the frequency and severity of extreme weather eve
 
 ## Experiments
 
-<div align="center" style="background:#f4f7fb; padding:18px; border-radius:10px; max-width:1000px; margin: 16px auto;">
+<div align="center" style="background:#f4f7fb; padding:5px; border-radius:10px; max-width:1000px; margin: 16px auto;">
     <img src="images/Table_6.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
 </div>
 <p align="center" style="margin:8px 0 0 0; font-weight:600;">Model performances after training 100 epochs and validating with imgsz=1280 on manually labeled test set. </p>
@@ -233,12 +233,12 @@ Global warming has intensified the frequency and severity of extreme weather eve
 </div>
 <p align="center" style="margin:8px 0 0 0; font-weight:600;">Model performances when training on different datasets </p>
 
-<div align="center" style="background:#f4f7fb; padding:18px; border-radius:10px; max-width:1000px; margin: 16px auto;">
+<div align="center" style="background:#f4f7fb; padding:5px; border-radius:10px; max-width:1000px; margin: 16px auto;">
     <img src="images/Table_1.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
 </div>
 <p align="center" style="margin:8px 0 0 0; font-weight:600;">Comparison of traffic surveillance datasets </p>
 
-<div align="center" style="background:#f4f7fb; padding:18px; border-radius:10px; max-width:1000px; margin: 16px auto;">
+<div align="center" style="background:#f4f7fb; padding:5px; border-radius:10px; max-width:1000px; margin: 16px auto;">
     <img src="images/Table_7.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
 </div>
 <p align="center" style="margin:8px 0 0 0; font-weight:600;">Models performance for <i>car</i> across different metrics on <b>the comparison set</b> </p>
@@ -249,13 +249,13 @@ Global warming has intensified the frequency and severity of extreme weather eve
 <details>
     <summary>Ablation Studies</summary>
 
-<div align="center" style="background:#f4f7fb; padding:18px; border-radius:10px; max-width:1000px; margin: 16px auto;">
-    <img src="images/Table_8.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
+<div align="center" style="background:#f4f7fb; padding:3px; max-width:1000px; margin: 16px auto;">
+    <img src="images/Table_8_slide.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
 </div>
 <p align="center" style="margin:8px 0 0 0; font-weight:600;">YOLOv12x performance across different classes. </p>
 
-<div align="center" style="background:#f4f7fb; padding:18px; border-radius:10px; max-width:1000px; margin: 16px auto;">
-    <img src="images/Table_9.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
+<div align="center" style="background:#f4f7fb; padding:3px; max-width:1000px; margin: 16px auto;">
+    <img src="images/Table_9_slide.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
 </div>
 <p align="center" style="margin:8px 0 0 0; font-weight:600;">Influence of dataset characteristics on object detection performance.</p>
 
