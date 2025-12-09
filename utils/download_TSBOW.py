@@ -37,6 +37,8 @@ def parse_args():
 
 def main(args):
     print("Updating...")
+
+    repo_id = f"SKKUAutoLab/{args.repo_id}"
     
 
 if __name__ == "__main__":
