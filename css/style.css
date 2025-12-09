@@ -500,16 +500,3 @@ body {
   transform: translateY(-5px);
   text-decoration: underline;
 }
-
-/* MARK: Mobile Ver */
-/* @media (max-width: 600px) {
-  #scrollHeader h1 {
-    font-size: 18px;
-  }
-  .header-left .logo {
-    width: 30px;
-    height: 30px;
-  }
-} */
-
-
