@@ -8,7 +8,8 @@
 
 
 // MARK: Title - Synchronize hover 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() 
+{
   const t1_T = document.querySelector('#tsbow-title .sync-tsbowT');
   const t2_T = document.querySelector('#titleText .sync-tsbowT');
   if (t1_T && t2_T) {
@@ -111,14 +112,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // MARK: header - scroll to top on logo/TSBOW click
 const headerLeft = document.querySelector(".header-left");
-if (headerLeft) {
-    headerLeft.style.cursor = "pointer";
-    headerLeft.addEventListener("click", () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
+if (headerLeft) 
+{
+  headerLeft.style.cursor = "pointer";
+  headerLeft.addEventListener("click", () => {
+      window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+      });
+  });
 }
 
 // header
