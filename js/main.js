@@ -141,7 +141,7 @@ let prevScrollPos = window.scrollY;
 window.addEventListener("scroll", () => {
 const currentScrollPos = window.scrollY;
 
-if (currentScrollPos > 700) // 👈 only start showing after 700px down
+if (currentScrollPos > 800) // 👈 only start showing after 800px down
 { 
     if (prevScrollPos > currentScrollPos) 
     {
@@ -154,7 +154,7 @@ if (currentScrollPos > 700) // 👈 only start showing after 700px down
 } 
 else 
 {
-    header.style.top = "-110px";     // stay hidden near the top
+    header.style.top = "-116px";     // stay hidden near the top
 }
 
 prevScrollPos = currentScrollPos;
