@@ -245,14 +245,6 @@ summary {
 
 /* MARK: Citation */
 
-/* .citation-section {
-  background: linear-gradient(135deg, #f7faff 0%, #eef5ff 100%);
-  padding: 60px 20px;
-  border-top: 2px solid #007acc;
-  border-bottom: 2px solid #007acc;
-  font-family: "Segoe UI", Roboto, sans-serif;
-} */
-
 .bibtex-box {
   position: relative;
   background-color: #d2d2ff;
