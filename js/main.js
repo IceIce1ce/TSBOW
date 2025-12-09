@@ -12,12 +12,15 @@ document.addEventListener('DOMContentLoaded', function()
 {
   const t1_T = document.querySelector('#tsbow-title .sync-tsbowT');
   const t2_T = document.querySelector('#titleText .sync-tsbowT');
-  if (t1_T && t2_T) {
-    function addHighlight() {
+  if (t1_T && t2_T) 
+  {
+    function addHighlight() 
+    {
       t1_T.classList.add('highlight');
       t2_T.classList.add('highlight');
     }
-    function removeHighlight() {
+    function removeHighlight() 
+    {
       t1_T.classList.remove('highlight');
       t2_T.classList.remove('highlight');
     }
