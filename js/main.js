@@ -178,6 +178,20 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
+
+
+// MARK: Notice
+
+document.querySelectorAll(".coming-soon").forEach(link =>{
+  link.addEventListener("click", e=>{
+    e.preventDefault();
+    showNotice("This page will be available in a future update");
+  });
+});
+
+
+
 //     if (model == "TensoRF")
 //         img.src = base_url + dataset + "/" + scene + "/" + "TensoRF" + "/" + frame + ".png"
 // 	else if (model == "GT")
