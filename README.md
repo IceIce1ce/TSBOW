@@ -288,6 +288,12 @@ Global warming has intensified the frequency and severity of extreme weather eve
 
 Thanks to the developers and contributors of the following open-source repositories, whose invaluable work has greatly inspire our project:
 
+Datasets:
+- [UAVDT]():
+- [UA-DETRAC]():
+- [AAU RainSnow]():
+
+Github Repo:
 - [X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling): An open-source tool for precise bounding box creation.
 - [Ultralytics YOLO](https://github.com/ultralytics/ultralytics): Detection models for training and real-time inferencing.
 - [YOLOv12](https://github.com/sunsmarterjie/yolov12): A model for object detection.
