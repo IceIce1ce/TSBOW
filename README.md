@@ -59,7 +59,7 @@
 <br> 
 
 <div align="center">
-  <a href="https://skkuautolab.github.io/TSBOW/"><img src="https://img.shields.io/static/v1?label=TSBOW&message=Website&color=9a33fc" style="height: 25px;"></a>  
+  <a href="https://skkuautolab.github.io/TSBOW/"><img src="https://img.shields.io/static/v1?label=TSBOW&message=Website&color=9a33fc&logo=githubpages" style="height: 25px;"></a>  
   <a href="https://aaai.org/conference/aaai/aaai-26/"><img src="https://img.shields.io/static/v1?label=DOI_AAAI&message=updating&color=green" style="height: 25px;"></a>  
   <a href="https://aaai.org/conference/aaai/aaai-26/"><img src="https://img.shields.io/static/v1?label=Supplementary_arXiv&message=updating&color=FF0066&logo=arxiv" style="height: 25px;"></a>  
   <br>
