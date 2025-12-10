@@ -211,6 +211,7 @@ Global warming has intensified the frequency and severity of extreme weather eve
 </div> -->
 
 
+
 <!-- MARK: Experiments -->
 
 ## Experiments
@@ -226,6 +227,7 @@ Global warming has intensified the frequency and severity of extreme weather eve
 <p align="center" style="margin:8px 0 0 0; font-weight:600;"> Model performances under different weather conditions </p>
 
 
+<!-- Comparison with other datasets -->
 <details>
     <summary>Comparison with other datasets</summary>
 <div align="center" style="background:#f4f7fb; padding:18px; border-radius:10px; max-width:1000px; margin: 16px auto;">
@@ -246,6 +248,7 @@ Global warming has intensified the frequency and severity of extreme weather eve
 </details>
 
 
+<!-- Ablation Studies -->
 <details>
     <summary>Ablation Studies</summary>
 
