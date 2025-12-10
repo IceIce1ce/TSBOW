@@ -308,7 +308,7 @@ body {
 /* Hidden by default */
 #scrollHeader {
   position: fixed;
-  top: -99px;  /* 👈 start hidden above page */
+  top: -116px;  /* 👈 start hidden above page */
   left: 0;
   width: 100%;
   background-color: #000080;
