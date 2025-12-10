@@ -70,9 +70,9 @@
 
 <br>
 
-(UPDATING....) 
+**(UPDATING....)**
 
-(All links would be updated on the conference day.)
+(All links would be updated **on the conference day.**)
 
 Please download our Github repo to get better markdown view (i.e. Visual Code).
 
