@@ -192,17 +192,6 @@ document.querySelectorAll(".coming-soon").forEach(link =>{
 
 
 
-//     if (model == "TensoRF")
-//         img.src = base_url + dataset + "/" + scene + "/" + "TensoRF" + "/" + frame + ".png"
-// 	else if (model == "GT")
-//         img.src = base_url + dataset + "/" + scene + "/" + "GT" + "/" + frame + ".png"
-//     else
-// 	    img.src = base_url + dataset + "/" + scene + "/" + frame + "/" + model + ".png"
-    
-//     caption.innerHTML = get_psnr(model, dataset, scene)
-// }
-
-
 // function select_frame(target, dataset, scene) {
 // 	var left_model = document.getElementById("left_select" + "_" + dataset + "_" + scene).value;
 // 	var right_model = document.getElementById("right_select" + "_" + dataset + "_" + scene).value;
