@@ -20,5 +20,3 @@ Navy Palettes (Ocean Depths)
     light teal      #39CCCC
     cool green      #3D9970
     vibrant green   #2ECC40
-
-#9a33fcff
