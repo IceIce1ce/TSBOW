@@ -42,6 +42,7 @@ def main(args):
 
     # Download csv metadata
     if args.type == "metadata":
+        # VIDEO_ID, SCENARIO, DAYTIME, WEATHER, SCALE, ROADTYPE, DURATION, FPS, ROI_DET, ROI_TRACK
         hub_path = f"metadata/{args.repo_id}_info.csv"
         hf_hub_download(
             repo_id=repo_id,
@@ -51,6 +52,8 @@ def main(args):
             resume_download=True,
         )
         print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
+
+        # VideoID for each attribute
     
 
 if __name__ == "__main__":
