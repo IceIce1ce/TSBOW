@@ -54,6 +54,7 @@ def main(args):
         print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
         # VideoID for each attribute
+        hub_path = f"metadata/{args.repo_id}_listID.json"
     
 
 if __name__ == "__main__":
