@@ -289,7 +289,7 @@ Global warming has intensified the frequency and severity of extreme weather eve
 Thanks to the developers and contributors of the following open-source repositories, whose invaluable work has greatly inspire our project:
 
 Datasets:
-- [UAVDT](https://datasetninja.com/uavdt): A traffic dataset contains drone footages under sunny and rainy condition.
+- [UAVDT](https://datasetninja.com/uavdt): A traffic dataset contains drone footages under sunny and rainy conditions.
 - [UA-DETRAC](https://sites.google.com/view/daweidu/projects/ua-detrac?authuser=0): A traffic surveillance dataset captures sunny and rainy weather.
 - [AAU RainSnow](https://vbn.aau.dk/en/datasets/aau-rainsnow-traffic-surveillance-dataset/): A traffic surveillance dataset provides segmentation annotations for rain and snow weather.
 
