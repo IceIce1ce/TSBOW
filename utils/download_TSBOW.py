@@ -39,6 +39,18 @@ def main(args):
     print("Updating...")
 
     repo_id = f"SKKUAutoLab/{args.repo_id}"
+
+    # Download csv metadata
+    if args.type == "metadata":
+        hub_path = f"metadata/{args.repo_id}_info.csv"
+        hf_hub_download(
+            repo_id=repo_id,
+            repo_type="dataset",
+            filename=hub_path,
+            local_dir=args.output_dir,
+            resume_download=True,
+        )
+        print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
     
 
 if __name__ == "__main__":
