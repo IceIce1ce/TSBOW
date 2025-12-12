@@ -55,6 +55,14 @@ def main(args):
 
         # VideoID for each attribute
         hub_path = f"metadata/{args.repo_id}_listID.json"
+        hf_hub_download(
+            repo_id=repo_id,
+            repo_type="dataset",
+            filename=hub_path,
+            local_dir=args.output_dir,
+            resume_download=True,
+        )
+        print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
     
 
 if __name__ == "__main__":
