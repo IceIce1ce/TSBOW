@@ -42,27 +42,24 @@ def main(args):
 
     # Download csv metadata
     if args.type == "metadata":
-        # VIDEO_ID, SCENARIO, DAYTIME, WEATHER, SCALE, ROADTYPE, DURATION, FPS, ROI_DET, ROI_TRACK
-        hub_path = f"metadata/{args.repo_id}_info.csv"
-        hf_hub_download(
-            repo_id=repo_id,
-            repo_type="dataset",
-            filename=hub_path,
-            local_dir=args.output_dir,
-            resume_download=True,
-        )
-        print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
+        hub_paths = [
+            # VIDEO_ID, SCENARIO, DAYTIME, WEATHER, SCALE, ROADTYPE, DURATION, FPS, ROI_DET, ROI_TRACK
+            f"metadata/{args.repo_id}_info.csv",
+            # VideoID for each attribute
+            f"metadata/{args.repo_id}_listID.json"
+        ]
 
-        # VideoID for each attribute
-        hub_path = f"metadata/{args.repo_id}_listID.json"
-        hf_hub_download(
-            repo_id=repo_id,
-            repo_type="dataset",
-            filename=hub_path,
-            local_dir=args.output_dir,
-            resume_download=True,
-        )
-        print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
+        for hub_path in hub_paths:
+            hf_hub_download(
+                repo_id=repo_id,
+                repo_type="dataset",
+                filename=hub_path,
+                local_dir=args.output_dir,
+                resume_download=True,
+            )
+            print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
+
+
     
 
 if __name__ == "__main__":
