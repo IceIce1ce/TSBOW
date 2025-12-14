@@ -232,6 +232,7 @@ Global warming has intensified the frequency and severity of extreme weather eve
 
 |  Year |  Pub    | Paper                            | Link  | Note |
 | :---: |  :---:  | :---                             |:---:  | :--- |
+| 2024  |  ICDICI | A review on yolov8 and its advancements | [paper](https://link.springer.com/chapter/10.1007/978-981-99-7962-2_39) | YOLOv8 |
 
 
 
