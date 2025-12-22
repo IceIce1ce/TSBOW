@@ -218,6 +218,16 @@ Global warming has intensified the frequency and severity of extreme weather eve
 
 ## Datasets
 
+<details>
+    <summary>Comparison with other datasets</summary>
+    
+<div align="center" style="background:#f4f7fb; padding:18px; border-radius:10px; max-width:1000px; margin: 16px auto;">
+    <img src="images/Supp_Datasets.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
+</div>
+<p align="center" style="margin:8px 0 0 0; font-weight:600;">Comparison with other datasets about weather conditions and scales</p>
+
+</details> <br>
+
 | Dataset           | Introduction                      | Year  |  Pub  | Paper |
 |:---:              |:---                               | :---: | :---: | :--- |
 | **UAVDT**         <br>[[website]](https://datasetninja.com/uavdt)| - <span style="color: #FFCC00">Hardware</span>: UAVs. <br> - <span style="color: #33CCCC">Tasks</span>: object detection, single object tracking, multiple-object tracking. <br> - <span style="color: #FF6600">Position</span>: China. <br> - <span style="color: #6699FF">Weather</span>: sunny/cloudy, fog, rain. <br> - <span style="color: #FF0066">Time</span>: day, night. | 2020 | IJCV | The Unmanned Aerial Vehicle Benchmark: Object Detection, Tracking and Baseline |
@@ -258,6 +268,7 @@ Global warming has intensified the frequency and severity of extreme weather eve
 <!-- Comparison with other datasets -->
 <details>
     <summary>Comparison with other datasets</summary>
+
 <div align="center" style="background:#f4f7fb; padding:18px; border-radius:10px; max-width:1000px; margin: 16px auto;">
     <img src="images/Supp_Comparison_Performances.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
 </div>
