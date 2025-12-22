@@ -220,10 +220,10 @@ Global warming has intensified the frequency and severity of extreme weather eve
 
 | Dataset           | Brief Introduction                | Website           | Year  |  Pub  | Paper |
 |:---:              |:---                               |:---:              | :---: | :---: | :--- |
-|UAVDT              | Traffic data using drone to capture |[link](https://datasetninja.com/uavdt)| 2020 | IJCV | The Unmanned Aerial Vehicle Benchmark: Object Detection, Tracking and Baseline |
-|UA-DETRAC          | Traffic surveillance dataset using color camera |[link](https://sites.google.com/view/daweidu/projects/ua-detrac?authuser=0)| 2020 | CVIU | UA-DETRAC: A new benchmark and protocol for multi-object detection and tracking |
-|AAU RainSnow       | Traffic surveillance dataset using color and thermal camera |[link](https://vbn.aau.dk/en/datasets/aau-rainsnow-traffic-surveillance-dataset/)| 2019 | ITS | Rain Removal in Traffic Surveillance: Does it Matter? |
-| **<span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>**             | CCTV system + color camera |[link](https://skkuautolab.github.io/TSBOW/)| 2026 | AAAI | TSBOW: Traffic Surveillance Benchmark for Occluded Vehicles Under Various Weather Conditions |
+|UAVDT              | Hardware: Drone. |[link](https://datasetninja.com/uavdt)| 2020 | IJCV | The Unmanned Aerial Vehicle Benchmark: Object Detection, Tracking and Baseline |
+|UA-DETRAC          | Hardware: color camera |[link](https://sites.google.com/view/daweidu/projects/ua-detrac?authuser=0)| 2020 | CVIU | UA-DETRAC: A new benchmark and protocol for multi-object detection and tracking |
+|AAU RainSnow       | Hardware: color and thermal camera |[link](https://vbn.aau.dk/en/datasets/aau-rainsnow-traffic-surveillance-dataset/)| 2019 | ITS | Rain Removal in Traffic Surveillance: Does it Matter? |
+| **<span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>**             | Hardware: CCTV system + color camera |[link](https://skkuautolab.github.io/TSBOW/)| 2026 | AAAI | TSBOW: Traffic Surveillance Benchmark for Occluded Vehicles Under Various Weather Conditions |
 
 
 
