@@ -1,0 +1,114 @@
+from argparse import ArgumentParser
+
+from ultralytics import YOLO
+
+
+def training(args):
+    model_name = args.model + '.pt'
+    model = YOLO(model_name)
+    
+    data_path = args.path2data
+    data_name = args.name
+    data_yaml = f"{data_path + data_name}/{data_name}.yaml"
+
+    results = model.train(data=data_yaml,         device=args.device_cuda, 
+                          imgsz=args.image_size,  batch=args.batch_size,
+                          epochs=args.epochs,     cache=args.cache,
+                          name=f"{args.model}_{data_name}")
+    
+    return results
+
+def resume_training(args):
+    model_path = args.path2model
+    model_name = f"{model_path}{args.model}/weights/{args.weights}.pt"
+    # model_name = args.model + '.pt'
+    model = YOLO(model_name)
+    
+    data_path = args.path2data
+    data_name = args.name
+    data_yaml = f"{data_path + data_name}/{data_name}.yaml"
+
+    results = model.train(data=data_yaml,         device=args.device_cuda, 
+                          imgsz=args.image_size,  batch=args.batch_size,
+                          epochs=args.epochs,     cache=args.cache,
+                          resume=True,
+                          name=f"{args.model}_{data_name}")
+    return results
+
+
+def resume_training_newdataset(args):
+    model_path = args.path2model
+    model_name = f"{model_path}{args.model}/weights/{args.weights}.pt"
+    # model_name = args.model + '.pt'
+    model = YOLO(model_name)
+    
+    data_path = args.path2data
+    data_name = args.name
+    data_yaml = f"{data_path + data_name}/{data_name}.yaml"
+
+    results = model.train(data=data_yaml,         device=args.device_cuda, 
+                          imgsz=args.image_size,  batch=args.batch_size,
+                          epochs=args.epochs,     cache=args.cache,
+                          resume=False,
+                          name=f"{args.model}_{data_name}")
+    return results
+
+
+def parse_args():
+    parser = ArgumentParser("Train YOLO models")
+
+    # MODEL RELATED
+    parser.add_argument('-m', '--model',        type=str,
+                        default="yolo11x", 
+                        help='Choose model name for -m or --model: yolov8x or yolo11x')
+    parser.add_argument('-c', '--device_cuda',  type=str, 
+                        default='cuda:0', 
+                        help='Choose cuda device for -c or --device-cuda: cuda:0 or [0, 1, 2]')
+    parser.add_argument('-e', '--epochs',       type=int,
+                        default=40,
+                        help='Enter number of training epochs for -e or --epochs')
+    parser.add_argument('-i', '--image_size',   type=int,
+                        default=1280,
+                        help='Enter image size for -i or --image_size')
+    parser.add_argument('-b', '--batch_size',   type=int,
+                        default=16,
+                        help='Enter batch size for -b or --batch_size')
+    parser.add_argument('--cache',              type=bool,
+                        default=True,
+                        help='Cache: True or False')
+    ### for resume training
+    parser.add_argument('-p', '--path2model',   type=str,   required=False,
+                        default="runs/detect/", 
+                        help='Enter the path of model.')
+    parser.add_argument('--state',              type=str,   required=False,
+                        default="start", 
+                        help='Choose task for --state: start, resume_current, or resume_new')
+    parser.add_argument('-w', '--weights',      type=str,   required=False,
+                        default="best", 
+                        help='Choose model weights for -w or --weights: best, last, or best_<epochID>')
+    
+    # DATA RELATED
+    parser.add_argument('-d', '--path2data',    type=str, 
+                        default='/media/hdmngoc/ssd_02/DataCreation/', 
+                        help='Enter the path of data.')
+    parser.add_argument('-n', '--name',         type=str,   
+                        default="SUWON_DATASET_VER01_GT", 
+                        help='Enter name of YAML file: suwon#11_01_04')
+    
+    args = parser.parse_args()
+    return args
+
+if __name__ == "__main__":
+    args    = parse_args()
+    state = args.state
+
+    if   state == "start":
+        results = training(args=args)
+
+    elif state == "resume_current":
+        # resume training with the same dataset
+        results = resume_training(args=args)
+
+    elif state == "resume_new":
+        # resume training with new dataset
+        results = resume_training_newdataset(args=args)
