@@ -46,7 +46,7 @@ def main(args):
             # VIDEO_ID, SCENARIO, DAYTIME, WEATHER, SCALE, ROADTYPE, DURATION, FPS, ROI_DET, ROI_TRACK
             f"metadata/{args.repo_id}_info.csv",
             # VideoID for each attribute
-            f"metadata/{args.repo_id}_listID.json"
+            # f"metadata/{args.repo_id}_listID.json"
         ]
 
         for hub_path in hub_paths:
