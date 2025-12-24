@@ -88,12 +88,13 @@ def parse_args():
                         help='Choose model weights for -w or --weights: best, last, or best_<epochID>')
     
     # DATA RELATED
+    ## Full path to dataset: /path/to/data/TSBOW/TSBOW.yaml
     parser.add_argument('-d', '--path2data',    type=str, 
-                        default='/media/hdmngoc/ssd_02/DataCreation/', 
-                        help='Enter the path of data.')
+                        default='/path/to/data/', 
+                        help='Enter the path of data.  i.e. /media/ngochdm/ssd_01/')
     parser.add_argument('-n', '--name',         type=str,   
-                        default="SUWON_DATASET_VER01_GT", 
-                        help='Enter name of YAML file: suwon#11_01_04')
+                        default="TSBOW", 
+                        help='Enter name of YAML file: TSBOW')
     
     args = parser.parse_args()
     return args
