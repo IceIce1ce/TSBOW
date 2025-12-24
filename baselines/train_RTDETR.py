@@ -42,12 +42,13 @@ def parse_args():
                         help='Cache: True or False')
     
     # DATA RELATED
+    # Full path to dataset: /media/hdmngoc/ssd_02/DataCreation/TSBOW/TSBOW.yaml
     parser.add_argument('-d', '--path2data',    type=str, 
                         default='/media/hdmngoc/ssd_02/DataCreation/', 
                         help='Enter the path of data.')
     parser.add_argument('-n', '--name',         type=str,   
-                        default="SUWON_DATASET_VER01_GT", 
-                        help='Enter name of YAML file: suwon#11_01_04')
+                        default="TSBOW", 
+                        help='Enter name of YAML file: TSBOW')
     
     args = parser.parse_args()
     return args
