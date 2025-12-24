@@ -249,6 +249,10 @@ Global warming has intensified the frequency and severity of extreme weather eve
 | 2025  |  arXiV  | A Breakdown of the Key Architectural Features | [paper](https://arxiv.org/abs/2502.14740) | YOLOv12 |
 
 
+The source codes for baseline models are provided in [Baselines](baselines/) folder. 
+Read [Instruction](baselines/README.md) for more information.
+
+
 
 <!-- MARK: Experiments -->
 
