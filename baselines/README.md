@@ -33,17 +33,21 @@ The experiments are based on [Ultralytics](https://github.com/ultralytics/ultral
 - For manually labels, we use the [X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling) tools.
 
 
-## Train
+## 🧑‍🏫 Training 
 
 
 
-## Val
+## ✔️ Validation
+
+
+
+<!-- ## 🧠 Inferences -->
 
 
 
 <!-- MARK: References -->
 
-## References
+## 📚 References
 
 Thanks to the developers and contributors of the following open-source repositories, whose invaluable work has greatly inspire our project:
 

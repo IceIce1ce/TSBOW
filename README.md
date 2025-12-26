@@ -111,15 +111,15 @@ Please download our Github repo to get better markdown view (i.e. Visual Code).
 
 <!-- MARK: Abstract -->
 
-## Abstract
+## 📝 Abstract
 
 Global warming has intensified the frequency and severity of extreme weather events, which degrade CCTV signal and video quality while disrupting traffic flow, thereby increasing traffic accident rates. Existing datasets, often limited to light haze, rain, and snow, fail to capture extreme weather conditions. To address this gap, this study introduces the **T**raffic **S**urveillance **B**enchmark for **O**ccluded Vehicles under Various **W**eather Conditions (**TSBOW**), a comprehensive dataset designed to enhance occluded vehicle detection across diverse annual weather scenarios. Comprising over **32 hours** of real-world traffic data from densely populated urban areas, TSBOW includes more than **48,000 manually annotated** and **3.2 million semi-labeled frames**; bounding boxes spanning eight traffic participant classes from large vehicles to micromobility devices and pedestrians. We establish an object detection benchmark for TSBOW, highlighting challenges posed by occlusions and adverse weather. With its varied road types, scales, and viewpoints, TSBOW serves as a critical resource for advancing Intelligent Transportation Systems. Our findings underscore the potential of CCTV-based traffic monitoring, paving the way for new research and applications. The TSBOW dataset is publicly available at the following link. <br>
 **Code** -- https://github.com/SKKUAutoLab/TSBOW
 
 
-<!-- MARK: 1. Overview -->
+<!-- MARK: Overview -->
 
-## 1. Overview
+## 🌍 Overview
 
 <div align="center" style="max-width:900px; margin: 10px auto 20px; border-radius: 8px;">
     <img src="images/Github_StatsTable_1x6.png" alt="TSBOW Stats" style="width:100%; height:auto; display:block; border-radius:6px;">
@@ -236,9 +236,9 @@ Global warming has intensified the frequency and severity of extreme weather eve
 
 
 
-<!-- MARK: 2. Datasets -->
+<!-- MARK: Datasets -->
 
-## 2. Datasets
+## 📊 Datasets
 
 <details>
     <summary>Comparison with other datasets</summary>
@@ -259,9 +259,9 @@ Global warming has intensified the frequency and severity of extreme weather eve
 
 
 
-<!-- MARK: 3. Baselines -->
+<!-- MARK: Baselines -->
 
-## 3. Baselines
+## 📉 Baselines
 
 |  Year |  Pub    | Paper                            | Link  | Note |
 | :---: |  :---:  | :---                             |:---:  | :--- |
@@ -276,9 +276,9 @@ Read [Instruction](baselines/README.md) for more information.
 
 
 
-<!-- MARK: 4. Experiments -->
+<!-- MARK: Experiments -->
 
-## 4. Experiments
+## ⚗️ Experiments
 
 <div align="center" style="background:#f4f7fb; padding:5px; border-radius:10px; max-width:1000px; margin: 16px auto;">
     <img src="images/Table_6.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
@@ -331,9 +331,9 @@ Read [Instruction](baselines/README.md) for more information.
 
 
 
-<!-- MARK: 5. Download -->
+<!-- MARK: Download -->
 
-## 5. Dataset Download
+## ⬇️ Dataset Download
 
 (Upcoming) We will provide **Terms and Conditions** before downloading our **<span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>** dataset.
 
@@ -346,9 +346,9 @@ Read [Instruction](baselines/README.md) for more information.
 (Upcoming) Scripts to download **<span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>** from HuggingFace will be provided. Please refer to the [`download_TSBOW.py`](utils/download_TSBOW.py) script for more details.
 
 
-<!-- MARK: 6. References -->
+<!-- MARK: References -->
 
-## 6. References
+## 📚 References
 
 Thanks to the developers and contributors of the following open-source repositories, whose invaluable work has greatly inspire our project:
 
@@ -365,9 +365,9 @@ Thanks to the developers and contributors of the following open-source repositor
 Our repository is licensed under the **Apache 2.0 License**. However, if you use other components in your work, please follow their license.
 
 
-<!-- MARK: 7. Citation -->
+<!-- MARK: Citation -->
 
-## 7. Citation
+## 🏅 Citation
 
 **If our research is helpful to you, please cite our paper using the following BibTeX format**
 
