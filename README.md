@@ -352,12 +352,12 @@ Read [Instruction](baselines/README.md) for more information.
 
 Thanks to the developers and contributors of the following open-source repositories, whose invaluable work has greatly inspire our project:
 
-Datasets:
+**Datasets**:
 - [UAVDT](https://datasetninja.com/uavdt): A traffic dataset contains drone footages under sunny and rainy conditions.
 - [UA-DETRAC](https://sites.google.com/view/daweidu/projects/ua-detrac?authuser=0): A traffic surveillance dataset captures sunny and rainy weather.
 - [AAU RainSnow](https://vbn.aau.dk/en/datasets/aau-rainsnow-traffic-surveillance-dataset/): A traffic surveillance dataset provides segmentation annotations for rain and snow weather.
 
-Github Repo:
+**Github Repo**:
 - [X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling): An open-source tool for precise bounding box creation.
 - [Ultralytics YOLO](https://github.com/ultralytics/ultralytics): Detection models for training and real-time inferencing.
 - [YOLOv12](https://github.com/sunsmarterjie/yolov12): A model for object detection.
