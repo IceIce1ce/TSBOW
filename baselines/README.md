@@ -24,7 +24,7 @@ __        _______ _     ____ ___  __  __ _____
 
 In this section, we provide the Python source code for baseline models used in paper Experiments.
 
-## Installation
+## 🔧 Installation
 
 The experiments are based on [Ultralytics](https://github.com/ultralytics/ultralytics) and [YOLOv12](https://github.com/sunsmarterjie/yolov12). Please visit their installation guides for more setup options.
 
