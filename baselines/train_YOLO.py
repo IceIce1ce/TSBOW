@@ -4,9 +4,11 @@ from ultralytics import YOLO
 
 
 def training(args):
+    # model
     model_name = args.model + '.pt'
     model = YOLO(model_name)
     
+    # dataset
     data_path = args.path2data
     data_name = args.name
     data_yaml = f"{data_path + data_name}/{data_name}.yaml"
@@ -19,11 +21,12 @@ def training(args):
     return results
 
 def resume_training(args):
+    # model
     model_path = args.path2model
     model_name = f"{model_path}{args.model}/weights/{args.weights}.pt"
-    # model_name = args.model + '.pt'
     model = YOLO(model_name)
     
+    # dataset
     data_path = args.path2data
     data_name = args.name
     data_yaml = f"{data_path + data_name}/{data_name}.yaml"
@@ -32,24 +35,6 @@ def resume_training(args):
                           imgsz=args.image_size,  batch=args.batch_size,
                           epochs=args.epochs,     cache=args.cache,
                           resume=True,
-                          name=f"{args.model}_{data_name}")
-    return results
-
-
-def resume_training_newdataset(args):
-    model_path = args.path2model
-    model_name = f"{model_path}{args.model}/weights/{args.weights}.pt"
-    # model_name = args.model + '.pt'
-    model = YOLO(model_name)
-    
-    data_path = args.path2data
-    data_name = args.name
-    data_yaml = f"{data_path + data_name}/{data_name}.yaml"
-
-    results = model.train(data=data_yaml,         device=args.device_cuda, 
-                          imgsz=args.image_size,  batch=args.batch_size,
-                          epochs=args.epochs,     cache=args.cache,
-                          resume=False,
                           name=f"{args.model}_{data_name}")
     return results
 
@@ -99,6 +84,7 @@ def parse_args():
     args = parser.parse_args()
     return args
 
+
 if __name__ == "__main__":
     args    = parse_args()
     state = args.state
@@ -109,7 +95,3 @@ if __name__ == "__main__":
     elif state == "resume_current":
         # resume training with the same dataset
         results = resume_training(args=args)
-
-    elif state == "resume_new":
-        # resume training with new dataset
-        results = resume_training_newdataset(args=args)
