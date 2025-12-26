@@ -113,7 +113,7 @@ Please download our Github repo to get better markdown view (i.e. Visual Code).
 
 ## Abstract
 
-Global warming has intensified the frequency and severity of extreme weather events, which degrade CCTV signal and video quality while disrupting traffic flow, thereby increasing traffic accident rates. Existing datasets, often limited to light haze, rain, and snow, fail to capture extreme weather conditions. To address this gap, this study introduces the **T**raffic **S**urveillance **B**enchmark for **O**ccluded Vehicles under Various **W**eather Conditions (**TSBOW**), a comprehensive dataset designed to enhance occluded vehicle detection across diverse annual weather scenarios. Comprising over **32 hours** of real-world traffic data from densely populated urban areas, TSBOW includes more than **48,000 manually annotated** and **3.2 million semi-labeled** frames; bounding boxes spanning eight traffic participant classes from large vehicles to micromobility devices and pedestrians. We establish an object detection benchmark for TSBOW, highlighting challenges posed by occlusions and adverse weather. With its varied road types, scales, and viewpoints, TSBOW serves as a critical resource for advancing Intelligent Transportation Systems. Our findings underscore the potential of CCTV-based traffic monitoring, paving the way for new research and applications. The TSBOW dataset is publicly available at the following link. <br>
+Global warming has intensified the frequency and severity of extreme weather events, which degrade CCTV signal and video quality while disrupting traffic flow, thereby increasing traffic accident rates. Existing datasets, often limited to light haze, rain, and snow, fail to capture extreme weather conditions. To address this gap, this study introduces the **T**raffic **S**urveillance **B**enchmark for **O**ccluded Vehicles under Various **W**eather Conditions (**TSBOW**), a comprehensive dataset designed to enhance occluded vehicle detection across diverse annual weather scenarios. Comprising over **32 hours** of real-world traffic data from densely populated urban areas, TSBOW includes more than **48,000 manually annotated** and **3.2 million semi-labeled frames**; bounding boxes spanning eight traffic participant classes from large vehicles to micromobility devices and pedestrians. We establish an object detection benchmark for TSBOW, highlighting challenges posed by occlusions and adverse weather. With its varied road types, scales, and viewpoints, TSBOW serves as a critical resource for advancing Intelligent Transportation Systems. Our findings underscore the potential of CCTV-based traffic monitoring, paving the way for new research and applications. The TSBOW dataset is publicly available at the following link. <br>
 **Code** -- https://github.com/SKKUAutoLab/TSBOW
 
 
@@ -129,11 +129,11 @@ Global warming has intensified the frequency and severity of extreme weather eve
 
 <div align="center" style="max-width:1000px; margin: 10px auto 20px;">
     <div style="display:flex; gap:18px; justify-content:center; align-items:flex-start; flex-wrap:wrap;">
-        <div style="flex:1 1 440px; max-width:58%; text-align:center;">
+        <div style="flex:1 1 440px; max-width:51%; text-align:center;">
             <img src="images/Figure_Suwon_Camera_Map.png" alt="Recording Locations" style="width:100%; height:auto; display:block; border-radius:6px;">
             <p style="margin:8px 0 0 0; font-weight:600;">Recording Locations</p>
         </div>
-        <div style="flex:1 1 440px; max-width:44%; text-align:center;">
+        <div style="flex:1 1 440px; max-width:42%; text-align:center;">
             <img src="images/Chart_SunburstChart_Attributes.png" alt="Video Distribution" style="width:100%; height:auto; display:block; border-radius:6px;">
             <p style="margin:8px 0 0 0; font-weight:600;">Video Distribution</p>
         </div>
