@@ -29,11 +29,18 @@ In this section, we provide the Python source code for baseline models used in p
 
 ## 🔧 Installation
 
-The experiments are based on [Ultralytics](https://github.com/ultralytics/ultralytics) and [YOLOv12](https://github.com/sunsmarterjie/yolov12). Please visit their installation guides for more setup options.
+The experiments are based on [Ultralytics](https://github.com/ultralytics/ultralytics) and [YOLOv12](https://github.com/sunsmarterjie/yolov12). 
+Please visit their installation guides for more detailed setup options.
 
-- For YOLOv8, YOLOv11, and RT-DETR models, we use the [Ultralytics](https://github.com/ultralytics/ultralytics) repo.
-- For YOLOv12 model, we use the [YOLOv12](https://github.com/sunsmarterjie/yolov12) repo.
-- For manually labels, we use the [X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling) tools.
+1. For YOLOv8, YOLOv11, and RT-DETR models, we use the [Ultralytics](https://github.com/ultralytics/ultralytics) repo.
+
+
+2. For YOLOv12 model, we use the [YOLOv12](https://github.com/sunsmarterjie/yolov12) repo.
+
+
+3. For manually labels, we use the [X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling) tools.
+
+
 
 <!-- MARK: Training -->
 
