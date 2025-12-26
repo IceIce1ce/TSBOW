@@ -26,6 +26,11 @@ In this section, we provide the Python source code for baseline models used in p
 
 ## Installation
 
+The experiments are based on [Ultralytics](https://github.com/ultralytics/ultralytics) and [YOLOv12](https://github.com/sunsmarterjie/yolov12). Please visit their installation guides for more setup options.
+
+- For YOLOv8, YOLOv11, and RT-DETR models, we use the [Ultralytics](https://github.com/ultralytics/ultralytics) repo.
+- For YOLOv12 model, we use the [YOLOv12](https://github.com/sunsmarterjie/yolov12) repo.
+- For manually labels, we use the [X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling) tools.
 
 
 ## Train
@@ -42,6 +47,7 @@ In this section, we provide the Python source code for baseline models used in p
 
 Thanks to the developers and contributors of the following open-source repositories, whose invaluable work has greatly inspire our project:
 
+- [X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling): An open-source tool for precise bounding box creation.
 - [Ultralytics YOLO](https://github.com/ultralytics/ultralytics): Detection models for training and real-time inferencing.
 - [YOLOv12](https://github.com/sunsmarterjie/yolov12): A model for object detection.
 
