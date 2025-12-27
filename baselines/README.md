@@ -34,11 +34,28 @@ Please visit their installation guides for more detailed setup options.
 
 1. For YOLOv8, YOLOv11, and RT-DETR models, we use the [Ultralytics](https://github.com/ultralytics/ultralytics) repo.
 
+<details>
+    <summary> Quick Installation </summary>
+</details>
+
+<br>
+
 
 2. For YOLOv12 model, we use the [YOLOv12](https://github.com/sunsmarterjie/yolov12) repo.
 
+<details>
+    <summary> Quick Installation </summary>
+</details>
+
+<br>
+
 
 3. For manually labels, we use the [X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling) tools.
+
+<details>
+    <summary> Quick Installation </summary>
+</details>
+
 
 
 
