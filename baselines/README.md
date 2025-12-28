@@ -83,11 +83,13 @@ The installation and guideline are mentioned in [Documents](../documents/Documen
 [train_YOLO.py](train_YOLO.py) can be used for training the YOLOv8, YOLOv11, and YOLOv12 models.
 
 ```bash
+# for training multi-GPU
+export NCCL_IB_GID_INDEX=3
+export NCCL_P2P_DISABLE=1
+
 python train_YOLO.py \
-    -d $DATA_PATH   -n $DATA_NAME \
-    -m $MODEL_VER   -c $CUDA_DEVICE \
-    -e $EPOCH_TRAIN -b $BATCH_SIZE \
-    -i $IMAGE_SIZE  --cache $CACHE
+    -d 'NGOCHDM/Dataset/'   -n 'TSBOW'      -c '[0,1,2,3]' \
+    -m yolo11x  -e 100      -b 40    -i 1280    --cache True
 ```
 
 **RT-DETR**
