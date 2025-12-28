@@ -83,16 +83,12 @@ def validation_comparison(args):
                         name=f"COMPARISON/{model_file}_evaluation_conf{conf_name:02d}", save_json=True)
 
 
-def visualize_():
-    print()
-
-
 def parse_args():
     parser = ArgumentParser()
 
     # MODEL RELATED
     parser.add_argument('-p', '--path2model',   type=str,  
-                        default='/media/ngochdm/Projects/__SERVER_05__/SourceCode/ultralytics/runs/detect/', 
+                        default='runs/detect/', 
                         help='Enter the path of detection model for -p or --path2model')
     parser.add_argument('-m', '--model',        type=str,
                         default="yolo11x", 
@@ -104,7 +100,7 @@ def parse_args():
                         help='Choose results folder name for -r or --results_name')
     
     parser.add_argument('-i', '--image_size',   type=int,
-                        default=640,
+                        default=1280,
                         help='Enter image size for -i or --image_size')
     parser.add_argument('-b', '--batch_size',   type=int,
                         default=16,
@@ -124,14 +120,14 @@ def parse_args():
     
     # DATA RELATED
     parser.add_argument('-d', '--path2data',    type=str, 
-                        default='/media/hdmngoc/ssd_02/DataCreation/', 
-                        help='Enter the path of data.')
+                        default='/path/to/data/', 
+                        help='Enter the path of data.  i.e. /media/ngochdm/ssd_01/')
     parser.add_argument('-n', '--name',         type=str,   
-                        default="SUWON_DATASET_VER01_GT", 
+                        default="TSBOW", 
                         help='Enter name of YAML file')
     parser.add_argument('-y', '--yaml',         type=str,   
-                        default="SUWON_DATASET_VER01_GT", 
-                        help='Enter name of YAML file')
+                        default="TSBOW", 
+                        help='Enter name of YAML file: TSBOW')
     
     args = parser.parse_args()
     return args
