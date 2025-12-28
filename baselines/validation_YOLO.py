@@ -1,5 +1,4 @@
 from argparse import ArgumentParser
-# from pathlib import Path
 
 from ultralytics import YOLO
 from ultralytics import RTDETR
@@ -119,6 +118,7 @@ def parse_args():
                         help='Choose task to evaluate --task: <none> or comparison or ablation')
     
     # DATA RELATED
+    ## Full path to dataset: /path/to/data/TSBOW/TSBOW.yaml
     parser.add_argument('-d', '--path2data',    type=str, 
                         default='/path/to/data/', 
                         help='Enter the path of data.  i.e. /media/ngochdm/ssd_01/')
