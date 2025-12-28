@@ -36,6 +36,15 @@ Please visit their installation guides for more detailed setup options.
 
 <details>
     <summary> Quick Installation </summary>
+
+    ```bash
+    pip install pytorch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+    git clone https://github.com/ultralytics/ultralytics 
+    cd ultralytics 
+    pip install -e .
+    pip install tensorboard
+    ```
+
 </details>
 
 <br>
@@ -54,6 +63,7 @@ Please visit their installation guides for more detailed setup options.
     pip install -r requirements.txt
     pip install -e .
     ```
+
 </details>
 
 <br>
