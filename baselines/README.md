@@ -92,6 +92,7 @@ python train_YOLO.py \
     -m yolo11x  -e 100      -b 40    -i 1280    --cache True
 ```
 
+
 **RT-DETR**
 
 ```bash
@@ -114,7 +115,9 @@ python train_RTDETR.py \
 
 [validation_YOLO.py](validation_YOLO.py) can be used for validation the YOLOv8, YOLOv11, and YOLOv12 models.
 
-
+```bash
+python validation_YOLO.py
+```
 
 **RT-DETR**
 
@@ -124,6 +127,7 @@ python train_RTDETR.py \
 
 <!-- ## 🧠 Inferences -->
 
+<!-- **YOLOv12x** -->
 
 
 <!-- MARK: References -->
