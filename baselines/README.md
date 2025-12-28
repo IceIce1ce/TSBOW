@@ -45,6 +45,15 @@ Please visit their installation guides for more detailed setup options.
 
 <details>
     <summary> Quick Installation </summary>
+
+    ```bash
+    git clone https://github.com/sunsmarterjie/yolov12 
+    wget https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.3/flash_attn-2.7.3+cu11torch2.2cxx11abiFALSE-cp311-cp311-linux_x86_64.whl 
+    conda create -n yolov12 python=3.11 -y 
+    conda activate yolov12
+    pip install -r requirements.txt
+    pip install -e .
+    ```
 </details>
 
 <br>
