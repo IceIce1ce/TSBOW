@@ -110,6 +110,13 @@ python train_RTDETR.py \
 
 ## ✔️ Validation
 
+**YOLO**
+
+[validation_YOLO.py](validation_YOLO.py) can be used for validation the YOLOv8, YOLOv11, and YOLOv12 models.
+
+
+
+**RT-DETR**
 
 
 
