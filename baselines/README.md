@@ -80,7 +80,17 @@ The installation and guideline are mentioned in [Documents](../documents/Documen
 
 **YOLO**
 
-
+```bash
+python train_YOLO.py \
+    -d $DATA_PATH   -n $DATA_NAME \
+    -m $MODEL_VER   -c $CUDA_DEVICE \
+    -e $EPOCH_TRAIN -b $BATCH_SIZE \
+    -i $IMAGE_SIZE  --cache $CACHEpython train_YOLO.py \
+    -d $DATA_PATH   -n $DATA_NAME \
+    -m $MODEL_VER   -c $CUDA_DEVICE \
+    -e $EPOCH_TRAIN -b $BATCH_SIZE \
+    -i $IMAGE_SIZE  --cache $CACHE
+```
 
 **RT-DETR**
 
