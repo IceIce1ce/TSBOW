@@ -228,15 +228,4 @@ document.querySelectorAll(".coming-soon").forEach(link =>{
 // 			}
 // 		}
 // 	}
-// 	else if (model == "GT") {
-// 		if (dataset == "NSVF") {
-// 			if (scene == "Spaceship")
-// 			return "<b>TensoRF-VM192</b><br>PSNR: 37.66"
-// 		}
-// 		else if (dataset == "NeRF") {
-// 			if (scene == "Lego") {
-// 				return "<b>Ground Truth</b>"
-// 			}
-// 		}
-// 	}
 // }
