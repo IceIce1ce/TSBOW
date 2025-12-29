@@ -5,22 +5,22 @@
 # Uncomment the corresponding block and set BATCH_SIZE accordingly
 ###########################################################################
 ### yolov8x
-# MODEL_PATH='NGOCHDM/SourceCode/ultralytics/runs/detect/' 
+# MODEL_PATH='ultralytics/runs/detect/' 
 # MODEL_NAME='yolov8x'
 # BATCH_SIZE=128
 
 ### yolo11x
-# MODEL_PATH='NGOCHDM/SourceCode/ultralytics/runs/detect/' 
+# MODEL_PATH='ultralytics/runs/detect/' 
 # MODEL_NAME='yolo11x'
 # BATCH_SIZE=64
 
 ### yolov12x
-MODEL_PATH='NGOCHDM/SourceCode/yolov12/runs/detect/' 
+MODEL_PATH='yolov12/runs/detect/' 
 MODEL_NAME='yolov12x'
 BATCH_SIZE=56
 
 ### rtdetr-x
-# MODEL_PATH='NGOCHDM/SourceCode/ultralytics/runs/detect/' 
+# MODEL_PATH='ultralytics/runs/detect/' 
 # MODEL_NAME='rtdetr-x'
 # BATCH_SIZE=14
 ###########################################################################

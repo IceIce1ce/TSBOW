@@ -119,7 +119,7 @@ python train_RTDETR.py \
 
 [validation_YOLO.py](validation_YOLO.py) can be used for validation the YOLOv8, YOLOv11, and YOLOv12 models.
 
-The script below is an example for validating the YOLO models on test set.
+The script below is an example for validating the YOLO models on test set. More detailed validation configurations are mentioned in [validation_YOLO.sh](validation_YOLO.sh).
 
 ```bash
 python validation_YOLO.py \
