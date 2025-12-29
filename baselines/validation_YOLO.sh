@@ -1,30 +1,35 @@
 
-DATA_PATH='NGOCHDM/Dataset/'
-DATA_NAME='TSBOW'
-
-###############
-# ultralytics
+###########################################################################
+# INSTRUCTIONS
+# Select model to validate: yolov8x, yolov11x, yolov12x, rtdetr-x
+# Uncomment the corresponding block and set BATCH_SIZE accordingly
+###########################################################################
 ### yolov8x
-# MODEL_PATH='/media/vsw/SSD_1/NGOCHDM/SourceCode/ultralytics/runs/detect/' 
+# MODEL_PATH='NGOCHDM/SourceCode/ultralytics/runs/detect/' 
 # MODEL_NAME='yolov8x'
 # BATCH_SIZE=128
 
-### yolov11x
-# MODEL_PATH='/media/vsw/SSD_1/NGOCHDM/SourceCode/ultralytics/runs/detect/' 
+### yolo11x
+# MODEL_PATH='NGOCHDM/SourceCode/ultralytics/runs/detect/' 
 # MODEL_NAME='yolo11x'
 # BATCH_SIZE=64
 
-### yolov12
-MODEL_PATH='/media/vsw/SSD_1/NGOCHDM/SourceCode/yolov12/runs/detect/' 
+### yolov12x
+MODEL_PATH='NGOCHDM/SourceCode/yolov12/runs/detect/' 
 MODEL_NAME='yolov12x'
 BATCH_SIZE=56
 
 ### rtdetr-x
-# MODEL_PATH='/media/vsw/SSD_1/NGOCHDM/SourceCode/ultralytics/runs/detect/' 
+# MODEL_PATH='NGOCHDM/SourceCode/ultralytics/runs/detect/' 
 # MODEL_NAME='rtdetr-x'
 # BATCH_SIZE=14
-###############
+###########################################################################
 
+# Dataset configuration
+DATA_PATH='NGOCHDM/Dataset/'
+DATA_NAME='TSBOW'
+
+# Validation configuration
 CUDA_DEVICE='cuda:2'
 IMAGE_SIZE='960 1120 1280 1440 1600'
 CONF_SCORE=0.5
