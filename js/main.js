@@ -216,16 +216,3 @@ document.querySelectorAll(".coming-soon").forEach(link =>{
 //         right_img.src = base_url + dataset +  "/" + scene + "/" + frame + "/" + right_model + ".png"
 // }
 
-// function get_psnr(model, dataset, scene) {
-// 	if (model == "TensoRF") {
-// 		if (dataset == "NSVF") {
-// 			if (scene == "Spaceship")
-// 			return "<b>TensoRF-VM192</b><br>PSNR: 37.66"
-// 		}
-// 		else if (dataset == "NeRF") {
-// 			if (scene == "Lego") {
-// 				return "<b>TensoRF-VM192</b><br>PSNR: 36.04<br>Size: 17.03MB"
-// 			}
-// 		}
-// 	}
-// }
