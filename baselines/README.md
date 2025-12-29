@@ -22,7 +22,7 @@ __        _______ _     ____ ___  __  __ _____
 
 # Baselines for [AAAI 26] TSBOW
 
-In this section, we provide the Python source code for baseline models used in paper Experiments.
+In this section, we provide the Python source code for baseline models used in Experiments.
 
 
 <!-- MARK: Installation -->
@@ -116,9 +116,9 @@ python train_RTDETR.py \
 
 ## 🔍 Validation
 
-[validation.py](validation.py) can be used for validation the YOLOv8, YOLOv11, and YOLOv12 models.
+[validation.py](validation.py) can be used for validation the YOLOv8, YOLOv11, YOLOv12, and RT-DETR models.
 
-The script below is an example for validating the YOLO models on test set. More detailed validation configurations are mentioned in [validation.sh](validation.sh).
+The script below is an example for validating YOLOv12x on test set. More detailed validation configurations are mentioned in [validation.sh](validation.sh).
 
 ```bash
 python validation.py \
