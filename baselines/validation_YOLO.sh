@@ -33,6 +33,8 @@ SPLIT_PATH='test'
 MAX_DETECT=300
 
 
+# Validation with different image sizes
+
 for imgsize in $IMAGE_SIZE
 do
     CUDA_VISIBLE_DEVICES='2' \
@@ -43,6 +45,9 @@ do
         --iou $IOU_DETECT   --split $SPLIT_PATH             --max_det $MAX_DETECT \
         -r "EVALUATION/${MODEL_NAME}_${imgsize}"
 done
+
+
+# Validation with fixed image size
 
 # CUDA_VISIBLE_DEVICES='1' \
 # python validation_YOLO.py \

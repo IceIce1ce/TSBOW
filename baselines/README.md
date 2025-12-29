@@ -82,6 +82,8 @@ The installation and guideline are mentioned in [Documents](../documents/Documen
 
 [train_YOLO.py](train_YOLO.py) can be used for training the YOLOv8, YOLOv11, and YOLOv12 models.
 
+The script below is an example for training the YOLO models on train set.
+
 ```bash
 # for training multi-GPU
 export NCCL_IB_GID_INDEX=3
@@ -94,6 +96,8 @@ python train_YOLO.py \
 
 
 **RT-DETR**
+
+The script below is an example for training the RT-DETR model on train set.
 
 ```bash
 # for training multi-GPU
