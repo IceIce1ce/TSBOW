@@ -23,15 +23,14 @@ Navy Palettes (Ocean Depths)
 
 
 Light Colors in Figure Background
+    Alto            #d9d9d9
+    Apricot Peach   #f8cbad
     Cadet Blue      #adb9ca
-    light blue      #bdd7ee
-    light gray      #d9d9d9
-    light green     #c5e0b4
-    light purple    #e1ccf0
-    light orange    #f8cbad
-    light red       #ffbdbd
-    light yellow    #ffe699
-
+    Cream Brulee    #ffe699
+    French Lilac    #e1ccf0
+    Spindle         #bdd7ee
+    Sprout          #c5e0b4
+    Your Pink       #ffbdbd
 
 
 
