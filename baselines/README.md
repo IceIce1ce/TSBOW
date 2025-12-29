@@ -113,7 +113,7 @@ python train_RTDETR.py \
 
 <!-- MARK: Validation -->
 
-## ✔️ Validation
+## 🔍 Validation
 
 **YOLO**
 
@@ -136,9 +136,17 @@ python validation_YOLO.py \
 
 <!-- MARK: Inferences -->
 
-<!-- ## 🧠 Inferences -->
+<!-- ## 🤖 Inferences -->
 
 <!-- **YOLOv12x** -->
+
+
+<!-- MARK: Ablation -->
+
+## 🔬 Ablation Studies
+
+The [validation_ablation.sh](validation_ablation.sh) provides the validation process according to TSBOW metadata for each attributes.
+
 
 
 <!-- MARK: References -->
