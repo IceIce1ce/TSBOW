@@ -1,12 +1,5 @@
 // base_url = "https://huggingface.co/datasets/skku-autolab/TSBOW"
 
-
-// title
-///// Traffic Surveillance Benchmark for Occluded vehicles under various Weather conditions
-// const title = document.getElementById("titleText");
-// title.innerHTML = title.textContent.replace(/([A-Z])/g, '<span class="uuc">$1</span>');
-
-
 // MARK: Title - Synchronize hover 
 document.addEventListener('DOMContentLoaded', function() 
 {
