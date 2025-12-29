@@ -1,25 +1,25 @@
 Main Color
-    navy		#000080
-    white       #FFFFFF
+    Navy		#000080
+    White       #FFFFFF
 
 
 Neon Palettes
-    neon green 	#33CCCC 
-    neon blue 	#33CCFF 
-    neon purple	#6699FF
-    neon yellow	#FFCC00 
-    neon orange	#FF6600 
-    neon red	#FF0066
+    Neon Green 	#33CCCC 
+    Neon Blue 	#33CCFF 
+    Neon Purple	#6699FF
+    Neon Yellow	#FFCC00 
+    Neon Orange	#FF6600 
+    Neon Red	#FF0066
 
 
 Navy Palettes (Ocean Depths)
-    deep navy       #001F3F
-    navy            #000080
-    vibrant blue    #0074D9
-    light blue      #7FDBFF
-    light teal      #39CCCC
-    cool green      #3D9970
-    vibrant green   #2ECC40
+    Deep Navy       #001F3F
+    Navy            #000080
+    Vibrant Blue    #0074D9
+    Light Blue      #7FDBFF
+    Light teal      #39CCCC
+    Cool Green      #3D9970
+    Vibrant Green   #2ECC40
 
 
 Light Colors in Figure Background
