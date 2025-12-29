@@ -43,7 +43,7 @@ MAX_DETECT=300
 for imgsize in $IMAGE_SIZE
 do
     CUDA_VISIBLE_DEVICES='2' \
-    python validation_YOLO.py \
+    python validation.py \
         -d $DATA_PATH       -n $DATA_NAME \
         -p $MODEL_PATH      -m "${MODEL_NAME}_${DATA_NAME}" -c $CUDA_DEVICE \
         -i $imgsize         -b $BATCH_SIZE                  --conf $CONF_SCORE  \
@@ -55,7 +55,7 @@ done
 # Validation with fixed image size
 
 # CUDA_VISIBLE_DEVICES='1' \
-# python validation_YOLO.py \
+# python validation.py \
 #     -d $DATA_PATH   -n $DATA_NAME \
 #     -p $MODEL_PATH  -m $"yolo11x.pt" \
 #     -c $CUDA_DEVICE -i $IMAGE_SIZE  -b 10  --conf $CONF_SCORE  \

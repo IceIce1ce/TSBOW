@@ -116,23 +116,18 @@ python train_RTDETR.py \
 
 ## 🔍 Validation
 
-**YOLO**
+[validation.py](validation.py) can be used for validation the YOLOv8, YOLOv11, and YOLOv12 models.
 
-[validation_YOLO.py](validation_YOLO.py) can be used for validation the YOLOv8, YOLOv11, and YOLOv12 models.
-
-The script below is an example for validating the YOLO models on test set. More detailed validation configurations are mentioned in [validation_YOLO.sh](validation_YOLO.sh).
+The script below is an example for validating the YOLO models on test set. More detailed validation configurations are mentioned in [validation.sh](validation.sh).
 
 ```bash
-python validation_YOLO.py \
+python validation.py \
     -d 'NGOCHDM/Dataset/'       -n 'TSBOW'          \
     -p 'runs/detect/'           -m "yolov12x_TSBOW" \
     -i 1280         -b 56       --conf 0.5          \
     --iou 0.6   --split 'test'  --max_det 300       \
     -r "EVALUATION/yolov12x_1280"
 ```
-
-**RT-DETR**
-
 
 
 <!-- MARK: Inferences -->
@@ -166,7 +161,7 @@ The script below is an example for validating the YOLOv12x model on weather cate
 ```bash
 for weather in $class_w_value
 do
-    python validation_YOLO.py \
+    python validation.py \
         -d $DATA_PATH   -n $DATA_NAME   -y "${VERSION_NAME}_WEATHER_${weather}"     \
         -p $MODEL_PATH  -m "ABLATION/yolov12x_TSBOW"                                \
         -c $CUDA_DEVICE -i $IMAGE_SIZE  -b $BATCH_SIZE_YOLO12x                      \
