@@ -149,6 +149,7 @@ The [validation_ablation.sh](validation_ablation.sh) provides the validation pro
 
 The attributes are `classification = "SCENARIO WEATHER SCALE ROADTYPE TRAFFIC"`.
 
+
 Attribute values:
 ```
 class_sn_value = "road intersection specialcase disaster"
@@ -156,6 +157,21 @@ class_w_value  = "normal haze rain snow"
 class_s_value  = "fine medium coarse"
 class_r_value  = "urban standard boulevard"
 class_t_value  = "light moderate heavy"
+```
+
+
+The script below is an example for validating the YOLOv12x model on weather category (test set). 
+
+```bash
+for weather in $class_w_value
+do
+    python validation_YOLO.py \
+        -d $DATA_PATH   -n $DATA_NAME   -y "${VERSION_NAME}_WEATHER_${weather}"     \
+        -p $MODEL_PATH  -m "ABLATION/yolov12x_TSBOW"                                \
+        -c $CUDA_DEVICE -i $IMAGE_SIZE  -b $BATCH_SIZE_YOLO12x                      \
+        --conf $CONF_SCORE  --iou $IOU_DETECT    --split $SPLIT_PATH                \
+        --max_det $MAX_DETECT   --task "ablation"
+done
 ```
 
 
