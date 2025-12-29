@@ -147,6 +147,17 @@ python validation_YOLO.py \
 
 The [validation_ablation.sh](validation_ablation.sh) provides the validation process according to TSBOW metadata for each attributes.
 
+The attributes are `classification = "SCENARIO WEATHER SCALE ROADTYPE TRAFFIC"`.
+
+Attribute values:
+```
+class_sn_value = "road intersection specialcase disaster"
+class_w_value  = "normal haze rain snow"
+class_s_value  = "fine medium coarse"
+class_r_value  = "urban standard boulevard"
+class_t_value  = "light moderate heavy"
+```
+
 
 
 <!-- MARK: References -->

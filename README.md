@@ -278,7 +278,7 @@ Read [Instruction](baselines/README.md) for more information.
 
 <!-- MARK: Experiments -->
 
-## ⚗️ Experiments
+## 🔬 Experiments
 
 <div align="center" style="background:#f4f7fb; padding:5px; border-radius:10px; max-width:1000px; margin: 16px auto;">
     <img src="images/Table_6.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
