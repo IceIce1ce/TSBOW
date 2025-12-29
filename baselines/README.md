@@ -90,8 +90,9 @@ export NCCL_IB_GID_INDEX=3
 export NCCL_P2P_DISABLE=1
 
 python train_YOLO.py \
-    -d 'NGOCHDM/Dataset/'   -n 'TSBOW'      -c '[0,1,2,3]' \
-    -m yolo11x  -e 100      -b 40    -i 1280    --cache True
+    -d 'NGOCHDM/Dataset/'   -n 'TSBOW'      -c '[0,1,2,3]'  \
+    -m yolo11x    -e 100    -b 40           -i 1280         \
+    --cache True            --state $TRAIN_STATE
 ```
 
 
