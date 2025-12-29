@@ -116,7 +116,29 @@ python train_RTDETR.py \
 [validation_YOLO.py](validation_YOLO.py) can be used for validation the YOLOv8, YOLOv11, and YOLOv12 models.
 
 ```bash
-python validation_YOLO.py
+CUDA_DEVICE='cuda:0'
+IMAGE_SIZE='960 1120 1280 1440 1600'
+CONF_SCORE=0.5
+IOU_DETECT=0.6
+SPLIT_PATH='test'
+MAX_DETECT=300
+
+# BATCH_SIZE_YOLOv8x=128
+# BATCH_SIZE_YOLO11x=64
+# BATCH_SIZE_YOLO12x=56
+# BATCH_SIZE_RTDETRx=14
+
+
+for imgsize in $IMAGE_SIZE
+do
+    CUDA_VISIBLE_DEVICES='2' \
+    python validation_YOLO.py \
+        -d $DATA_PATH       -n $DATA_NAME \
+        -p $MODEL_PATH      -m "${MODEL_NAME}_${DATA_NAME}" -c $CUDA_DEVICE \
+        -i $imgsize         -b $BATCH_SIZE_YOLO11x          --conf $CONF_SCORE  \
+        --iou $IOU_DETECT   --split $SPLIT_PATH             --max_det $MAX_DETECT \
+        -r "EVALUATION/${MODEL_NAME}_${imgsize}"
+done
 ```
 
 **RT-DETR**
