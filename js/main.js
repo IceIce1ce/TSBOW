@@ -183,9 +183,3 @@ document.querySelectorAll(".coming-soon").forEach(link =>{
   });
 });
 
-
-
-// function select_frame(target, dataset, scene) {
-// 	var left_model = document.getElementById("left_select" + "_" + dataset + "_" + scene).value;
-// 	var right_model = document.getElementById("right_select" + "_" + dataset + "_" + scene).value;
-
