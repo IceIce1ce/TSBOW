@@ -84,6 +84,16 @@ def main(args):
                 allow_patterns=["*.txt"],
             )
             print(f"Downloaded directory '{hub_path}' from {repo_id} to {args.output_dir}")
+
+    # Download entire dataset
+    elif args.type == "all":
+        snapshot_download(
+            repo_id=repo_id,
+            repo_type="dataset",
+            local_dir=args.output_dir,
+            resume_download=True,
+        )
+        print(f"Downloaded entire dataset from {repo_id} to {args.output_dir}")
     
 
 if __name__ == "__main__":

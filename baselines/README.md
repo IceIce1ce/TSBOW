@@ -132,9 +132,9 @@ python validation.py \
 
 <!-- MARK: Inferences -->
 
-<!-- ## 🤖 Inferences -->
+<!-- ## 🤖 Inferences
 
-<!-- **YOLOv12x** -->
+**YOLOv12x** -->
 
 
 <!-- MARK: Ablation -->
