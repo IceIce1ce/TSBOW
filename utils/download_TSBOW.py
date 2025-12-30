@@ -74,6 +74,7 @@ def main(args):
 
     # Download annotations
     elif args.type == "annotations":
+        print("Downloading annotations...")
         hub_paths = ["train/annotations/", "val/annotations/", "test/annotations/"]
         
         for hub_path in hub_paths:
@@ -82,6 +83,18 @@ def main(args):
                 repo_type="dataset",
                 local_dir=f"{args.output_dir}/{hub_path}",
                 allow_patterns=["*.txt"],
+            )
+            print(f"Downloaded directory '{hub_path}' from {repo_id} to {args.output_dir}")
+
+        print("Downloading images...")
+        hub_paths = ["train/images/", "val/images/", "test/images/"]
+        
+        for hub_path in hub_paths:
+            snapshot_download(
+                repo_id=repo_id,
+                repo_type="dataset",
+                local_dir=f"{args.output_dir}/{hub_path}",
+                allow_patterns=["*.jpg", "*.png"],
             )
             print(f"Downloaded directory '{hub_path}' from {repo_id} to {args.output_dir}")
 
