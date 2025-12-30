@@ -92,7 +92,7 @@ export NCCL_P2P_DISABLE=1
 python train_YOLO.py \
     -d 'NGOCHDM/Dataset/'   -n 'TSBOW'      -c '[0,1,2,3]'  \
     -m yolo11x    -e 100    -b 40           -i 1280         \
-    --cache True            --state $TRAIN_STATE
+    --cache True            --state 'start'
 ```
 
 
@@ -156,7 +156,7 @@ class_t_value  = "light moderate heavy"
 ```
 
 
-The script below is an example for validating the YOLOv12x model on weather category (test set). 
+The script below is an example for validating the YOLOv12x model on **weather** category (test set). 
 
 ```bash
 for weather in $class_w_value
