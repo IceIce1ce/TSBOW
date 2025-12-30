@@ -1,7 +1,10 @@
 
 DATA_PATH='NGOCHDM/Dataset/'
 DATA_NAME='TSBOW'
-MODEL_VER='yolov12x'
+
+# Model_ver can be: yolov8, yolo11, yolov12
+# Weights can be: n, s, m, l, x
+MODEL_VER='yolov12x'        
 
 CUDA_DEVICE='[0,1,2,3]'
 EPOCH_TRAIN=100
