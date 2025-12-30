@@ -201,11 +201,4 @@ document.querySelectorAll(".coming-soon").forEach(link =>{
 //     else
 //         left_img.src = base_url + dataset +  "/" + scene + "/" + frame + "/" + left_model + ".png"
         
-//     if (right_model == "TensoRF")
-//         right_img.src = base_url + dataset +  "/" + scene + "/" + "TensoRF" + "/" + frame + ".png"
-// 	else if (right_model == "GT")
-//         right_img.src = base_url + dataset + "/" + scene + "/" + "GT" + "/" + frame + ".png"
-//     else
-//         right_img.src = base_url + dataset +  "/" + scene + "/" + frame + "/" + right_model + ".png"
-// }
 
