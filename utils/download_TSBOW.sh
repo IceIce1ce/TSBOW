@@ -9,50 +9,13 @@
 #  - all: all files and folders      #
 ######################################
 
-
 REPO_ID='TSBOW'
 OUT_DIR='NGOCHDM/Dataset/TSBOW/'
 
-####################################
-# Download "videos" only
+# Select one of types: videos, annotations, metadata, semilabels, all
+DATA_TYPE='all'
+
 python download_TSBOW.py        \
     --repo_id       $REPO_ID    \
     --output_dir    $OUT_DIR    \
-    --type          'videos'
-####################################
-
-
-####################################
-# Download "annotations" only
-python download_TSBOW.py        \
-    --repo_id       $REPO_ID    \
-    --output_dir    $OUT_DIR    \
-    --type          'annotations'
-####################################
-
-
-####################################
-# Download "metadata" only
-python download_TSBOW.py        \
-    --repo_id       $REPO_ID    \
-    --output_dir    $OUT_DIR    \
-    --type          'metadata'
-####################################
-
-
-####################################
-# Download "semilabels" only
-python download_TSBOW.py        \
-    --repo_id       $REPO_ID    \
-    --output_dir    $OUT_DIR    \
-    --type          'semilabels'
-####################################
-
-
-####################################
-# Download ALL DATA
-python download_TSBOW.py        \
-    --repo_id       $REPO_ID    \
-    --output_dir    $OUT_DIR    \
-    --type          'all'
-####################################
+    --type          $DATA_TYPE
