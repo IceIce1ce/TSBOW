@@ -19,9 +19,9 @@ def parse_args():
     parser.add_argument(
         "--type",
         type=str,
-        choices=["videos", "annotations", "metadata", "all"],
+        choices=["videos", "annotations", "metadata", "semilabels", "all"],
         required=True,
-        help="Type of data to download (videos, annotations, metadata, all)",
+        help="Type of data to download (videos, annotations, metadata, semilabels, all)",
     )
 
     parser.add_argument(
@@ -45,6 +45,7 @@ def main(args):
         hub_paths = [
             # VIDEO_ID, SCENARIO, DAYTIME, WEATHER, SCALE, ROADTYPE, DURATION, FPS, ROI_DET, ROI_TRACK
             f"metadata/{args.repo_id}_info.csv",
+            
             # VideoID for each attribute
             # f"metadata/{args.repo_id}_listID.json"
         ]
