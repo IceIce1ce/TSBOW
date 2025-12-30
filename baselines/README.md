@@ -95,6 +95,12 @@ python train_YOLO.py \
     --cache True            --state 'start'
 ```
 
+or execute the [bash file](train_YOLO.sh) via 
+
+```bash
+bash train_YOLO.sh
+```
+
 
 **RT-DETR**
 
@@ -108,6 +114,12 @@ export NCCL_P2P_DISABLE=1
 python train_RTDETR.py \
     -d 'NGOCHDM/Dataset/'   -n 'TSBOW'      -c '[0,1,2,3]' \
     -m 'rtdetr-x'     -e 100      -b 36   -i 1280
+```
+
+or execute the [bash file](train_RTDETR.sh) via 
+
+```bash
+bash train_RTDETR.sh
 ```
 
 
