@@ -95,7 +95,7 @@ python train_YOLO.py \
     --cache True            --state 'start'
 ```
 
-or execute the [bash file](train_YOLO.sh) via 
+The [bash file](train_YOLO.sh) can be executed via command:
 
 ```bash
 bash train_YOLO.sh
@@ -116,7 +116,7 @@ python train_RTDETR.py \
     -m 'rtdetr-x'     -e 100      -b 36   -i 1280
 ```
 
-or execute the [bash file](train_RTDETR.sh) via 
+The [bash file](train_RTDETR.sh) can be executed via command:
 
 ```bash
 bash train_RTDETR.sh
