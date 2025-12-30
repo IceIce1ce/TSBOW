@@ -45,7 +45,7 @@ def main(args):
         hub_paths = [
             # VIDEO_ID, SCENARIO, DAYTIME, WEATHER, SCALE, ROADTYPE, DURATION, FPS, ROI_DET, ROI_TRACK
             f"metadata/{args.repo_id}_info.csv",
-            
+
             # VideoID for each attribute
             # f"metadata/{args.repo_id}_listID.json"
         ]
@@ -77,6 +77,20 @@ def main(args):
     elif args.type == "annotations":
         # annotation.zip contains images/ and labels/ folders
         hub_paths = ["train/annotations.zip", "val/annotations.zip", "test/annotations.zip"]
+
+        for hub_path in hub_paths:
+            hf_hub_download(
+                repo_id=repo_id,
+                repo_type="dataset",
+                filename=hub_path,
+                local_dir=args.output_dir,
+                resume_download=True,
+            )
+            print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
+
+    # Download semi-labels
+    elif args.type == "semilabels":
+        hub_paths = ["train/semilabels.zip", "val/semilabels.zip", "test/semilabels.zip"]
 
         for hub_path in hub_paths:
             hf_hub_download(
