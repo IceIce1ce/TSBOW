@@ -1,41 +1,9 @@
 import argparse
 from huggingface_hub import hf_hub_download, snapshot_download
 
-def parse_args():
-    # Setup command line arguments
-    parser = argparse.ArgumentParser(
-        description="Download TSBOW dataset from Hugging Face."
-    )
 
-    # The other versions of datasets will be added in the future
-    parser.add_argument(
-        "--repo_id",
-        type=str,
-        choices=["TSBOW"],
-        required=True,
-        help="Dataset type to download (TSBOW)",
-    )
-
-    parser.add_argument(
-        "--type",
-        type=str,
-        choices=["videos", "annotations", "metadata", "semilabels", "all"],
-        required=True,
-        help="Type of data to download (videos, annotations, metadata, semilabels, all)",
-    )
-
-    parser.add_argument(
-        "--output_dir",
-        type=str,
-        help="Local directory to save dataset",
-        default="./TSBOW",
-    )
-    
-    args = parser.parse_args()
-    return  args
-
-
-def main(args):
+# MARK: Download
+def download_TSBOW(args):
     print("Updating...")
 
     repo_id = f"SKKUAutoLab/{args.repo_id}"
@@ -117,8 +85,45 @@ def main(args):
         )
         print(f"Downloaded entire dataset from {repo_id} to {args.output_dir}")
     
-    
 
+
+# MARK: Args
+def parse_args():
+    # Setup command line arguments
+    parser = argparse.ArgumentParser(
+        description="Download TSBOW dataset from Hugging Face."
+    )
+
+    # The other versions of datasets will be added in the future
+    parser.add_argument(
+        "--repo_id",
+        type=str,
+        choices=["TSBOW"],
+        required=True,
+        help="Dataset type to download (TSBOW)",
+    )
+
+    parser.add_argument(
+        "--type",
+        type=str,
+        choices=["videos", "annotations", "metadata", "semilabels", "all"],
+        required=True,
+        help="Type of data to download (videos, annotations, metadata, semilabels, all)",
+    )
+
+    parser.add_argument(
+        "--output_dir",
+        type=str,
+        help="Local directory to save dataset",
+        default="./TSBOW",
+    )
+    
+    args = parser.parse_args()
+    return  args
+
+
+
+# MARK: Main
 if __name__ == "__main__":
     args    = parse_args()
-    main(args=args)
+    download_TSBOW(args=args)
