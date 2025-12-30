@@ -1,4 +1,4 @@
-# Instruction
+# Instruction for the related files in utils
 
 
 ## Hugging Face
@@ -10,6 +10,13 @@ The [download_TSBOW.py](download_TSBOW.py) provides the python source code for d
 
 The download options are: *videos*, *annotations*, *metadata*, *semilabels*, *all*.
 You can select one of them to download the data type.
+- *videos*: &emsp;&emsp; &emsp; the .mp4 files
+- *annotations*: &emsp; the manually labeled images and annotations
+- *metadata*: &emsp;&emsp; the json file storing metadata
+- *semilabels*: &emsp; &ensp; the semi-labeled annotations (txt files)
+- *all*: &emsp; &emsp; &emsp; &emsp;&ensp; all files and folders
+<!-- &nbsp; 1 space     &ensp; 2 spaces -->
+<!-- &emsp; 4 spaces     -->
 
 The [download_TSBOW.py](download_TSBOW.py) can be executed via command:
 ```bash
