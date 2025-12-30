@@ -194,11 +194,4 @@ document.querySelectorAll(".coming-soon").forEach(link =>{
 
 // 	var frame = target.value.toString().padStart(3, '0');
 
-//     if (left_model == "TensoRF")
-//         left_img.src = base_url + dataset +  "/" + scene + "/" + "TensoRF" + "/" + frame + ".png"
-// 	else if (left_model == "GT")
-//         left_img.src = base_url + dataset + "/" + scene + "/" + "GT" + "/" + frame + ".png"
-//     else
-//         left_img.src = base_url + dataset +  "/" + scene + "/" + frame + "/" + left_model + ".png"
-        
 
