@@ -5,6 +5,7 @@
 ##### videos: .mp4 files
 ##### annotations: images & labels
 ##### metadata: json file 
+##### semilabels: semi-labels
 ######################################
 
 
@@ -35,4 +36,13 @@ python download_TSBOW.py        \
     --repo_id       $REPO_ID    \
     --output_dir    $OUT_DIR    \
     --type          'metadata'
+####################################
+
+
+####################################
+# Download "semilabels" only
+python download_TSBOW.py        \
+    --repo_id       $REPO_ID    \
+    --output_dir    $OUT_DIR    \
+    --type          'semilabels'
 ####################################
