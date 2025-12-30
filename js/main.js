@@ -189,9 +189,3 @@ document.querySelectorAll(".coming-soon").forEach(link =>{
 // 	var left_model = document.getElementById("left_select" + "_" + dataset + "_" + scene).value;
 // 	var right_model = document.getElementById("right_select" + "_" + dataset + "_" + scene).value;
 
-// 	var left_img = document.getElementById("left_img" + "_" + dataset + "_" + scene);
-// 	var right_img = document.getElementById("right_img" + "_" + dataset + "_" + scene);
-
-// 	var frame = target.value.toString().padStart(3, '0');
-
-
