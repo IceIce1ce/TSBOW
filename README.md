@@ -333,7 +333,7 @@ Read [Instruction](baselines/README.md) for more information.
 
 <!-- MARK: Download -->
 
-## ⬇️ Dataset Download
+## 📥 Dataset Download
 
 (Upcoming) We will provide **Terms and Conditions** before downloading our **<span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>** dataset.
 
