@@ -162,11 +162,10 @@ The script below is an example for validating the YOLOv12x model on weather cate
 for weather in $class_w_value
 do
     python validation.py \
-        -d $DATA_PATH   -n $DATA_NAME   -y "${VERSION_NAME}_WEATHER_${weather}"     \
-        -p $MODEL_PATH  -m "ABLATION/yolov12x_TSBOW"                                \
-        -c $CUDA_DEVICE -i $IMAGE_SIZE  -b $BATCH_SIZE_YOLO12x                      \
-        --conf $CONF_SCORE  --iou $IOU_DETECT    --split $SPLIT_PATH                \
-        --max_det $MAX_DETECT   --task "ablation"
+        -d 'NGOCHDM/Dataset/'   -n 'TSBOW'   -y "TSBOWv01_WEATHER_${weather}"     \
+        -p 'runs/detect/'       -m "ABLATION/yolov12x_TSBOW"                      \
+        -c 'cuda:2'     -i 1280         -b 56               --max_det 300         \
+        --conf 0.5      --iou 0.6       --split 'test'      --task "ablation"
 done
 ```
 

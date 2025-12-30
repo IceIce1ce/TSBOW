@@ -29,7 +29,7 @@ class_s_value="fine medium coarse"
 class_r_value="urban standard boulevard"
 class_t_value="light moderate heavy"
 
-VERSION_NAME="TSBOWv02"
+VERSION_NAME="TSBOWv01"
 
 ##############################
 
