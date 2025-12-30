@@ -40,6 +40,7 @@ def main(args):
 
     repo_id = f"SKKUAutoLab/{args.repo_id}"
 
+
     # Download csv metadata
     if args.type == "metadata":
         hub_paths = [
@@ -60,6 +61,7 @@ def main(args):
             )
             print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
+
     # Download videos
     elif args.type == "videos":
         hub_paths = ["train/videos/", "val/videos/", "test/videos/"]
@@ -72,6 +74,7 @@ def main(args):
                 allow_patterns=["*.mp4"],
             )
             print(f"Downloaded directory '{hub_path}' from {repo_id} to {args.output_dir}")
+
 
     # Download annotations
     elif args.type == "annotations":
@@ -88,6 +91,7 @@ def main(args):
             )
             print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
+
     # Download semi-labels
     elif args.type == "semilabels":
         hub_paths = ["train/semilabels.zip", "val/semilabels.zip", "test/semilabels.zip"]
@@ -102,6 +106,7 @@ def main(args):
             )
             print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
+
     # Download entire dataset
     elif args.type == "all":
         snapshot_download(
@@ -111,6 +116,7 @@ def main(args):
             resume_download=True,
         )
         print(f"Downloaded entire dataset from {repo_id} to {args.output_dir}")
+    
     
 
 if __name__ == "__main__":
