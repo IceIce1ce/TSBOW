@@ -2,10 +2,11 @@
 ############ INSTRUCTIONS ############
 ######################################
 # Select the data type that you need #
-##### videos: .mp4 files
-##### annotations: images & labels
-##### metadata: json file 
-##### semilabels: semi-labels
+#  - videos: .mp4 files              #
+#  - annotations: images & labels    #
+#  - metadata: json file             #
+#  - semilabels: semi-labels         #
+#  - all: all files and folders      #
 ######################################
 
 
@@ -45,4 +46,13 @@ python download_TSBOW.py        \
     --repo_id       $REPO_ID    \
     --output_dir    $OUT_DIR    \
     --type          'semilabels'
+####################################
+
+
+####################################
+# Download ALL DATA
+python download_TSBOW.py        \
+    --repo_id       $REPO_ID    \
+    --output_dir    $OUT_DIR    \
+    --type          'all'
 ####################################
