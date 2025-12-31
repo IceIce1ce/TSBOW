@@ -1,0 +1,8 @@
+unidentified
+others
+pedestrian
+micromobility
+car
+bus
+small truck
+truck
