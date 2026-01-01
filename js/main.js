@@ -149,6 +149,10 @@ prevScrollPos = currentScrollPos;
 });
 
 
+// MARK: Scenes
+
+
+
 // MARK: citation
 function copyBibtex() {
   const code = document.querySelector("#citation pre code").innerText;
