@@ -356,7 +356,8 @@ Thanks to the developers and contributors of the following open-source repositor
 
 **Datasets**:
 - [UAVDT](https://datasetninja.com/uavdt): A traffic dataset contains drone footages under sunny and rainy conditions.
-- [UA-DETRAC](https://sites.google.com/view/daweidu/projects/ua-detrac?authuser=0): A traffic surveillance dataset captures sunny and rainy weather.
+- [UA-DETRAC](https://wayback.archive-it.org/org-652/20231112205116/https:/detrac-db.rit.albany.edu/): A traffic surveillance dataset captures sunny and rainy weather.
+<!-- new UA-DETRAC website: https://sites.google.com/view/daweidu/projects/ua-detrac?authuser=0 -->
 - [AAU RainSnow](https://vbn.aau.dk/en/datasets/aau-rainsnow-traffic-surveillance-dataset/): A traffic surveillance dataset provides segmentation annotations for rain and snow weather.
 
 **Github Repo**:
