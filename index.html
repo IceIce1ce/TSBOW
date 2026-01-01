@@ -344,7 +344,6 @@
                         <div class="filter-zone w3-center" style="display: block; margin-bottom: 20px; gap: 10px;">
                             <!-- Row 1: Buttons -->
                             <div class="filter-buttons" style="margin-bottom: 20px; display: flex; justify-content: center; gap: 10px;">
-                                <button class="btn filter-btn" onclick="filterScenes('all')" style="padding: 10px 20px;">ALL</button>
                                 <button class="btn filter-btn" onclick="filterScenes('scenario')" style="padding: 10px 20px;">SCENARIO</button>
                                 <button class="btn filter-btn" onclick="filterScenes('weather')" style="padding: 10px 20px;">WEATHER</button>
                                 <button class="btn filter-btn" onclick="filterScenes('roadtype')" style="padding: 10px 20px;">ROADTYPE</button>
@@ -353,22 +352,20 @@
                             </div>
 
                             <!-- Row 2: Sub-values -->
-                            <div class="filter-subvalues" style="border: 1px solid #ccc; padding: 5px; text-align: left; margin-bottom: 20px;">
-                                <p>Select a filter to see sub-values here.</p>
-                                <ul id="subvalues-list" style="list-style: none; padding: 0; margin: 0;">
-                                    <!-- Sub-values will be dynamically added here -->
-                                </ul>
+                            <div class="filter-subvalues" style="margin-bottom: 20px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+                                <!-- Sub-value buttons will be dynamically added here -->
                             </div>
 
                             <!-- Row 3: Visualization -->
                             <div class="filter-visualization" style="border: 1px solid #ccc; padding: 5px;">
                                 <img id="visualization-image" src="images/TSBOW_scenes.jpg" alt="Default Visualization" style="width: 100%; object-fit: cover;">
                                 <video id="visualization-video" controls style="width: 100%; display: none;">
-                                    <source src="" type="video/mp4">
+                                    <source id="video-source" src="" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
                         </div>
+
 
                         <details class="datasets-comparison-details">
                             <summary style="font-size: 25px;">
