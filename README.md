@@ -32,7 +32,7 @@ __        _______ _     ____ ___  __  __ _____
     <a href="https://scholar.google.com/citations?user=pCTUkWwAAAAJ">
         Ngoc Doan-Minh Huynh</a> &emsp;
     <a href="https://scholar.google.com/citations?user=crRQGUAAAAAJ">
-        Duong Nguyen-Ngoc Tran</a>&emsp;
+        Duong Nguyen-Ngoc Tran</a> &emsp;
     <a href="https://scholar.google.com/citations?user=xPyle9AAAAAJ">
         Long Hoang Pham</a>   
 </div>
@@ -316,6 +316,8 @@ Read [Instruction](baselines/README.md) for more information.
 <!-- Ablation Studies -->
 <details>
     <summary>Ablation Studies</summary>
+
+The source code for validating Ablation Studies are provided in [validation_ablation.sh](baselines/validation_ablation.sh). Please read the [Instruction](baselines/README.md) for more information.
 
 <div align="center" style="background:#f4f7fb; padding:3px; max-width:1000px; margin: 16px auto;">
     <img src="images/Table_8_slide.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
