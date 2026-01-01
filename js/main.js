@@ -167,10 +167,16 @@ function filterScenes(filter) {
     // Clear existing sub-value buttons
     subvaluesContainer.innerHTML = '';
 
-    // Reset visualization to default
-    visualizationImage.style.display = 'block';
+    // Reset visualization
+    visualizationImage.style.display = 'none';
     visualizationVideo.style.display = 'none';
     videoSource.src = '';
+
+    // Show the image only for "ALL"
+    if (filter === 'all') {
+        // visualizationContainer.style.display = 'block';
+        visualizationImage.style.display = 'block';
+    }
 
     // Add sub-value buttons for the selected filter
     if (subvalues[filter]) {
