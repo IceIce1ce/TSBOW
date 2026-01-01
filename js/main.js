@@ -150,7 +150,53 @@ prevScrollPos = currentScrollPos;
 
 
 // MARK: Scenes
+const subvalues = {
+    "scenario": ["road", "intersection", "specialcase", "disaster"],
+    "weather": ["normal", "haze", "rain", "snow"],
+    "scale": ["fine", "medium", "coarse"],
+    "roadtype": ["urban", "standard", "boulevard"],
+    "traffic": ["light", "moderate", "heavy"]
+};
 
+function filterScenes(filter) {
+    const subvaluesContainer = document.querySelector('.filter-subvalues');
+    const visualizationImage = document.getElementById('visualization-image');
+    const visualizationVideo = document.getElementById('visualization-video');
+    const videoSource = document.getElementById('video-source');
+
+    // Clear existing sub-value buttons
+    subvaluesContainer.innerHTML = '';
+
+    // Reset visualization to default
+    visualizationImage.style.display = 'block';
+    visualizationVideo.style.display = 'none';
+    videoSource.src = '';
+
+    // Add sub-value buttons for the selected filter
+    if (subvalues[filter]) {
+        subvalues[filter].forEach(subvalue => {
+            const button = document.createElement('button');
+            button.className = 'btn subvalue-btn';
+            button.style = 'padding: 10px 20px; margin: 5px;';
+            button.textContent = subvalue.toUpperCase();
+            button.onclick = () => showVideo(filter, subvalue);
+            subvaluesContainer.appendChild(button);
+        });
+    }
+}
+
+function showVideo(filter, subvalue) {
+    const visualizationImage = document.getElementById('visualization-image');
+    const visualizationVideo = document.getElementById('visualization-video');
+    const videoSource = document.getElementById('video-source');
+
+    // Hide the image and show the video
+    visualizationImage.style.display = 'none';
+    visualizationVideo.style.display = 'block';
+    videoSource.src = `videos/${filter}_${subvalue}.mp4`;
+    visualizationVideo.load();
+    visualizationVideo.play();
+}
 
 
 // MARK: citation
