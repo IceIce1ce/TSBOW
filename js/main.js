@@ -186,6 +186,7 @@ function filterScenes(filter) {
     // Show the image only for "ALL"
     if (filter === 'ALL') {
         visualizationContainer.style.display = 'block';
+        visualizationImage.src = `images/TSBOW_scenes.jpg`;
         visualizationImage.style.display = 'block';
     }
 
@@ -196,10 +197,39 @@ function filterScenes(filter) {
             button.className = 'btn subvalue-btn';
             button.style = `padding: 10px 20px; margin: 5px; background-color: ${filterColors[filter]}; color: #001F3F;`;
             button.textContent = subvalue.toUpperCase();
-            button.onclick = () => showVideo(filter, subvalue);
+            // button.onclick = () => showVideo(filter, subvalue);
+            button.onclick = () => showImage(filter, subvalue);
             subvaluesContainer.appendChild(button);
         });
     }
+}
+
+function showImage(filter, subvalue) {
+    const visualizationContainer = document.querySelector('.filter-visualization');
+    const visualizationImage = document.getElementById('visualization-image');
+    const visualizationVideo = document.getElementById('visualization-video');
+
+    const imagePath = `images/${filter}_${subvalue}.jpg`;
+
+    // Hide the video and show the image
+    visualizationVideo.style.display = 'none';
+    visualizationImage.style.display = 'block';
+    visualizationImage.src = imagePath;
+
+    // Check if the image file exists
+    visualizationImage.onload = () => {
+        console.log(`Image successfully loaded: ${imagePath}`);
+        visualizationContainer.style.display = 'block'; // Ensure the container is visible
+    };
+    
+    // Handle image load error
+    visualizationImage.onerror = () => {
+        console.error(`Error: Image not found at path: ${imagePath}`);
+        visualizationImage.style.display = 'none'; // Hide the image if it doesn't exist
+    };
+
+    // Log the final image source
+    console.log(`Image source set to: ${visualizationImage.src}`);
 }
 
 function showVideo(filter, subvalue) {
