@@ -152,19 +152,19 @@ prevScrollPos = currentScrollPos;
 // MARK: Scenes
 const subvalues = {
     "scenario": ["road", "intersection", "specialcase", "disaster"],
-    "weather": ["normal", "haze", "rain", "snow"],
-    "scale": ["fine", "medium", "coarse"],
+    "weather":  ["normal", "haze", "rain", "snow"],
+    "scale":    ["fine", "medium", "coarse"],
     "roadtype": ["urban", "standard", "boulevard"],
-    "traffic": ["light", "moderate", "heavy"]
+    "traffic":  ["light", "moderate", "heavy"]
 };
 
 const filterColors = {
-    "all": "#FFCC00",
+    "all":      "#FFCC00",
     "scenario": "#33CCCC",
-    "weather": "#FF6600",
-    "scale": "#FF0066",
+    "weather":  "#FF6600",
+    "scale":    "#FF0066",
     "roadtype": "#6699FF",
-    "traffic": "#33CCFF"
+    "traffic":  "#33CCFF"
 };
 
 function filterScenes(filter) {
