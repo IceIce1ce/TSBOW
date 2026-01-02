@@ -158,8 +158,18 @@ const subvalues = {
     "traffic": ["light", "moderate", "heavy"]
 };
 
+const filterColors = {
+    "all": "#FFCC00",
+    "scenario": "#33CCCC",
+    "weather": "#FF6600",
+    "scale": "#FF0066",
+    "roadtype": "#6699FF",
+    "traffic": "#33CCFF"
+};
+
 function filterScenes(filter) {
     const subvaluesContainer = document.querySelector('.filter-subvalues');
+    const visualizationContainer = document.querySelector('.filter-visualization');
     const visualizationImage = document.getElementById('visualization-image');
     const visualizationVideo = document.getElementById('visualization-video');
     const videoSource = document.getElementById('video-source');
@@ -168,13 +178,14 @@ function filterScenes(filter) {
     subvaluesContainer.innerHTML = '';
 
     // Reset visualization
+    visualizationContainer.style.display = 'none';
     visualizationImage.style.display = 'none';
     visualizationVideo.style.display = 'none';
     videoSource.src = '';
 
     // Show the image only for "ALL"
     if (filter === 'all') {
-        // visualizationContainer.style.display = 'block';
+        visualizationContainer.style.display = 'block';
         visualizationImage.style.display = 'block';
     }
 
@@ -183,7 +194,7 @@ function filterScenes(filter) {
         subvalues[filter].forEach(subvalue => {
             const button = document.createElement('button');
             button.className = 'btn subvalue-btn';
-            button.style = 'padding: 10px 20px; margin: 5px;';
+            button.style = `padding: 10px 20px; margin: 5px; background-color: ${filterColors[filter]}; color: #001F3F;`;
             button.textContent = subvalue.toUpperCase();
             button.onclick = () => showVideo(filter, subvalue);
             subvaluesContainer.appendChild(button);
@@ -192,6 +203,7 @@ function filterScenes(filter) {
 }
 
 function showVideo(filter, subvalue) {
+    const visualizationContainer = document.querySelector('.filter-visualization');
     const visualizationImage = document.getElementById('visualization-image');
     const visualizationVideo = document.getElementById('visualization-video');
     const videoSource = document.getElementById('video-source');
