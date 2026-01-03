@@ -262,11 +262,11 @@ function copyBibtex() {
 const footer = document.getElementById("dynamicFooter");
 
 window.addEventListener("scroll", () => {
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
-    // footer.classList.add("visible");
-  } else {
-    // footer.classList.remove("visible");
-  }
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+      // footer.classList.add("visible");
+    } else {
+      // footer.classList.remove("visible");
+    }
 });
 
 
