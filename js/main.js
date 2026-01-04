@@ -263,9 +263,9 @@ const footer = document.getElementById("dynamicFooter");
 
 window.addEventListener("scroll", () => {
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
-      // footer.classList.add("visible");
+        // footer.classList.add("visible");
     } else {
-      // footer.classList.remove("visible");
+        // footer.classList.remove("visible");
     }
 });
 

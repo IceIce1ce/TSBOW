@@ -242,9 +242,9 @@ Global warming has intensified the frequency and severity of extreme weather eve
 
 The comparison between different datasets are described in [Datasets](documents/README.md#-datasets) section.
 
-| Dataset           | Introduction                      |  Pub  | Paper |
-|:---:              |:---                               | :---: | :--- |
-| 🎯 **<span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>**             <br>[[website]](https://skkuautolab.github.io/TSBOW/)| - *<span style="color: #FFCC00">Hardware</span>*: CCTV system + color camera. <br> - *<span style="color: #33CCCC">Tasks</span>:* object detection. <br> - *<span style="color: #FF6600">Position</span>:* South Korea. <br> - *<span style="color: #6699FF">Weather</span>:* sunny/cloudy, haze, rain, snow. <br> - *<span style="color: #FF0066">Time</span>:* day. <br> (night-time and other tasks will be updated later) | AAAI <br> 2026 | TSBOW: Traffic Surveillance Benchmark for Occluded Vehicles Under Various Weather Conditions |
+| Dataset           | Introduction                      | Paper |
+|:---:              |:---                               | :--- |
+| 🎯 **<span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>**             <br>[[website]](https://skkuautolab.github.io/TSBOW/)| - *<span style="color: #FFCC00">Hardware</span>*: CCTV system + color camera. <br> - *<span style="color: #33CCCC">Tasks</span>:* object detection. <br> - *<span style="color: #FF6600">Position</span>:* South Korea. <br> - *<span style="color: #6699FF">Weather</span>:* sunny/cloudy, haze, rain, snow. <br> - *<span style="color: #FF0066">Time</span>:* day. <br> (night-time and other tasks will be updated later) | [AAAI -- 2026] <br> TSBOW: Traffic Surveillance Benchmark for Occluded Vehicles Under Various Weather Conditions |
 
 <!-- The TSBOW Data Formats are described in [DataFormat.md](documents/DataFormat.md) -->
 
@@ -269,6 +269,9 @@ Read [Instruction](baselines/README.md) for more information.
 <!-- MARK: Metrics -->
 
 ## ⚖️ Metrics
+
+| Metric        | Abbr      | Reference         | Link      |
+| :---:         | :---:     | :---:             | :---      |
 
 
 
