@@ -153,6 +153,23 @@ python validation.py \
 
 ## 🔬 Ablation Studies
 
+<!-- Ablation Studies -->
+<details>
+    <summary>Experiment Results</summary>
+
+<div align="center" style="background:#f4f7fb; padding:3px; max-width:1000px; margin: 16px auto;">
+    <img src="../images/Table_8_slide.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
+</div>
+<p align="center" style="margin:8px 0 0 0; font-weight:600;">YOLOv12x performance across different classes. </p>
+
+<div align="center" style="background:#f4f7fb; padding:3px; max-width:1000px; margin: 16px auto;">
+    <img src="../images/Table_9_slide.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
+</div>
+<p align="center" style="margin:8px 0 0 0; font-weight:600;">Influence of dataset characteristics on object detection performance.</p>
+
+</details>
+
+
 The [validation_ablation.sh](validation_ablation.sh) provides the validation process according to TSBOW metadata for each attributes.
 
 The attributes are `classification = "SCENARIO WEATHER SCALE ROADTYPE TRAFFIC"`.

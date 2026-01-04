@@ -292,6 +292,7 @@ Read [Instruction](baselines/README.md) for more information.
 </div>
 <p align="center" style="margin:8px 0 0 0; font-weight:600;"> Model performances under different weather conditions </p>
 
+The source code for validating Ablation Studies are provided in [validation_ablation.sh](baselines/validation_ablation.sh). Please read the [Instruction](baselines/README.md) for the experiment results and more information.
 
 <!-- Comparison with other datasets -->
 <details>
@@ -315,23 +316,7 @@ Read [Instruction](baselines/README.md) for more information.
 </details>
 
 
-<!-- Ablation Studies -->
-<details>
-    <summary>Ablation Studies</summary>
 
-The source code for validating Ablation Studies are provided in [validation_ablation.sh](baselines/validation_ablation.sh). Please read the [Instruction](baselines/README.md) for more information.
-
-<div align="center" style="background:#f4f7fb; padding:3px; max-width:1000px; margin: 16px auto;">
-    <img src="images/Table_8_slide.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
-</div>
-<p align="center" style="margin:8px 0 0 0; font-weight:600;">YOLOv12x performance across different classes. </p>
-
-<div align="center" style="background:#f4f7fb; padding:3px; max-width:1000px; margin: 16px auto;">
-    <img src="images/Table_9_slide.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
-</div>
-<p align="center" style="margin:8px 0 0 0; font-weight:600;">Influence of dataset characteristics on object detection performance.</p>
-
-</details>
 
 
 
