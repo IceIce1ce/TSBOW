@@ -1,0 +1,368 @@
+<!-- HELLO WORLD!!! -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <title>TSBOW</title>
+        <meta charset="UTF-8">
+        <!-- Google verified -->
+        <meta name="google-site-verification" content="vmfqvIjFP9YbInjTiXD4oxolnwQqRrmt4gNTPzq14EU" />
+        <!-- Robots.txt -->
+        <meta name="robots" content="index,follow">
+        <link rel="canonical" href="https://skkuautolab.github.io/TSBOW/">
+
+        <link rel="icon" type="image/png" href="icons/TSBOW_icon_title.png" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <style>
+            html,
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 
+            {
+                font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", 
+                             "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            }
+
+            <!--
+            .cite {
+                background: #f0f0f0;
+                padding: 10px;
+                font-size: 18px
+            }
+
+            -->
+            .cite {
+                padding: 0px;
+                background: #ffffff;
+                font-size: 18px
+            }
+
+            .card {
+                border: 1px solid #ccc
+            }
+
+            img {
+                margin-bottom: -6px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #0074D9;
+            }
+
+            .bibtexsection {
+                width: 80%;
+                font-family: "Courier", monospace;
+                /* font-size: 1vw; */
+                white-space: pre;
+                background-color: #f4f4f4;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+            }
+
+            .layered-paper-big {
+                /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+                box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+                    /* The top layer shadow */ 5px 5px 0 0px #fff,
+                    /* The second layer */ 5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+                    /* The second layer shadow */ 10px 10px 0 0px #fff,
+                    /* The third layer */ 10px 10px 1px 1px rgba(0, 0, 0, 0.35),
+                    /* The third layer shadow */ 15px 15px 0 0px #fff,
+                    /* The fourth layer */ 15px 15px 1px 1px rgba(0, 0, 0, 0.35),
+                    /* The fourth layer shadow */ 20px 20px 0 0px #fff,
+                    /* The fifth layer */ 20px 20px 1px 1px rgba(0, 0, 0, 0.35),
+                    /* The fifth layer shadow */ 25px 25px 0 0px #fff,
+                    /* The fifth layer */ 25px 25px 1px 1px rgba(0, 0, 0, 0.35);
+                /* The fifth layer shadow */
+                margin-left: 10px;
+                margin-right: 60px;
+            }
+
+            table {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                border-collapse: collapse;
+            }
+
+            table > :is(thead, tbody) > tr > :is(th, td) {
+                padding: 3px;
+                text-align: center;
+            }
+
+            table > thead > tr > :is(th, td) {
+                border-top: 2px solid;
+                border-bottom: 1px solid;
+            }
+
+            table > tbody > tr:last-child > :is(th, td) {
+                border-bottom: 2px solid;
+            }
+
+            table > tbody {
+                border-top: 2px solid;
+                border-bottom: 1px solid;
+            }
+        </style>
+    </head>
+
+    <body class="w3-white" style="top:11px;">
+        <!-- MARK: Header -->
+        <header id="scrollHeader">
+            <div class="header-left">
+                <img src="icons/TSBOW_icon_white_border.png" alt="TSBOW Logo" class="logo">
+                <p class="title">TSBOW</p>
+            </div>
+
+            <nav>
+                <a href="#overview">Overview</a>
+                <a href="#scenes">Scenes</a>
+                <!-- <a href="#pipelines">Pipelines</a> -->
+                <a href="#statistics">Statistics</a>
+                <!-- <a href="#challenges">Challenges</a> -->
+                <a href="#download">Download</a>
+                <!-- <a href="#experiments">Experiments</a> -->
+                <a href="#citation">Citation</a>
+                <!-- <a href="#acknowledgement">Acknowledgement</a> -->
+            </nav>
+        </header>
+        <!-- End of Header -->
+
+        
+        <!-- Page Container -->
+        <div class="w3-content w3-margin-top w3-margin-bottom" style="max-width:960px;">
+
+            <!-- The Grid -->
+            <div class="w3-row-padding">
+
+                <!-- paper container -->
+                <div class="w3-display-container w3-row w3-white w3-margin-bottom" style="top: 100px;">
+                    
+                    <!-- MARK: TSBOW title -->
+                    <div class="w3-center" style="display: flex; align-items: center; justify-content: center; margin-top: 140px; margin-bottom: 30px;">
+                        <img src="icons/TSBOW_icon_white_BG.png" alt="TSBOW Logo" style="height:80px; margin-right:30px;">
+
+                        <h1 id="tsbow-title" style="margin:0; font-weight: bold; font-size:116px; line-height:1; position: relative; top:10px;">
+                            <!-- <span>T</span><span>S</span><span>B</span><span>O</span><span>W</span> -->
+                            <!-- <span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span> -->
+                            <span class="sync-tsbowT" style="color: #FFCC00">T</span>
+                            <span class="sync-tsbowS" style="color: #33CCCC">S</span>
+                            <span class="sync-tsbowB" style="color: #FF6600">B</span>
+                            <span class="sync-tsbowO" style="color: #6699FF">O</span>
+                            <span class="sync-tsbowW" style="color: #FF0066">W</span>
+                        </h1>
+                    </div>
+                    <!-- End of TSBOW title -->
+
+                    
+                    <div class="w3-center">
+                        <!-- TSBOW name -->
+                        <h1 style="color: #000080;">
+                            <b id="titleText">
+                                <span class="sync-tsbowT">
+                                    <span style="color: #FFCC00">T</span>raffic
+                                </span> 
+                                <span class="sync-tsbowS">
+                                    <span style="color: #33CCCC">S</span>urveillance
+                                </span> 
+                                <span class="sync-tsbowB">
+                                    <span style="color: #FF6600">B</span>enchmark
+                                </span> for
+                                <span class="sync-tsbowO">
+                                    <span style="color: #6699FF">O</span>ccluded Vehicles
+                                </span> under
+                                <span class="sync-tsbowW">
+                                    Various <span style="color: #FF0066">W</span>eather Conditions
+                                </span> 
+                            </b>
+                        </h1>
+                        <!-- End of TSBOW name -->
+                        
+                        <!-- dataset's urls -->
+                        <div class="w3-center resources">
+                            <h3 style="color: #001F3F; margin-top: -16px;">
+                                <a href="https://aaai.org/conference/aaai/aaai-26/">
+                                    <b>AAAI 2026</b>
+                                </a>
+                            </h3>
+                            <h5 style="color: #001F3F; margin-top: -16px;">
+                                <a href="https://docs.google.com/presentation/d/1Wd2alQk565YBZjTaoVdSrdDacb_ILhlXTOzTTP_tTt4/edit?usp=sharing">
+                                    [<b>Slides</b>]
+                                </a>
+                                <!-- <a href="#" class="coming-soon">
+                                    [<b>Poster</b>]
+                                </a> -->
+                                <!-- <a href="#" class="coming-soon">
+                                    [<b>Presentation</b>]
+                                </a> -->
+                            </h5>
+                        </div>
+                        
+                        <!-- authors list -->
+                        <h4 style="font-weight: bold; color: #001F3F; margin-top: 27px; font-size: 21px;">
+                            <a href="https://scholar.google.com/citations?user=pCTUkWwAAAAJ">
+                                Ngoc Doan-Minh Huynh</a>,   
+                            <a href="https://scholar.google.com/citations?user=crRQGUAAAAAJ">
+                                Duong Nguyen-Ngoc Tran</a>, 
+                            <a href="https://scholar.google.com/citations?user=xPyle9AAAAAJ">
+                                Long Hoang Pham</a>,
+                            Tai Huu-Phuong Tran, <br>
+                            Hyung-Joon Jeon,
+                            Huy-Hung Nguyen,
+                            Duong Khac Vu,          
+                            Hyung-Min Jeon, 
+                            Son Hong Phan, <br>
+                            Quoc Pham-Nam Ho,  
+                            Chi Dai Tran,
+                            Trinh Le Ba Khanh,  
+                            <a href="https://scholar.google.com/citations?user=9z0SfKoAAAAJ">
+                                Jae Wook Jeon</a>
+                        </h4>
+
+                        <!-- lab + uni info -->
+                        <h5 style="color: #001F3F; font-size: 20px; ">
+                            <a href="https://micro.skku.ac.kr/micro/index.do">Automation Lab</a>, Sungkyunkwan University, South Korea
+                        </h5>
+
+                        <!-- URLs button -->
+                        <div class="w3-center resources" style="margin-top: 50px; margin-bottom: 161px;">
+                            <div class="button-group">
+                                <a href="#overview" class="btn explore-btn" style="border-radius:999px; padding:10px 14px; background:#001F3F; color:#fff; display:inline-flex; align-items:center; gap:8px;">
+                                    <span>Explore <span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span></span>
+                                </a>
+                                <a href="." class="btn">
+                                    <img src="icons/AAAI-26_Mark-Inverse.webp" alt="Paper" />
+                                    <span>Paper</span>
+                                </a>
+                                <a href="." class="btn">
+                                    <img src="icons/ArXiv.png" alt="arXiv" />
+                                    <span>Supplementary</span>
+                                </a>
+                                <a href="https://huggingface.co/datasets/SKKUAutoLab/TSBOW" class="btn">
+                                    <img src="icons/huggingface.png" alt="Huggingface" />
+                                    <span>Hugging Face Dataset</span>
+                                </a>
+                                <a href="https://github.com/SKKUAutoLab/TSBOW/" class="btn">
+                                    <img src="icons/github.png" alt="GitHub" />
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- email authors -->
+                        <!-- <h6 style="color: #001F3F; margin-bottom: 50px;">
+                            Corresponding Author: <b>jwjeon</b>@skku.edu
+                            <br>
+                            Contact for Dataset: {<b>ngochdm, duongtran, phlong</b>}@skku.edu
+                        </h6> -->
+                    </div>
+
+                    
+
+                    <!-- MARK: Abstract and Future Works -->
+                    <section id="abtract-conclusion">
+                        <div class="section-header w3-center">
+                            <h2>Abstract and Future Works</h2>
+                        </div>
+
+                        <!-- Abstract -->
+                        <details class="para-bi-margin">
+                            <summary>Abstract</summary>
+                            Global warming has intensified the frequency and severity of extreme weather events, which degrade CCTV signal and video quality while disrupting traffic flow, thereby increasing traffic accident rates. Existing datasets, often limited to light haze, rain, and snow, fail to capture extreme weather conditions. To address this gap, this study introduces the <b>T</b>raffic <b>S</b>urveillance <b>B</b>enchmark for <b>O</b>ccluded vehicles under various <b>W</b>eather conditions (<b>TSBOW</b>), a comprehensive dataset designed to enhance occluded vehicle detection across diverse annual weather scenarios. Comprising over <b>32 hours</b> of real-world traffic data from densely populated urban areas, TSBOW includes more than <b>48,000 manually annotated</b> and <b>3.2 million semi-labeled frames</b>; bounding boxes spanning eight traffic participant classes from large vehicles to micromobility devices and pedestrians. We establish an object detection benchmark for TSBOW, highlighting challenges posed by occlusions and adverse weather. With its varied road types, scales, and viewpoints, TSBOW serves as a critical resource for advancing Intelligent Transportation Systems. Our findings underscore the potential of CCTV-based traffic monitoring, paving the way for new research and applications. The TSBOW dataset is publicly available at the following link.
+                            <br>
+                            <b>Code</b> -- <a href="https://github.com/SKKUAutoLab/TSBOW">https://github.com/SKKUAutoLab/TSBOW</a>.
+                        </details>
+
+                        <!-- Conclusion and Future Works -->
+                        <details class="para-bi-margin">
+                            <summary>Conclusion and Future Works</summary>
+                            This study introduces the <b>T</b>raffic <b>S</b>urveillance <b>B</b>enchmark for <b>O</b>ccluded vehicles under various <b>W</b>eather conditions (<b>TSBOW</b>), a comprehensive, semi-automatically annotated traffic surveillance dataset designed to improve monitoring system training, particularly under extreme weather conditions such as heavy haze and snow. Collected across all seasons and diverse road scenarios, TSBOW comprises 32 hours of footage from 198 videos, encompassing a variety of road types and scales, and providing multiple viewing angles for vehicles and pedestrians. The dataset includes over 3.2 million frames, each annotated with weather conditions and scenarios, alongside detailed object annotations derived from extracted images. Capturing complex, high-density scenes of vehicles and pedestrians in crowded urban settings, TSBOW features approximately 71.1 million bounding boxes across eight distinct traffic participant classes. As a robust resource for traffic surveillance research, TSBOW offers substantial potential to deepen insights into traffic dynamics and support advancements in intelligent transportation systems. The initial version focuses on daytime traffic flow under varying weather conditions. Future versions will include ground truth annotations for nighttime scenarios and additional computer vision tasks, such as multi-object tracking, semantic segmentation, vehicle counting, and speed estimation, to further enhance its utility.
+                        </details>
+                    </section>
+                    <!-- End of Abstract and Future Works -->
+
+                    
+                    
+                    <!-- MARK: Citation -->
+                    <section id="citation" class="citation-section">
+                        <div class="section-header w3-center">
+                            <h1>Cite Our Work</h1>
+                            <p style="font-size: 1.6em; font-weight: bold;">If our research is helpful to you, please cite our paper <br> using the following BibTeX format</p>
+                        </div>
+
+                        <div class="bibtex-box">
+                            <div class="bibtex-header">
+                                <img src="icons/BibTeX.png" alt="BibTeX Icon" class="bibtex-icon">
+                                <!-- <h3>BibTeX</h3> -->
+                            </div>
+                            <pre><code>
+@article{Huynh_TSBOW_AAAI_2026,
+    title   = {TSBOW: Traffic Surveillance Benchmark for Occluded Vehicles Under Various Weather Conditions},
+    author  = {Ngoc Doan-Minh Huynh, Duong Nguyen-Ngoc Tran, Long Hoang Pham, Tai Huu-Phuong Tran, Hyung-Joon Jeon, Huy-Hung Nguyen, Duong Khac Vu, Hyung-Min Jeon, Son Hong Phan, Quoc Pham-Nam Ho, Chi Dai Tran, Trinh Le Ba Khanh, Jae Wook Jeon},
+    journal = {AAAI 2026},
+    year    = {2025}
+}</code></pre>
+                            <button class="copy-btn" onclick="copyBibtex()">📋 Copy</button>
+                        </div>
+                    </section>
+                    <!-- End of Citation -->
+                    
+                    <!-- MARK: Acknowledgement -->
+                    <section id="acknowledgement">
+                        <div class="section-header w3-center">
+                            <h2>Acknowledgement</h2>
+                        </div>
+                        <p class="para-bi-margin">
+                            This work was supported by the Institute of Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government (MSIT) (No. 2021-0-01364, An intelligent system for 24/7 real-time traffic surveillance on edge devices)
+                        </p>
+                    </section>
+                    <!-- End of Acknowledgement -->
+
+
+                </div>
+                <!-- end paper container -->
+
+            </div>
+            <!-- End Grid -->
+        </div>
+        <!-- End Page Container -->
+
+
+
+        <!-- MARK: Footer -->
+        <footer class="footer">
+            <div class="footer-content"></div>
+                <img src="icons/TSBOW_icon_white_border.png" class="footer-icon" alt="Left Icon">
+
+                <pre class="ascii">
+ _____ ____  ____   _____        __
+|_   _/ ___|| __ ) / _ \ \      / /
+  | | \___ \|  _ \| | | \ \ /\ / / 
+  | |  ___) | |_) | |_| |\ V  V /  
+  |_| |____/|____/ \___/  \_/\_/   </pre>
+
+                <!-- <img src="icons/TSBOW_icon_white_border.png" class="footer-icon" alt="Right Icon"> -->
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </body>
+
+    <script defer src="https://unpkg.com/img-comparison-slider@7/dist/index.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"/>
+
+</html>
