@@ -158,7 +158,7 @@ const attributeValues = {
     "TRAFFIC":  ["light", "moderate", "heavy"]
 };
 
-const filterColors = {
+const attributeColors = {
     "ALL":      "#FFCC00",
     "SCENARIO": "#33CCCC",
     "WEATHER":  "#FF6600",
@@ -177,7 +177,7 @@ const attributeEmojis = {
 };
 
 function filterScenes(attribute_name) {
-    const attributeValuesContainer = document.querySelector('.filter-subvalues');
+    const attributeValuesContainer = document.querySelector('.filter-attributes');
     const visualizationContainer = document.querySelector('.filter-visualization');
     const visualizationImage = document.getElementById('visualization-image');
     const visualizationVideo = document.getElementById('visualization-video');
@@ -204,7 +204,7 @@ function filterScenes(attribute_name) {
         attributeValues[attribute_name].forEach(attribute_value => {
             const button = document.createElement('button');
             button.className = 'btn subvalue-btn';
-            button.style = `padding: 10px 20px; margin: 5px; background-color: ${filterColors[attribute_name]}; color: #001F3F;`;
+            button.style = `padding: 10px 20px; margin: 5px; background-color: ${attributeColors[attribute_name]}; color: #001F3F;`;
             button.textContent = attributeEmojis[attribute_name] + ' ' + attribute_value.toUpperCase() + ' ' + attributeEmojis[attribute_name];
             // button.onclick = () => showVideo(attribute_name, attribute_value);
             button.onclick = () => showImage(attribute_name, attribute_value);
