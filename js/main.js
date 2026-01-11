@@ -150,7 +150,7 @@ prevScrollPos = currentScrollPos;
 
 
 // MARK: Scenes
-const subvalues = {
+const attributeValues = {
     "SCENARIO": ["road", "intersection", "specialcase", "disaster"],
     "WEATHER":  ["normal", "haze", "rain", "snow"],
     "SCALE":    ["fine", "medium", "coarse"],
@@ -177,14 +177,14 @@ const attributeEmojis = {
 };
 
 function filterScenes(filter) {
-    const subvaluesContainer = document.querySelector('.filter-subvalues');
+    const attributeValuesContainer = document.querySelector('.filter-subvalues');
     const visualizationContainer = document.querySelector('.filter-visualization');
     const visualizationImage = document.getElementById('visualization-image');
     const visualizationVideo = document.getElementById('visualization-video');
     const videoSource = document.getElementById('video-source');
 
     // Clear existing sub-value buttons
-    subvaluesContainer.innerHTML = '';
+    attributeValuesContainer.innerHTML = '';
 
     // Reset visualization
     visualizationContainer.style.display = 'none';
@@ -200,15 +200,15 @@ function filterScenes(filter) {
     }
 
     // Add sub-value buttons for the selected filter
-    if (subvalues[filter]) {
-        subvalues[filter].forEach(subvalue => {
+    if (attributeValues[filter]) {
+        attributeValues[filter].forEach(subvalue => {
             const button = document.createElement('button');
             button.className = 'btn subvalue-btn';
             button.style = `padding: 10px 20px; margin: 5px; background-color: ${filterColors[filter]}; color: #001F3F;`;
             button.textContent = attributeEmojis[filter] + ' ' + subvalue.toUpperCase() + ' ' + attributeEmojis[filter];
             // button.onclick = () => showVideo(filter, subvalue);
             button.onclick = () => showImage(filter, subvalue);
-            subvaluesContainer.appendChild(button);
+            attributeValuesContainer.appendChild(button);
         });
     }
 }
