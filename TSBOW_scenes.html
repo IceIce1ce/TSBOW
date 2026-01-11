@@ -521,17 +521,17 @@
                             <!-- Description -->
                             <p class="caption-bi-margin">
                                 <b>
-                                    Traffic flow in <span style="color: #FFCC00; font-weight: bold;">T</span><span style="color: #33CCCC; font-weight: bold;">S</span><span style="color: #FF6600; font-weight: bold;">B</span><span style="color: #6699FF; font-weight: bold;">O</span><span style="color: #FF0066; font-weight: bold;">W</span> is categorized into: 
+                                    Traffic flow in <span style="color: #FFCC00; font-weight: bold;">T</span><span style="color: #33CCCC; font-weight: bold;">S</span><span style="color: #FF6600; font-weight: bold;">B</span><span style="color: #6699FF; font-weight: bold;">O</span><span style="color: #FF0066; font-weight: bold;">W</span> is categorized into 
                                     <span style="color: #FF6600;">light</span>, 
                                     <span style="color: #FF6600;">moderate</span>, and 
-                                    <span style="color: #FF6600;">heavy</span>.
+                                    <span style="color: #FF6600;">heavy</span>, based on the maximum number of bounding boxes per frame in video.
                                 </b>
 
-                                <!-- <ul style="list-style-type:circle;">
-                                    <li><b>Light</b>: near road surface, detailed object visualization</li>
-                                    <li><b>Moderate</b>: elevated cameras, discernible license plates but reduced clarity</li>
-                                    <li><b>Heavy</b>: distant cameras, high vehicle count but partial visibility due to distance and occlusion</li>
-                                </ul> -->
+                                <ul style="list-style-type:circle;">
+                                    <li><b>Light</b>: less than 25 bboxes/frame</li>
+                                    <li><b>Moderate</b>: 25 to less than 50 bboxes/frame</li>
+                                    <li><b>Heavy</b>: over 50 bboxes/frame</li>
+                                </ul>
                             </p>
 
                             <!-- Light -->
