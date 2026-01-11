@@ -133,11 +133,11 @@ if (currentScrollPos > 800) // 👈 only start showing after 800px down
 { 
     if (prevScrollPos > currentScrollPos) 
     {
-      header.style.top = "0";       // show when scrolling up
+        header.style.top = "0";       // show when scrolling up
     } 
     else 
     {
-      header.style.top = "0";   // -80px if need hide when scrolling down
+        header.style.top = "0";   // -80px if need hide when scrolling down
     }
 } 
 else 
@@ -258,11 +258,11 @@ function showVideo(attribute_name, attribute_value) {
 
 // MARK: citation
 function copyBibtex() {
-  const code = document.querySelector("#citation pre code").innerText;
-  navigator.clipboard.writeText(code);
-  const btn = document.querySelector(".copy-btn");
-  btn.innerText = "✅ Copied!";
-  setTimeout(() => btn.innerText = "📋 Copy", 2000);
+    const code = document.querySelector("#citation pre code").innerText;
+    navigator.clipboard.writeText(code);
+    const btn = document.querySelector(".copy-btn");
+    btn.innerText = "✅ Copied!";
+    setTimeout(() => btn.innerText = "📋 Copy", 2000);
 }
 
 
