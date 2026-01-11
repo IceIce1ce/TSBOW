@@ -176,7 +176,7 @@ const attributeEmojis = {
     "TRAFFIC":  "🚗"
 };
 
-function filterScenes(filter) {
+function filterScenes(attribute_name) {
     const attributeValuesContainer = document.querySelector('.filter-subvalues');
     const visualizationContainer = document.querySelector('.filter-visualization');
     const visualizationImage = document.getElementById('visualization-image');
@@ -193,21 +193,21 @@ function filterScenes(filter) {
     videoSource.src = '';
 
     // Show the image only for "ALL"
-    if (filter === 'ALL') {
+    if (attribute_name === 'ALL') {
         visualizationContainer.style.display = 'block';
         visualizationImage.src = `images/TSBOW_scenes.jpg`;
         visualizationImage.style.display = 'block';
     }
 
     // Add sub-value buttons for the selected filter
-    if (attributeValues[filter]) {
-        attributeValues[filter].forEach(subvalue => {
+    if (attributeValues[attribute_name]) {
+        attributeValues[attribute_name].forEach(attribute_value => {
             const button = document.createElement('button');
             button.className = 'btn subvalue-btn';
-            button.style = `padding: 10px 20px; margin: 5px; background-color: ${filterColors[filter]}; color: #001F3F;`;
-            button.textContent = attributeEmojis[filter] + ' ' + subvalue.toUpperCase() + ' ' + attributeEmojis[filter];
-            // button.onclick = () => showVideo(filter, subvalue);
-            button.onclick = () => showImage(filter, subvalue);
+            button.style = `padding: 10px 20px; margin: 5px; background-color: ${filterColors[attribute_name]}; color: #001F3F;`;
+            button.textContent = attributeEmojis[attribute_name] + ' ' + attribute_value.toUpperCase() + ' ' + attributeEmojis[attribute_name];
+            // button.onclick = () => showVideo(attribute_name, attribute_value);
+            button.onclick = () => showImage(attribute_name, attribute_value);
             attributeValuesContainer.appendChild(button);
         });
     }
