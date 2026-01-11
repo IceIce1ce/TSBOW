@@ -150,7 +150,7 @@ prevScrollPos = currentScrollPos;
 
 
 // MARK: Scenes
-const attributeValues = {
+const subvalues = {
     "SCENARIO": ["road", "intersection", "specialcase", "disaster"],
     "WEATHER":  ["normal", "haze", "rain", "snow"],
     "SCALE":    ["fine", "medium", "coarse"],
@@ -168,23 +168,23 @@ const filterColors = {
 };
 
 const attributeEmojis = {
-    "ALL":      "#FFCC00",
-    "SCENARIO": "#33CCCC",
-    "WEATHER":  "#FF6600",
-    "SCALE":    "#FF0066",
-    "ROADTYPE": "#6699FF",
-    "TRAFFIC":  "#33CCFF"
+    "ALL":      "✨",
+    "SCENARIO": "🚦",
+    "WEATHER":  "🌦️",
+    "SCALE":    "🔎",
+    "ROADTYPE": "🛣️",
+    "TRAFFIC":  "🚗"
 };
 
 function filterScenes(filter) {
-    const attributeValuesContainer = document.querySelector('.filter-attributeValues');
+    const subvaluesContainer = document.querySelector('.filter-subvalues');
     const visualizationContainer = document.querySelector('.filter-visualization');
     const visualizationImage = document.getElementById('visualization-image');
     const visualizationVideo = document.getElementById('visualization-video');
     const videoSource = document.getElementById('video-source');
 
     // Clear existing sub-value buttons
-    attributeValuesContainer.innerHTML = '';
+    subvaluesContainer.innerHTML = '';
 
     // Reset visualization
     visualizationContainer.style.display = 'none';
@@ -200,15 +200,15 @@ function filterScenes(filter) {
     }
 
     // Add sub-value buttons for the selected filter
-    if (attributeValues[filter]) {
-        attributeValues[filter].forEach(subvalue => {
+    if (subvalues[filter]) {
+        subvalues[filter].forEach(subvalue => {
             const button = document.createElement('button');
             button.className = 'btn subvalue-btn';
             button.style = `padding: 10px 20px; margin: 5px; background-color: ${filterColors[filter]}; color: #001F3F;`;
-            button.textContent = subvalue.toUpperCase();
+            button.textContent = attributeEmojis[filter] + ' ' + subvalue.toUpperCase() + ' ' + attributeEmojis[filter];
             // button.onclick = () => showVideo(filter, subvalue);
             button.onclick = () => showImage(filter, subvalue);
-            attributeValuesContainer.appendChild(button);
+            subvaluesContainer.appendChild(button);
         });
     }
 }
