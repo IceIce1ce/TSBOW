@@ -213,12 +213,12 @@ function filterScenes(filter) {
     }
 }
 
-function showImage(filter, subvalue) {
+function showImage(attribute_name, attribute_value) {
     const visualizationContainer = document.querySelector('.filter-visualization');
     const visualizationImage = document.getElementById('visualization-image');
     const visualizationVideo = document.getElementById('visualization-video');
 
-    const imagePath = `images/${filter}_${subvalue}.jpg`;
+    const imagePath = `images/${attribute_name}_${attribute_value}.jpg`;
 
     // Hide the video and show the image
     visualizationVideo.style.display = 'none';
@@ -241,7 +241,7 @@ function showImage(filter, subvalue) {
     console.log(`Image source set to: ${visualizationImage.src}`);
 }
 
-function showVideo(filter, subvalue) {
+function showVideo(attribute_name, attribute_value) {
     const visualizationContainer = document.querySelector('.filter-visualization');
     const visualizationImage = document.getElementById('visualization-image');
     const visualizationVideo = document.getElementById('visualization-video');
@@ -250,7 +250,7 @@ function showVideo(filter, subvalue) {
     // Hide the image and show the video
     visualizationImage.style.display = 'none';
     visualizationVideo.style.display = 'block';
-    videoSource.src = `videos/${filter}_${subvalue}.mp4`;
+    videoSource.src = `videos/${attribute_name}_${attribute_value}.mp4`;
     visualizationVideo.load();
     visualizationVideo.play();
 }
