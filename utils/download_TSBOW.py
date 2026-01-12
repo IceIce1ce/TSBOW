@@ -32,7 +32,7 @@ def download_TSBOW(args):
 
     # Download videos
     elif args.type == "videos":
-        hub_paths = ["train/videos/", "val/videos/", "test/videos/"]
+        hub_paths = ["train/videos/", "val/videos/"]
         
         for hub_path in hub_paths:
             snapshot_download(
@@ -62,7 +62,7 @@ def download_TSBOW(args):
 
     # Download semi-labels
     elif args.type == "semilabels":
-        hub_paths = ["train/semilabels.zip", "val/semilabels.zip", "test/semilabels.zip"]
+        hub_paths = ["train/semilabels.zip", "val/semilabels.zip"]
 
         for hub_path in hub_paths:
             hf_hub_download(

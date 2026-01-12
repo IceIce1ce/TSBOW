@@ -12,8 +12,8 @@
 REPO_ID='TSBOW'
 OUT_DIR='NGOCHDM/Dataset/TSBOW/'
 
-# Select one of types: videos, annotations, metadata, semilabels, all
-DATA_TYPE='all'
+# Select one of types: videos, annotations, metadata, semilabels, comparison, all
+DATA_TYPE='annotations'
 
 python download_TSBOW.py        \
     --repo_id       $REPO_ID    \
