@@ -8,12 +8,13 @@
 
 The [download_TSBOW.py](download_TSBOW.py) provides the python source code for download our TSBOW dataset from Hugging Face. 
 
-The download options are: *videos*, *annotations*, *metadata*, *semilabels*, *all*.
+The download options are: *videos*, *annotations*, *metadata*, *semilabels*, *comparison*, *all*.
 You can select one of them to download the data type.
 - *videos*: &emsp;&emsp; &emsp;             the .mp4 files
 - *annotations*:&emsp;         the manually labeled images and annotations
 - *metadata*:&emsp;&emsp;                  the json file storing metadata
 - *semilabels*: &emsp;&ensp;       the semi-labeled annotations (txt files)
+- *comparison*:&emsp;         the manually labeled images and annotations for Datasets' Comparison in Experiments
 - *all*: &emsp;&emsp;&emsp;&emsp;&emsp; all files and folders
 <!-- &nbsp; 1 space     &ensp; 2 spaces -->
 <!-- &emsp; 4 spaces     -->
@@ -30,3 +31,6 @@ or run the [bash file](download_TSBOW.sh):
 ```bash
 bash download_TSBOW.sh
 ```
+
+**Notes:** 
+The first public version, we only provide 30% of the test set.
