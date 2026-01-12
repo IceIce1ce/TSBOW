@@ -74,6 +74,16 @@ def download_TSBOW(args):
             )
             print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
+    # Download comparison set (4 scenes in [Experiments] datasets' comparison)
+    elif args.type == "comparison":
+        hf_hub_download(
+                repo_id=repo_id,
+                repo_type="dataset",
+                filename="comparison.zip",
+                local_dir=args.output_dir,
+                resume_download=True,
+            )
+        print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
     # Download entire dataset
     elif args.type == "all":
@@ -106,9 +116,9 @@ def parse_args():
     parser.add_argument(
         "--type",
         type=str,
-        choices=["videos", "annotations", "metadata", "semilabels", "all"],
+        choices=["videos", "annotations", "metadata", "semilabels", "comparison", "all"],
         required=True,
-        help="Type of data to download (videos, annotations, metadata, semilabels, all)",
+        help="Type of data to download (videos, annotations, metadata, semilabels, comparison, all)",
     )
 
     parser.add_argument(
