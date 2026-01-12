@@ -1,17 +1,23 @@
+import os
 from argparse import ArgumentParser
 
 from ultralytics import YOLO
 
 
 def training(args):
-    # model
     model_name = args.model + '.pt'
     model = YOLO(model_name)
     
-    # dataset
     data_path = args.path2data
     data_name = args.name
     data_yaml = f"{data_path + data_name}/{data_name}.yaml"
+
+    # Remove cache: labels.cache
+    subsets = ["train", "val"]
+    for subset in subsets:
+        path2cache = f"{data_path + data_name}/{subset}/labels.cache"
+        if os.path.exists(path2cache):
+            os.remove(path2cache)
 
     results = model.train(data=data_yaml,         device=args.device_cuda, 
                           imgsz=args.image_size,  batch=args.batch_size,
@@ -21,15 +27,20 @@ def training(args):
     return results
 
 def resume_training(args):
-    # model
     model_path = args.path2model
     model_name = f"{model_path}{args.model}/weights/{args.weights}.pt"
     model = YOLO(model_name)
     
-    # dataset
     data_path = args.path2data
     data_name = args.name
     data_yaml = f"{data_path + data_name}/{data_name}.yaml"
+
+    # Remove cache: labels.cache
+    subsets = ["train", "val"]
+    for subset in subsets:
+        path2cache = f"{data_path + data_name}/{subset}/labels.cache"
+        if os.path.exists(path2cache):
+            os.remove(path2cache)
 
     results = model.train(data=data_yaml,         device=args.device_cuda, 
                           imgsz=args.image_size,  batch=args.batch_size,
