@@ -325,8 +325,11 @@ By completing the form below, users acknowledge and agree that <b>the dataset wi
 - Save as PDF file. Renaming as: **{TSBOW}_{Application-Date}_{Huggingface-Username}.pdf** (i.e. TSBOW_20260120_ngochdm.pdf)
 
 <b>2. Requirement Email</b>
-- The subject format: [TSBOW Access Requirement] 
+- The subject format: [TSBOW Access Requirement] {Your Name} - {Affiliation}
 - The email body includes your HuggingFace information (username and email).
+
+<b>3. Send Request on HuggingFace</b>
+- Press "Agree and send request to access repo" button in <a href="https://huggingface.co/datasets/SKKUAutoLab/TSBOW">TSBOW on HuggingFace</a>. Our team may take 2-3 days to process your request.
 
 </details>
 <br>
