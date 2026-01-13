@@ -126,8 +126,13 @@ Global warming has intensified the frequency and severity of extreme weather eve
     <p><b>Dataset Statistics</b></p>
 </div>
 
+<div align="center" style="max-width:900px; margin: 10px auto 20px; border-radius: 8px;">
+    <img src="images/Chart_SunburstChart_Attributes.png" alt="Video Distribution" style="width:70%; height:auto; display:block; border-radius:6px;">
+    <p><b>Video Distribution</b></p>
+</div>
 
-<div align="center" style="max-width:1000px; margin: 10px auto 20px;">
+
+<!-- <div align="center" style="max-width:1000px; margin: 10px auto 20px;">
     <div style="display:flex; gap:18px; justify-content:center; align-items:flex-start; flex-wrap:wrap;">
         <div style="flex:1 1 440px; max-width:51%; text-align:center;">
             <img src="images/Figure_Suwon_Camera_Map.png" alt="Recording Locations" style="width:100%; height:auto; display:block; border-radius:6px;">
@@ -138,7 +143,7 @@ Global warming has intensified the frequency and severity of extreme weather eve
             <p style="margin:8px 0 0 0; font-weight:600;">Video Distribution</p>
         </div>
     </div>
-</div>
+</div> -->
 
 
 
@@ -242,9 +247,12 @@ Global warming has intensified the frequency and severity of extreme weather eve
 
 The comparison between different datasets are described in [Datasets](documents/README.md#-datasets) section.
 
-| Dataset           | Introduction                      | Paper |
-|:---:              |:---                               | :--- |
-| 🎯 **<span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>**             <br>[[website]](https://skkuautolab.github.io/TSBOW/)| - *<span style="color: #FFCC00">Hardware</span>*: CCTV system + color camera. <br> - *<span style="color: #33CCCC">Tasks</span>:* object detection. <br> - *<span style="color: #FF6600">Position</span>:* South Korea. <br> - *<span style="color: #6699FF">Weather</span>:* sunny/cloudy, haze, rain, snow. <br> - *<span style="color: #FF0066">Time</span>:* day. <br> (night-time and other tasks will be updated later) | [AAAI -- 2026] <br> TSBOW: Traffic Surveillance Benchmark for Occluded Vehicles Under Various Weather Conditions |
+TSBOW Introduction
+- *<span style="color: #FFCC00">Hardware</span>*: CCTV system + color camera. 
+- *<span style="color: #33CCCC">Tasks</span>:* object detection. 
+- *<span style="color: #FF6600">Position</span>:* South Korea. 
+- *<span style="color: #6699FF">Weather</span>:* sunny/cloudy, haze, rain, snow. 
+- *<span style="color: #FF0066">Time</span>:* day.
 
 <!-- The TSBOW Data Formats are described in [DataFormat.md](documents/DataFormat.md) -->
 
