@@ -1,7 +1,7 @@
 # Documents
 
 
-
+## 🚗 TSBOW on HuggingFace
 
 
 
@@ -11,6 +11,7 @@
 
 ## 📊 Datasets
 
+<!-- Colapsed content -->
 <details>
     <summary>Comparison with other datasets</summary>
 
@@ -26,8 +27,10 @@
 </div>
 <p align="center" style="margin:8px 0 0 0; font-weight:600;">Comparison of traffic surveillance datasets </p>
 
-
 </details> <br>
+
+
+<!-- Comparison Table -->
 
 | Dataset           | Introduction                      |  Pub  | Paper |
 |:---:              |:---                               | :---: | :--- |
@@ -54,7 +57,10 @@ Thanks to the developers and contributors of the following open-source repositor
 - [X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling): An open-source tool for precise bounding box creation.
 
 
-## Licenses
+
+<!-- MARK: License -->
+
+## 🔑 Licenses
 
 Our repository on Github is licensed under the **Apache 2.0 License**. However, if you use other components in your work, please follow their license.
 
