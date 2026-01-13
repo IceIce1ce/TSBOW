@@ -139,7 +139,8 @@ def parse_args():
 # MARK: Main
 
 if __name__ == "__main__":
+    # More details about login: https://huggingface.co/docs/huggingface_hub/quick-start#login
     login()
-    
+
     args    = parse_args()
     download_TSBOW(args=args)
