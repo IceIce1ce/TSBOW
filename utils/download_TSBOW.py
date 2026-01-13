@@ -33,16 +33,30 @@ def download_TSBOW(args):
 
     # Download videos
     elif args.type == "videos":
-        hub_paths = ["train/videos/", "val/videos/"]
+        # FOLDER: videos/
+        # hub_paths = ["train/videos/", "val/videos/"]
         
+        # for hub_path in hub_paths:
+        #     snapshot_download(
+        #         repo_id=repo_id,
+        #         repo_type="dataset",
+        #         local_dir=f"{args.output_dir}/{hub_path}",
+        #         allow_patterns=["*.mp4"],
+        #     )
+        #     print(f"Downloaded directory '{hub_path}' from {repo_id} to {args.output_dir}")
+
+        # FILE: videos.zip
+        hub_paths = ["train/videos.zip", "val/videos.zip"]
+
         for hub_path in hub_paths:
-            snapshot_download(
+            hf_hub_download(
                 repo_id=repo_id,
                 repo_type="dataset",
-                local_dir=f"{args.output_dir}/{hub_path}",
-                allow_patterns=["*.mp4"],
+                filename=hub_path,
+                local_dir=args.output_dir,
+                resume_download=True,
             )
-            print(f"Downloaded directory '{hub_path}' from {repo_id} to {args.output_dir}")
+            print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
 
     # Download annotations
