@@ -1,0 +1,805 @@
+<!-- HELLO WORLD!!! -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <title>TSBOW</title>
+        <meta charset="UTF-8">
+        <!-- Google verified -->
+        <meta name="google-site-verification" content="vmfqvIjFP9YbInjTiXD4oxolnwQqRrmt4gNTPzq14EU" />
+        <!-- Robots.txt -->
+        <meta name="robots" content="index,follow">
+        <link rel="canonical" href="https://skkuautolab.github.io/TSBOW/">
+
+        <link rel="icon" type="image/png" href="icons/TSBOW_icon_title.png" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <style>
+            html,
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 
+            {
+                font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", 
+                             "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            }
+
+            <!--
+            .cite {
+                background: #f0f0f0;
+                padding: 10px;
+                font-size: 18px
+            }
+
+            -->
+            .cite {
+                padding: 0px;
+                background: #ffffff;
+                font-size: 18px
+            }
+
+            .card {
+                border: 1px solid #ccc
+            }
+
+            img {
+                margin-bottom: -6px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #0074D9;
+            }
+
+            .bibtexsection {
+                width: 80%;
+                font-family: "Courier", monospace;
+                /* font-size: 1vw; */
+                white-space: pre;
+                background-color: #f4f4f4;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+            }
+
+            .layered-paper-big {
+                /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+                box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+                    /* The top layer shadow */ 5px 5px 0 0px #fff,
+                    /* The second layer */ 5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+                    /* The second layer shadow */ 10px 10px 0 0px #fff,
+                    /* The third layer */ 10px 10px 1px 1px rgba(0, 0, 0, 0.35),
+                    /* The third layer shadow */ 15px 15px 0 0px #fff,
+                    /* The fourth layer */ 15px 15px 1px 1px rgba(0, 0, 0, 0.35),
+                    /* The fourth layer shadow */ 20px 20px 0 0px #fff,
+                    /* The fifth layer */ 20px 20px 1px 1px rgba(0, 0, 0, 0.35),
+                    /* The fifth layer shadow */ 25px 25px 0 0px #fff,
+                    /* The fifth layer */ 25px 25px 1px 1px rgba(0, 0, 0, 0.35);
+                /* The fifth layer shadow */
+                margin-left: 10px;
+                margin-right: 60px;
+            }
+
+            table {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                border-collapse: collapse;
+            }
+
+            table > :is(thead, tbody) > tr > :is(th, td) {
+                padding: 3px;
+                text-align: center;
+            }
+
+            table > thead > tr > :is(th, td) {
+                border-top: 2px solid;
+                border-bottom: 1px solid;
+            }
+
+            table > tbody > tr:last-child > :is(th, td) {
+                border-bottom: 2px solid;
+            }
+
+            table > tbody {
+                border-top: 2px solid;
+                border-bottom: 1px solid;
+            }
+        </style>
+    </head>
+
+    <body class="w3-white" style="top:11px;">
+        <!-- MARK: Header -->
+        <header id="scrollHeader">
+            <div class="header-left">
+                <img src="icons/TSBOW_icon_white_border.png" alt="TSBOW Logo" class="logo">
+                <p class="title">TSBOW</p>
+            </div>
+
+            <nav>
+                <a href="#overview">Overview</a>
+                <a href="#scenes">Scenes</a>
+                <!-- <a href="#pipelines">Pipelines</a> -->
+                <a href="#statistics">Statistics</a>
+                <!-- <a href="#challenges">Challenges</a> -->
+                <a href="#download">Download</a>
+                <!-- <a href="#experiments">Experiments</a> -->
+                <a href="#citation">Citation</a>
+                <!-- <a href="#acknowledgement">Acknowledgement</a> -->
+            </nav>
+        </header>
+        <!-- End of Header -->
+
+        
+        <!-- Page Container -->
+        <div class="w3-content w3-margin-top w3-margin-bottom" style="max-width:960px;">
+
+            <!-- The Grid -->
+            <div class="w3-row-padding">
+
+                <!-- paper container -->
+                <div class="w3-display-container w3-row w3-white w3-margin-bottom" style="top: 100px;">
+                    
+                    <!-- MARK: TSBOW title -->
+                    <div class="w3-center" style="display: flex; align-items: center; justify-content: center; margin-top: 140px; margin-bottom: 30px;">
+                        <img src="icons/TSBOW_icon_white_BG.png" alt="TSBOW Logo" style="height:80px; margin-right:30px;">
+
+                        <h1 id="tsbow-title" style="margin:0; font-weight: bold; font-size:116px; line-height:1; position: relative; top:10px;">
+                            <!-- <span>T</span><span>S</span><span>B</span><span>O</span><span>W</span> -->
+                            <!-- <span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span> -->
+                            <span class="sync-tsbowT" style="color: #FFCC00">T</span>
+                            <span class="sync-tsbowS" style="color: #33CCCC">S</span>
+                            <span class="sync-tsbowB" style="color: #FF6600">B</span>
+                            <span class="sync-tsbowO" style="color: #6699FF">O</span>
+                            <span class="sync-tsbowW" style="color: #FF0066">W</span>
+                        </h1>
+                    </div>
+                    <!-- End of TSBOW title -->
+
+                    
+                    <div class="w3-center">
+                        <!-- TSBOW name -->
+                        <h1 style="color: #000080;">
+                            <b id="titleText">
+                                <span class="sync-tsbowT">
+                                    <span style="color: #FFCC00">T</span>raffic
+                                </span> 
+                                <span class="sync-tsbowS">
+                                    <span style="color: #33CCCC">S</span>urveillance
+                                </span> 
+                                <span class="sync-tsbowB">
+                                    <span style="color: #FF6600">B</span>enchmark
+                                </span> for
+                                <span class="sync-tsbowO">
+                                    <span style="color: #6699FF">O</span>ccluded Vehicles
+                                </span> under
+                                <span class="sync-tsbowW">
+                                    Various <span style="color: #FF0066">W</span>eather Conditions
+                                </span> 
+                            </b>
+                        </h1>
+                        <!-- End of TSBOW name -->
+                        
+                        <!-- dataset's urls -->
+                        <div class="w3-center resources">
+                            <h3 style="color: #001F3F; margin-top: -16px;">
+                                <a href="https://aaai.org/conference/aaai/aaai-26/">
+                                    <b>AAAI 2026</b>
+                                </a>
+                            </h3>
+                            <h5 style="color: #001F3F; margin-top: -16px;">
+                                <a href="https://docs.google.com/presentation/d/1Wd2alQk565YBZjTaoVdSrdDacb_ILhlXTOzTTP_tTt4/edit?usp=sharing">
+                                    [<b>Slides</b>]
+                                </a>
+                                <!-- <a href="#" class="coming-soon">
+                                    [<b>Poster</b>]
+                                </a> -->
+                                <!-- <a href="#" class="coming-soon">
+                                    [<b>Presentation</b>]
+                                </a> -->
+                            </h5>
+                        </div>
+                        
+                        <!-- authors list -->
+                        <h4 style="font-weight: bold; color: #001F3F; margin-top: 27px; font-size: 21px;">
+                            <a href="https://scholar.google.com/citations?user=pCTUkWwAAAAJ">
+                                Ngoc Doan-Minh Huynh</a>,   
+                            <a href="https://scholar.google.com/citations?user=crRQGUAAAAAJ">
+                                Duong Nguyen-Ngoc Tran</a>, 
+                            <a href="https://scholar.google.com/citations?user=xPyle9AAAAAJ">
+                                Long Hoang Pham</a>,
+                            Tai Huu-Phuong Tran, <br>
+                            Hyung-Joon Jeon,
+                            Huy-Hung Nguyen,
+                            Duong Khac Vu,          
+                            Hyung-Min Jeon, 
+                            Son Hong Phan, <br>
+                            Quoc Pham-Nam Ho,  
+                            Chi Dai Tran,
+                            Trinh Le Ba Khanh,  
+                            <a href="https://scholar.google.com/citations?user=9z0SfKoAAAAJ">
+                                Jae Wook Jeon</a>
+                        </h4>
+
+                        <!-- lab + uni info -->
+                        <h5 style="color: #001F3F; font-size: 20px; ">
+                            <a href="https://micro.skku.ac.kr/micro/index.do">Automation Lab</a>, Sungkyunkwan University, South Korea
+                        </h5>
+
+                        <!-- URLs button -->
+                        <div class="w3-center resources" style="margin-top: 50px; margin-bottom: 161px;">
+                            <div class="button-group">
+                                <a href="#overview" class="btn explore-btn" style="border-radius:999px; padding:10px 14px; background:#001F3F; color:#fff; display:inline-flex; align-items:center; gap:8px;">
+                                    <span>Explore <span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span></span>
+                                </a>
+                                <a href="." class="btn">
+                                    <img src="icons/AAAI-26_Mark-Inverse.webp" alt="Paper" />
+                                    <span>Paper</span>
+                                </a>
+                                <a href="." class="btn">
+                                    <img src="icons/ArXiv.png" alt="arXiv" />
+                                    <span>Supplementary</span>
+                                </a>
+                                <a href="https://huggingface.co/datasets/SKKUAutoLab/TSBOW" class="btn">
+                                    <img src="icons/huggingface.png" alt="Huggingface" />
+                                    <span>Hugging Face Dataset</span>
+                                </a>
+                                <a href="https://github.com/SKKUAutoLab/TSBOW/" class="btn">
+                                    <img src="icons/github.png" alt="GitHub" />
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- email authors -->
+                        <!-- <h6 style="color: #001F3F; margin-bottom: 50px;">
+                            Corresponding Author: <b>jwjeon</b>@skku.edu
+                            <br>
+                            Contact for Dataset: {<b>ngochdm, duongtran, phlong</b>}@skku.edu
+                        </h6> -->
+                    </div>
+
+                    
+                    <!-- MARK: Overview -->
+                    <section id="overview" style="margin-top: 16px;">
+                        <div class="section-header w3-center">
+                            <h1><b>Overview</b></h1>
+                            
+                            <!-- Dataset Stats -->
+                            <div class="stats">
+                                <div class="stat">
+                                    <h2>198</h2>
+                                    <p>Processed Videos</p>
+                                </div>
+                                <div class="stat">
+                                    <h2>32h</h2>
+                                    <p>Duration</p>
+                                </div>
+                                <div class="stat">
+                                    <h2>3.2M</h2>
+                                    <p>Total Frames</p>
+                                </div>
+                                <div class="stat">
+                                    <h2>71.1M</h2>
+                                    <p>Semi-Annotated Instances</p>
+                                </div>
+                                <div class="stat">
+                                    <h2>48K</h2>
+                                    <p>Manual-Annotated Frames</p>
+                                </div>
+                                <div class="stat">
+                                    <h2>1.1M</h2>
+                                    <p>Manual-Annotated Instances</p>
+                                </div>
+                            </div>
+                            <!-- End of Dataset Stats -->
+
+                            
+
+                            <!-- MARK: Demo Videos -->
+
+                            <!-- Road & Intersection -->
+                            <div class="video-container">
+                                <video controls style="width:100%" autoplay loop playsinline muted>
+                                    <source src="videos/road_intersection_conversion.mp4" type="video/mp4">
+                                    Video Demo: road_intersection
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab">
+                                Scenario: Road and Intersection
+                            </figcaption>
+
+                            <!-- Special Cases & Disaster -->
+                            <div class="video-container">
+                                <video controls style="width:100%" autoplay loop playsinline muted>
+                                    <source src="videos/specialcases_disaster_conversion.mp4" type="video/mp4">
+                                    Video Demo: specialcases_disaster
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab">
+                                Scenario: Special Cases and Disaster
+                            </figcaption>
+
+                            <!-- End of Demo Videos -->
+
+                        </div>
+                    </section>
+                    <!-- End of Overview -->
+
+                    
+
+                    <!-- MARK: Scenes -->
+                    <section id="scenes">
+                        <div class="section-header w3-center">
+                            <h1><b>Scenes</b></h1>
+                        </div>
+
+                        <!-- TSBOW_scenes -->
+                        <!-- <details class="datasets-comparison-details">
+                            <summary style="font-size: 25px;">
+                                All Scenes in <span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>
+                            </summary>
+
+                            <div style="width:100%; overflow:hidden; background:#fff;">
+                                <img src="images/TSBOW_scenes.jpg" 
+                                style="width:100%; object-fit:cover; object-position: center 30%;">
+                            </div>
+                        </details> -->
+                        <!-- <div style="height:515px;"> : cut image  -->
+
+                        <!-- Fig 1 -->
+                        <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                            <embed src="images/Figure_All_Scenes.png" style="width:100%">
+                        </div>
+                        <p class="caption-bi-margin"><b style="color: #FF6600;">Scenes from the <span style="color: #FFCC00; font-weight: bold;">T</span><span style="color: #33CCCC; font-weight: bold;">S</span><span style="color: #FF6600; font-weight: bold;">B</span><span style="color: #6699FF; font-weight: bold;">O</span><span style="color: #FF0066; font-weight: bold;">W</span> dataset,</b> comprising 198 videos recorded across <b>four distinct scenarios</b> spanning <b>all seasons</b> (sunny/cloudy, haze/fog, rain, snow) over a year. The dataset emphasizes <b>adverse weather conditions</b> and <b>densely populated urban areas</b> with heavy traffic, addressing significant challenges in image degradation and vehicle occlusion.</p>
+
+                        <!-- Fig #11 different views -->
+                        <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                            <embed src="images/Supp_Different_FOV.png" style="width:95%">
+                            <p class="caption-figtab">
+                                Intersections under different viewpoints in diverse weather conditions
+                            </p>
+                        </div>
+
+                        <!-- Fig selected scenes in Comparison -->
+                        <details class="datasets-comparison-details">
+                            <summary>
+                                Subset for Datasets comparison
+                            </summary>
+
+                            <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                                <figure style="margin: 0; text-align: center;">
+                                    <img src="images/Figure_Comparison.png" alt="scenes compare" style="width:90%; max-width:900px;">
+                                    <figcaption class="caption-figtab">
+                                        Selected scenes for comparison with other datasets
+                                    </figcaption>
+                                </figure>
+                                <p class="caption-bi-margin">To ensure a fair comparison, we created a subset of medium-scale scenes distinct from the TSBOW dataset, featuring unique road structures and vehicle characteristics. While snowy conditions were recorded in Suwon, additional videos capturing normal, haze, and rain conditions were collected in Seoul. Unlike UA-DETRAC, which includes only fine- and medium-scale videos captured by a color camera, and UAVDT, which focuses on medium- and coarse-scale drone footage, TSBOW encompasses fine, medium, and coarse scales. Therefore, the comparison subset comprises medium-scale scenes, included in the UAVDT, UA-DETRAC, and TSBOW datasets.</p>
+                            </div>
+                        </details>
+
+
+                        <!-- Samples / TSBOW Scenes -->
+                        <div class="filter-zone w3-center" style="display: block; margin-top: 30px1; margin-bottom: 20px; gap: 10px;">
+                            <div class="section-header w3-center" style="margin-top: 50px;">
+                                <h2><b><span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span> All Scenes</b></h2>
+                            </div>
+
+                            <p class="caption-bi-margin" style="margin-bottom: 27px;" >
+                                Because of bandwidth limitation, only images are shown in this website. 
+                                <!-- <br> -->
+                                The <b>demo videos</b> are provided in 
+                                <a href="https://skkuautolab.github.io/TSBOW/TSBOW_scenes.html" style="font-weight: bold;">
+                                    <span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>  
+                                    <span style="color: #FFCC00">S</span><span style="color: #33CCCC">c</span><span style="color: #FF6600">e</span><span style="color: #6699FF">n</span><span style="color: #FF0066">e</span><span style="color: #33CCFF">s</span>
+                                </a>.
+                            </p>
+
+                            <!-- Row 1: Buttons -->
+                            <div class="filter-buttons" style="margin-bottom: 20px; display: flex; justify-content: center; gap: 10px;">
+                                <button class="btn filter-btn" onclick="filterScenes('ALL')" style="padding: 10px 20px; background-color: #001F3F; color: #FFCC00;">ALL</button>
+                                <button class="btn filter-btn" onclick="filterScenes('SCENARIO')" style="padding: 10px 20px; background-color: #001F3F; color: #33CCCC ;">SCENARIO 🚦</button>
+                                <button class="btn filter-btn" onclick="filterScenes('WEATHER')" style="padding: 10px 20px; background-color: #001F3F; color: #FF6600 ;">WEATHER 🌦️</button>
+                                <button class="btn filter-btn" onclick="filterScenes('ROADTYPE')" style="padding: 10px 20px; background-color: #001F3F; color: #6699FF;">ROAD TYPE 🛣️</button>
+                                <button class="btn filter-btn" onclick="filterScenes('SCALE')" style="padding: 10px 20px; background-color: #001F3F; color: #FF0066;">SCALE 🔎</button>
+                                <button class="btn filter-btn" onclick="filterScenes('TRAFFIC')" style="padding: 10px 20px; background-color: #001F3F; color: #33CCFF ;">TRAFFIC 🚗</button>
+                            </div>
+
+                            <!-- Row 2: Sub-values -->
+                            <div class="filter-attributes" style="margin-bottom: 20px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+                                <!-- Sub-value buttons will be dynamically added here -->
+                            </div>
+
+                            <!-- Row 3: Visualization -->
+                            <div class="filter-visualization" style="border: 1px solid #ccc; padding: 5px; display: none;">
+                                <img id="visualization-image" src="images/TSBOW_scenes.jpg" style="width: 100%; object-fit: cover; display: none;">
+                                
+                                <video id="visualization-video" controls style="width: 100%; display: none;">
+                                    <source id="video-source" src="" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                       
+                    </section>
+                    <!-- End of Scenes -->
+
+                    
+
+                    <!-- MARK: Pipelines -->
+                    <section id="pipelines">
+                        <div class="section-header w3-center">
+                            <h1><b>Annotation Pipelines</b></h1>
+                        </div>
+
+                        <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                            <embed src="images/Figure_Pipelines.png" style="width:100%">
+                        </div>
+                        <p class="caption-bi-margin"><b style="color: #FF6600;">Detailed overview of the data collection and annotation pipeline.</b> The process commences with the <b>recording</b> and <b>categorization</b> of videos during the data collection phase. Subsequently, the videos are <b>preprocessed</b> and allocated to a team of annotators for <b>manual labeling</b>. Next, a state-of-the-art model is <b>fine-tuned</b> to automatically <b>annotate the remaining frames</b>. The resulting annotations are then <b>verified</b> against predefined labeling criteria. Finally, the annotated instances are aggregated and undergo <b>post-processing</b> to finalize the dataset.</p>
+
+                        <!-- Documents for Definition -->
+                        <p class="caption-bi-margin">
+                            The <b>detailed description</b> and <b>examples</b> for each class are provided in <a href="https://github.com/SKKUAutoLab/TSBOW/blob/main/documents/TSBOW_Class_Definition.pdf" style="font-weight: bold;">Class_Definition.pdf</a>. Other documents related to the <span style="color: #FFCC00; font-weight: bold;">T</span><span style="color: #33CCCC; font-weight: bold;">S</span><span style="color: #FF6600; font-weight: bold;">B</span><span style="color: #6699FF; font-weight: bold;">O</span><span style="color: #FF0066; font-weight: bold;">W</span> dataset can be found at <a href="https://github.com/SKKUAutoLab/TSBOW/tree/main/documents" style="font-weight: bold;">Documents</a> folder.
+                        </p>
+
+                        <details class="datasets-comparison-details">
+                            <summary><span style="color: #FFCC00; font-weight: bold;">T</span><span style="color: #33CCCC; font-weight: bold;">S</span><span style="color: #FF6600; font-weight: bold;">B</span><span style="color: #6699FF; font-weight: bold;">O</span><span style="color: #FF0066; font-weight: bold;">W</span> Object Categories</summary>
+                            <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                                
+                                <!-- Visualization of Classes -->
+                                <figure style="margin: 0; text-align: center;">
+                                    <img src="images/Figure_VehicleCategories.png" alt="vehicle Categories" style="width:95%; max-width:900px;">
+                                    <figcaption class="caption-figtab">
+                                        Visualization of annotated instances of different classes
+                                    </figcaption>
+                                </figure>
+                                <br>
+
+                                <!-- Chart: Instance Stats -->
+                                <figure style="margin: 0; text-align: center;">
+                                    <img src="images/Chart_TSBOW_ClassDist.png" alt="vehicle Categories" style="width:75%; max-width:900px;">
+                                    <figcaption class="caption-figtab">
+                                        Instance statistics
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </details>
+                    </section>
+                    <!-- End of Pipelines -->
+
+
+                    
+
+                    <!-- MARK: Statistics -->
+                    <section id="statistics">
+                        <div class="section-header w3-center">
+                            <h1><b>Statistics</b></h1>
+                        </div>
+
+                        <!-- block 1 -->
+                        <div class="w3-center">
+                            <!-- Recording Locations -->
+                            <div style="width: 49.5%; display: inline-block;">
+                                <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                                    <embed src="images/Figure_Suwon_Camera_Map.png" style="width:95%">
+                                    <p class="caption-figtab">Suwon Recording Locations</p>
+                                </div>
+                            </div>
+                            <!-- Attribute Distribution -->
+                            <div style="width: 49.5%; display: inline-block;">
+                                <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                                    <embed src="images/Chart_SunburstChart_Attributes.png" style="width:95%">
+                                    <p class="caption-figtab">Attribute Distribution</p>
+                                </div>
+                            </div>
+                        </div>                        
+
+                        <!-- block 2 -->
+                        <div class="w3-center">
+                            <!-- Occlusion Distribution -->
+                            <div style="width: 49.5%; display: inline-block;">
+                                <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                                    <embed src="images/Chart_TSBOW_Occlusion.png" style="width:95%">
+                                    <p class="caption-figtab">Occlusion Distribution (#annotations)</p>
+                                </div>
+                            </div>
+                            <!-- Traffic Distribution -->
+                            <div style="width: 49.5%; display: inline-block;">
+                                <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                                    <embed src="images/Chart_TSBOW_Traffic.png" style="width:95%">
+                                        <p class="caption-figtab">Traffic Distribution (#videos)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End of Statistics -->
+
+                        
+
+                    <!-- MARK: Challenges -->
+                    <section id="challenges">
+                        <div class="section-header w3-center">
+                            <h1><b>Challenges</b></h1>
+                        </div>
+
+                        <!-- block 1 -->
+                        <div class="w3-center">
+                            <!-- Weather vs Disaster -->
+                            <div style="width: 49.5%; display: inline-block;">
+                                <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                                    <embed src="images/Supp_Weather_vs_Disaster.png" style="width:95%">
+                                    <p class="caption-figtab">Challenges by Disaster scenarios</p>
+                                </div>
+                            </div>
+                            <!-- Car accident -->
+                            <div style="width: 49.5%; display: inline-block;">
+                                <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                                    <embed src="images/Supp_Car_Accident.png" style="width:95%">
+                                    <p class="caption-figtab">Car accident due to snow weather</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- block 2 -->
+                        <div class="w3-center">
+                            <!-- Road Type vs Scale -->
+                            <div style="width: 49.5%; display: inline-block;">
+                                <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                                    <embed src="images/Supp_RoadType_Scale.png" style="width:95%">
+                                    <p class="caption-figtab">Examples of Road Types and Scales</p>
+                                </div>
+                            </div>
+                            <!-- Weather Challenges -->
+                            <div style="width: 49.5%; display: inline-block;">
+                                <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                                    <embed src="images/Figure_Challenges.png" style="width:95%">
+                                        <p class="caption-figtab">Challenges by Weather Conditions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End of Challenges -->
+
+
+
+                    <!-- MARK: Download -->
+                    <section id="download">
+                        <div class="section-header w3-center">
+                            <h1>
+                                <b>Download</b>
+                            </h1>
+                            <p style="font-size: 1.6em; margin-top: 20px; font-weight: bold; color: #001F3F;">
+                                Choose the download option that suits your needs
+                            </p>
+                        </div>
+
+                        <!-- Terms and Conditions -->
+                        <p style="font-size: 1.1em; margin-top: 20px; color: #001F3F;">
+                            Please following <b style="color: #FF6600;">Terms and Conditions</b> before downloading the dataset.
+                        </p>
+                        
+                        <details class="para-bi-margin">
+                            <summary>Submission Guidelines</summary>
+                            We will provide the guidelines soon.
+                        </details>
+
+                        <!-- Download Options -->
+                        <div class="w3-center download-section">
+                            <!-- TSBOW v1.0: 198 videos and annotations -->
+                            <div class="download-item">
+                                <h3><span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span> Full Dataset</h3>
+                                <p class="download-desc">Complete dataset with 198 videos, extracted frames and all manually/semi-labeled annotations</p>
+                                <div class="button-group">
+                                    <a href="https://huggingface.co/datasets/SKKUAutoLab/TSBOW" class="btn">
+                                        <img src="icons/huggingface.png" alt="Hugging Face" />
+                                        <span>Hugging Face</span>
+                                    </a>
+                                    <a href="https://github.com/SKKUAutoLab/TSBOW/" class="btn">
+                                        <img src="icons/github.png" alt="GitHub" />
+                                        <span>GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End of Download -->
+
+                    
+
+                    <!-- MARK: Experiments -->
+                    <section id="experiments">
+                        <div class="section-header w3-center">
+                            <h1><b>Experiments</b></h1>
+                        </div>
+
+                        <!-- Visualize model performances -->
+                        <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                            <embed src="images/Supp_Models_Performances.png" style="width:95%">
+                            <p class="caption-figtab">
+                                Model performances under different weather conditions
+                            </p>
+                        </div>
+
+                        <!-- Validation Models -->
+                        <details class="datasets-comparison-details">
+                            <summary>Validation Models</summary>
+                            <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                                <figure style="margin: 0; text-align: center;">
+                                    <img src="images/Table_6.png" alt="model performances" style="width:75%; max-width:900px;">
+                                    <figcaption class="caption-figtab">
+                                        Model performances after training 100 epochs and validating with imgsz=1280 on manually labeled test set.
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </details>
+
+                        <!-- Compared with UAVDT, UA-DETRAC -->
+                        <details class="datasets-comparison-details">
+                            <summary>Comparison of Traffic Surveillance Datasets</summary>
+                            
+                            <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                                <!-- Visualization -->
+                                <figure style="margin: 0; text-align: center;">
+                                    <img src="images/Supp_Comparison_Performances.png" alt="Comparison of traffic surveillance datasets" style="width:100%; max-width:900px;">
+                                    <figcaption class="caption-figtab">
+                                        Model performances when training on different datasets
+                                    </figcaption>
+                                </figure>
+                                <!-- Statistics Comparison -->
+                                <figure style="margin: 0; text-align: center;">
+                                    <img src="images/Table_1.png" alt="Comparison of traffic surveillance datasets" style="width:100%; max-width:900px;">
+                                    <figcaption class="caption-figtab">
+                                        Comparison of Traffic Surveillance Datasets
+                                    </figcaption>
+                                </figure>
+                                <!-- Performance Comparison -->
+                                <figure style="margin: 0; text-align: center;">
+                                    <img src="images/Table_7.png" alt="Comparison of car class across traffic surveillance datasets" style="width:70%; max-width:900px;">
+                                    <figcaption class="caption-figtab">
+                                        Models performance for <i>car</i> across different metrics <b>on the comparison set</b>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </details>
+
+                        <div class="w3-center">
+                            <div class="section-header">
+                                <h2>Ablation Studies</h2>
+                            </div>
+                            
+                            <!-- Object Classes -->
+                            <details class="datasets-comparison-details">
+                                <summary>Object Classes</summary>
+                                <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                                    <figure style="margin: 0; text-align: center;">
+                                        <img src="images/Table_8_slide.png" alt="YOLOv12x performance across different classes" style="width:100%; max-width:900px;">
+                                        <figcaption class="caption-figtab">
+                                            YOLOv12x performance across different classes.
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </details>
+                            
+                            <!-- Data Characteristics -->
+                            <details class="datasets-comparison-details">
+                                <summary>Data Characteristics</summary>
+                                <div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+                                    <figure style="margin: 0; text-align: center;">
+                                        <img src="images/Table_9_slide.png" alt="Influence of dataset characteristics on object detection performance" style="width:100%; max-width:900px;">
+                                        <figcaption class="caption-figtab">
+                                            Influence of dataset characteristics on object detection performance.
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </details>
+                        </div>
+                    </section>
+                    <!-- End of Experiments -->
+
+                    
+
+                    <!-- MARK: Abstract and Future Works -->
+                    <section id="abtract-conclusion">
+                        <div class="section-header w3-center">
+                            <h2>Abstract and Future Works</h2>
+                        </div>
+
+                        <!-- Abstract -->
+                        <details class="para-bi-margin">
+                            <summary>Abstract</summary>
+                            Global warming has intensified the frequency and severity of extreme weather events, which degrade CCTV signal and video quality while disrupting traffic flow, thereby increasing traffic accident rates. Existing datasets, often limited to light haze, rain, and snow, fail to capture extreme weather conditions. To address this gap, this study introduces the <b>T</b>raffic <b>S</b>urveillance <b>B</b>enchmark for <b>O</b>ccluded vehicles under various <b>W</b>eather conditions (<b>TSBOW</b>), a comprehensive dataset designed to enhance occluded vehicle detection across diverse annual weather scenarios. Comprising over <b>32 hours</b> of real-world traffic data from densely populated urban areas, TSBOW includes more than <b>48,000 manually annotated</b> and <b>3.2 million semi-labeled frames</b>; bounding boxes spanning eight traffic participant classes from large vehicles to micromobility devices and pedestrians. We establish an object detection benchmark for TSBOW, highlighting challenges posed by occlusions and adverse weather. With its varied road types, scales, and viewpoints, TSBOW serves as a critical resource for advancing Intelligent Transportation Systems. Our findings underscore the potential of CCTV-based traffic monitoring, paving the way for new research and applications. The TSBOW dataset is publicly available at the following link.
+                            <br>
+                            <b>Code</b> -- <a href="https://github.com/SKKUAutoLab/TSBOW">https://github.com/SKKUAutoLab/TSBOW</a>.
+                        </details>
+
+                        <!-- Conclusion and Future Works -->
+                        <details class="para-bi-margin">
+                            <summary>Conclusion and Future Works</summary>
+                            This study introduces the <b>T</b>raffic <b>S</b>urveillance <b>B</b>enchmark for <b>O</b>ccluded vehicles under various <b>W</b>eather conditions (<b>TSBOW</b>), a comprehensive, semi-automatically annotated traffic surveillance dataset designed to improve monitoring system training, particularly under extreme weather conditions such as heavy haze and snow. Collected across all seasons and diverse road scenarios, TSBOW comprises 32 hours of footage from 198 videos, encompassing a variety of road types and scales, and providing multiple viewing angles for vehicles and pedestrians. The dataset includes over 3.2 million frames, each annotated with weather conditions and scenarios, alongside detailed object annotations derived from extracted images. Capturing complex, high-density scenes of vehicles and pedestrians in crowded urban settings, TSBOW features approximately 71.1 million bounding boxes across eight distinct traffic participant classes. As a robust resource for traffic surveillance research, TSBOW offers substantial potential to deepen insights into traffic dynamics and support advancements in intelligent transportation systems. The initial version focuses on daytime traffic flow under varying weather conditions. Future versions will include ground truth annotations for nighttime scenarios and additional computer vision tasks, such as multi-object tracking, semantic segmentation, vehicle counting, and speed estimation, to further enhance its utility.
+                        </details>
+                    </section>
+                    <!-- End of Abstract and Future Works -->
+
+                    
+                    
+                    <!-- MARK: Citation -->
+                    <section id="citation" class="citation-section">
+                        <div class="section-header w3-center">
+                            <h1>Cite Our Work</h1>
+                            <p style="font-size: 1.6em; font-weight: bold;">If our research is helpful to you, please cite our paper <br> using the following BibTeX format</p>
+                        </div>
+
+                        <div class="bibtex-box">
+                            <div class="bibtex-header">
+                                <img src="icons/BibTeX.png" alt="BibTeX Icon" class="bibtex-icon">
+                                <!-- <h3>BibTeX</h3> -->
+                            </div>
+                            <pre><code>
+@article{Huynh_TSBOW_AAAI_2026,
+    title   = {TSBOW: Traffic Surveillance Benchmark for Occluded Vehicles Under Various Weather Conditions},
+    author  = {Ngoc Doan-Minh Huynh, Duong Nguyen-Ngoc Tran, Long Hoang Pham, Tai Huu-Phuong Tran, Hyung-Joon Jeon, Huy-Hung Nguyen, Duong Khac Vu, Hyung-Min Jeon, Son Hong Phan, Quoc Pham-Nam Ho, Chi Dai Tran, Trinh Le Ba Khanh, Jae Wook Jeon},
+    journal = {AAAI 2026},
+    year    = {2025}
+}</code></pre>
+                            <button class="copy-btn" onclick="copyBibtex()">📋 Copy</button>
+                        </div>
+                    </section>
+                    <!-- End of Citation -->
+                    
+                    <!-- MARK: Acknowledgement -->
+                    <section id="acknowledgement">
+                        <div class="section-header w3-center">
+                            <h2>Acknowledgement</h2>
+                        </div>
+                        <p class="para-bi-margin">
+                            This work was supported by the Institute of Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government (MSIT) (No. 2021-0-01364, An intelligent system for 24/7 real-time traffic surveillance on edge devices)
+                        </p>
+                    </section>
+                    <!-- End of Acknowledgement -->
+
+
+                </div>
+                <!-- end paper container -->
+
+            </div>
+            <!-- End Grid -->
+        </div>
+        <!-- End Page Container -->
+
+
+
+        <!-- MARK: Footer -->
+        <footer class="footer">
+            <div class="footer-content"></div>
+                <img src="icons/TSBOW_icon_white_border.png" class="footer-icon" alt="Left Icon">
+
+                <pre class="ascii">
+ _____ ____  ____   _____        __
+|_   _/ ___|| __ ) / _ \ \      / /
+  | | \___ \|  _ \| | | \ \ /\ / / 
+  | |  ___) | |_) | |_| |\ V  V /  
+  |_| |____/|____/ \___/  \_/\_/   </pre>
+
+                <!-- <img src="icons/TSBOW_icon_white_border.png" class="footer-icon" alt="Right Icon"> -->
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </body>
+
+    <script defer src="https://unpkg.com/img-comparison-slider@7/dist/index.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"/>
+
+</html>
