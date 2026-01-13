@@ -47,7 +47,7 @@ def download_TSBOW(args):
     # Download annotations
     elif args.type == "annotations":
         # annotation.zip contains images/ and labels/ folders
-        hub_paths = ["train/annotations.zip", "val/annotations.zip", "test/annotations.zip"]
+        hub_paths = ["train/annotations.zip", "val/annotations.zip", "test_public/annotations.zip"]
 
         for hub_path in hub_paths:
             hf_hub_download(
