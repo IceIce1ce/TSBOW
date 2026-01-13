@@ -1,0 +1,627 @@
+<!-- HELLO WORLD!!! -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <title>TSBOW</title>
+        <meta charset="UTF-8">
+        <!-- Google verified -->
+        <meta name="google-site-verification" content="vmfqvIjFP9YbInjTiXD4oxolnwQqRrmt4gNTPzq14EU" />
+        <!-- Robots.txt -->
+        <meta name="robots" content="index,follow">
+        <link rel="canonical" href="https://skkuautolab.github.io/TSBOW/">
+
+        <link rel="icon" type="image/png" href="icons/TSBOW_icon_title.png" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <style>
+            html,
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 
+            {
+                font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", 
+                             "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            }
+
+            <!--
+            .cite {
+                background: #f0f0f0;
+                padding: 10px;
+                font-size: 18px
+            }
+
+            -->
+            .cite {
+                padding: 0px;
+                background: #ffffff;
+                font-size: 18px
+            }
+
+            .card {
+                border: 1px solid #ccc
+            }
+
+            img {
+                margin-bottom: -6px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #0074D9;
+            }
+
+            .bibtexsection {
+                width: 80%;
+                font-family: "Courier", monospace;
+                /* font-size: 1vw; */
+                white-space: pre;
+                background-color: #f4f4f4;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+            }
+
+            .layered-paper-big {
+                /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+                box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+                    /* The top layer shadow */ 5px 5px 0 0px #fff,
+                    /* The second layer */ 5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+                    /* The second layer shadow */ 10px 10px 0 0px #fff,
+                    /* The third layer */ 10px 10px 1px 1px rgba(0, 0, 0, 0.35),
+                    /* The third layer shadow */ 15px 15px 0 0px #fff,
+                    /* The fourth layer */ 15px 15px 1px 1px rgba(0, 0, 0, 0.35),
+                    /* The fourth layer shadow */ 20px 20px 0 0px #fff,
+                    /* The fifth layer */ 20px 20px 1px 1px rgba(0, 0, 0, 0.35),
+                    /* The fifth layer shadow */ 25px 25px 0 0px #fff,
+                    /* The fifth layer */ 25px 25px 1px 1px rgba(0, 0, 0, 0.35);
+                /* The fifth layer shadow */
+                margin-left: 10px;
+                margin-right: 60px;
+            }
+
+            table {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                border-collapse: collapse;
+            }
+
+            table > :is(thead, tbody) > tr > :is(th, td) {
+                padding: 3px;
+                text-align: center;
+            }
+
+            table > thead > tr > :is(th, td) {
+                border-top: 2px solid;
+                border-bottom: 1px solid;
+            }
+
+            table > tbody > tr:last-child > :is(th, td) {
+                border-bottom: 2px solid;
+            }
+
+            table > tbody {
+                border-top: 2px solid;
+                border-bottom: 1px solid;
+            }
+        </style>
+    </head>
+
+    <body class="w3-white" style="top:11px;">
+        <!-- MARK: Header -->
+        <header id="scrollHeader">
+            <div class="header-left">
+                <img src="icons/TSBOW_icon_white_border.png" alt="TSBOW Logo" class="logo">
+                <p class="title">TSBOW</p>
+            </div>
+
+            <nav>
+                <a href="#weather">Weather</a>
+                <a href="#scenario">Scenario</a>
+                <a href="#roadtype">RoadType</a>
+                <a href="#scale">Scale</a>
+                <a href="#traffic">Traffic</a>
+                <a href="#citation">Citation</a>
+            </nav>
+        </header>
+        <!-- End of Header -->
+
+        
+        <!-- Page Container -->
+        <div class="w3-content w3-margin-top w3-margin-bottom" style="max-width:960px;">
+
+            <!-- The Grid -->
+            <div class="w3-row-padding">
+
+                <!-- paper container -->
+                <div class="w3-display-container w3-row w3-white w3-margin-bottom" style="top: 100px;">
+                    
+                    <!-- MARK: TSBOW title -->
+                    <div class="w3-center" style="display: flex; align-items: center; justify-content: center; margin-top: 10px; margin-bottom: 30px;">
+                        <img src="icons/TSBOW_icon_white_BG.png" alt="TSBOW Logo" style="height:80px; margin-right:30px;">
+
+                        <h1 id="tsbow-title" style="margin:0; font-weight: bold; font-size:116px; line-height:1; position: relative; top:10px;">
+                            <span class="sync-tsbowT" style="color: #FFCC00">T</span>
+                            <span class="sync-tsbowS" style="color: #33CCCC">S</span>
+                            <span class="sync-tsbowB" style="color: #FF6600">B</span>
+                            <span class="sync-tsbowO" style="color: #6699FF">O</span>
+                            <span class="sync-tsbowW" style="color: #FF0066">W</span>
+                        </h1>
+                    </div>
+                    <!-- End of TSBOW title -->
+
+                    
+                    <div class="w3-center">
+                        <!-- TSBOW name -->
+                        <h1 style="color: #000080;">
+                            <b id="titleText">
+                                <span class="sync-tsbowT">
+                                    <span style="color: #FFCC00">T</span>raffic
+                                </span> 
+                                <span class="sync-tsbowS">
+                                    <span style="color: #33CCCC">S</span>urveillance
+                                </span> 
+                                <span class="sync-tsbowB">
+                                    <span style="color: #FF6600">B</span>enchmark
+                                </span> for
+                                <span class="sync-tsbowO">
+                                    <span style="color: #6699FF">O</span>ccluded Vehicles
+                                </span> under
+                                <span class="sync-tsbowW">
+                                    Various <span style="color: #FF0066">W</span>eather Conditions
+                                </span> 
+                            </b>
+                        </h1>
+                        <!-- End of TSBOW name -->
+                        
+
+                        <!-- URLs button -->
+                        <div class="w3-center resources" style="margin-top: 50px; margin-bottom: 70px;">
+                            <div class="button-group">
+                                <a href="https://skkuautolab.github.io/TSBOW/" class="btn explore-btn" style="border-radius:999px; padding:10px 14px; background:#001F3F; color:#fff; display:inline-flex; align-items:center; gap:8px;">
+                                    <span><span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span> Website</span>
+                                </a>
+                                <a href="." class="btn">
+                                    <img src="icons/AAAI-26_Mark-Inverse.webp" alt="Paper" />
+                                    <span>Paper</span>
+                                </a>
+                                <a href="." class="btn">
+                                    <img src="icons/ArXiv.png" alt="arXiv" />
+                                    <span>Supplementary</span>
+                                </a>
+                                <a href="https://huggingface.co/datasets/SKKUAutoLab/TSBOW" class="btn">
+                                    <img src="icons/huggingface.png" alt="Huggingface" />
+                                    <span>Hugging Face Dataset</span>
+                                </a>
+                                <a href="https://github.com/SKKUAutoLab/TSBOW/" class="btn">
+                                    <img src="icons/github.png" alt="GitHub" />
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <!-- MARK: OPTIONS -->
+                    <div class="section-header w3-center" style="margin-top: 16px;">
+                        <h1>
+                            <span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>  
+                            <span style="color: #FFCC00">S</span><span style="color: #33CCCC">C</span><span style="color: #FF6600">E</span><span style="color: #6699FF">N</span><span style="color: #FF0066">E</span><span style="color: #33CCFF">S</span>
+                        </h1>
+                    </div>
+
+                    <div class="w3-center resources" style="margin-top: 11px; margin-bottom: 25px;">
+                        <div class="button-group">
+                            <a href="#weather" class="btn" style="background:#001F3F; color: #FFCC00;">
+                                <span>🌦️ WEATHER 🌦️</span>
+                            </a>
+                            <a href="#scenario" class="btn" style="background:#001F3F; color: #33CCCC;">
+                                <span>🚦 SCENARIO 🚦</span>
+                            </a>
+                            <a href="#roadtype" class="btn" style="background:#001F3F; color: #FF6600;">
+                                <span>🛣️ ROAD TYPE 🛣️</span>
+                            </a>
+                            <a href="#scale" class="btn" style="background:#001F3F; color: #6699FF;">
+                                <span>🔎 SCALE 🔎</span>
+                            </a>
+                            <a href="#traffic" class="btn" style="background:#001F3F; color: #FF0066;">
+                                <span>🚗 TRAFFIC 🚗</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End of OPTIONS -->
+
+
+
+                    <!-- MARK: Weather -->
+                    <section id="weather">
+                        <div class="section-header">
+                            <h1 class="w3-center"><b>Weather</b></h1>
+
+                            <!-- Description -->
+                            <p class="caption-bi-margin">
+                                <b class="w3-center">
+                                    Videos for the <span style="color: #FFCC00; font-weight: bold;">T</span><span style="color: #33CCCC; font-weight: bold;">S</span><span style="color: #FF6600; font-weight: bold;">B</span><span style="color: #6699FF; font-weight: bold;">O</span><span style="color: #FF0066; font-weight: bold;">W</span> dataset were recorded in Suwon under diverse weather condition throughout the year: 
+                                    <span style="color: #FF6600;">normal</span> (<span style="color: #FF6600;">sunny</span>/<span style="color: #FF6600;">cloudy</span>)</span>, 
+                                    <span style="color: #FF6600;">haze</span>, 
+                                    <span style="color: #FF6600;">rain</span>, and 
+                                    <span style="color: #FF6600;">snow</span>.
+                                </b>
+
+                                <ul style="list-style-type:circle;">
+                                    <li><b>Normal</b>: sunny and cloudy</li>
+                                    <li><b>Haze</b>: haze or foggy</li>
+                                    <li><b>Rain</b>: raindrops or active rainfall are evident</li>
+                                    <li><b>Snow</b>: visible snowflkes or snowfall</li>
+                                </ul>
+                            </p>
+
+                            <!-- Normal -->
+                            <div class="video-container w3-center">
+                                <video controls style="width:100%" loop playsinline muted>
+                                    <source src="videos/WEATHER_normal.mp4" type="video/mp4">
+                                    Video Demo: WEATHER_normal
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab w3-center" style="font-size: large; font-weight: bold;">
+                                Normal
+                            </figcaption>
+
+                            <!-- Haze -->
+                            <div class="video-container w3-center">
+                                <video controls style="width:100%" loop playsinline muted>
+                                    <source src="videos/WEATHER_haze.mp4" type="video/mp4">
+                                    Video Demo: WEATHER_haze
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab w3-center" style="font-size: large; font-weight: bold;">
+                                Haze
+                            </figcaption>
+
+                            <!-- Rain -->
+                            <div class="video-container w3-center">
+                                <video controls style="width:100%" loop playsinline muted>
+                                    <source src="videos/WEATHER_rain.mp4" type="video/mp4">
+                                    Video Demo: WEATHER_rain
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab w3-center" style="font-size: large; font-weight: bold;">
+                                Rain
+                            </figcaption>
+
+                            <!-- Snow -->
+                            <div class="video-container w3-center">
+                                <video controls style="width:100%" loop playsinline muted>
+                                    <source src="videos/WEATHER_snow.mp4" type="video/mp4">
+                                    Video Demo: WEATHER_snow
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab w3-center" style="font-size: large; font-weight: bold;">
+                                Snow
+                            </figcaption>
+                        </div>
+                    </section>
+                    <!-- End of Weather -->
+
+
+
+                    <!-- MARK: Scenario -->
+                    <section id="scenario">
+                        <div class="section-header">
+                            <h1 class="w3-center"><b>Scenario</b></h1>
+
+                            <!-- Description -->
+                            <p class="caption-bi-margin">
+                                <b class=" w3-center">
+                                    The <span style="color: #FFCC00; font-weight: bold;">T</span><span style="color: #33CCCC; font-weight: bold;">S</span><span style="color: #FF6600; font-weight: bold;">B</span><span style="color: #6699FF; font-weight: bold;">O</span><span style="color: #FF0066; font-weight: bold;">W</span> scenarios are categorized into four distinct types: 
+                                    <span style="color: #FF6600;">road</span>, 
+                                    <span style="color: #FF6600;">intersection</span>, 
+                                    <span style="color: #FF6600;">special cases</span>, and 
+                                    <span style="color: #FF6600;">disaster</span>.
+                                </b>
+
+                                <ul style="list-style-type:circle;">
+                                    <li><b>Road</b>:  straight roads or those where traffi flow remains unaffected by traffi lights</li>
+                                    <li><b>Intersection</b>: includes three subtypes—T, Y, or crossroad—and extends to scenes where traffi lights or pedestrian crossings inflence traffi flow</li>
+                                    <li><b>Special cases</b>: includes videos featuring shared lanes, overpasses, or mid-road construction</li>
+                                    <li><b>Disaster</b>: pertains to scenarios where hostile weather severely degrades video quality</li>
+                                </ul>
+                            </p>
+
+                            <!-- Road -->
+                            <div class="video-container w3-center">
+                                <video controls style="width:100%" loop playsinline muted>
+                                    <source src="videos/SCENARIO_road.mp4" type="video/mp4">
+                                    Video Demo: SCENARIO_road
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab w3-center" style="font-size: large; font-weight: bold;">
+                                Road
+                            </figcaption>
+
+                            <!-- Intersection -->
+                            <div class="video-container w3-center">
+                                <video controls style="width:100%" loop playsinline muted>
+                                    <source src="videos/SCENARIO_intersection.mp4" type="video/mp4">
+                                    Video Demo: SCENARIO_intersection
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab w3-center" style="font-size: large; font-weight: bold;">
+                                Intersection
+                            </figcaption>
+
+                            <!-- Special Cases -->
+                            <div class="video-container w3-center">
+                                <video controls style="width:100%" loop playsinline muted>
+                                    <source src="videos/SCENARIO_specialcase.mp4" type="video/mp4">
+                                    Video Demo: SCENARIO_specialcase
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab w3-center" style="font-size: large; font-weight: bold;">
+                                Special Cases
+                            </figcaption>
+
+                            <!-- Disaster -->
+                            <div class="video-container w3-center">
+                                <video controls style="width:100%" loop playsinline muted>
+                                    <source src="videos/SCENARIO_disaster.mp4" type="video/mp4">
+                                    Video Demo: SCENARIO_disaster
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab w3-center" style="font-size: large; font-weight: bold;">
+                                Disaster
+                            </figcaption>
+                        </div>
+                    </section>
+                    <!-- End of Scenario -->
+
+
+
+                    <!-- MARK: RoadType -->
+                    <section id="roadtype">
+                        <div class="section-header">
+                            <h1 class="w3-center"><b>Road Type</b></h1>
+
+                            <!-- Description -->
+                            <p class="caption-bi-margin">
+                                <b>
+                                    The <span style="color: #FFCC00; font-weight: bold;">T</span><span style="color: #33CCCC; font-weight: bold;">S</span><span style="color: #FF6600; font-weight: bold;">B</span><span style="color: #6699FF; font-weight: bold;">O</span><span style="color: #FF0066; font-weight: bold;">W</span> dataset classifies data collection zones by the number of straight lanes per direction, excluding turning lanes, into three road types:
+                                    <span style="color: #FF6600;">urban</span>, 
+                                    <span style="color: #FF6600;">standard</span>, and 
+                                    <span style="color: #FF6600;">boulevard</span>.
+                                </b>
+
+                                <ul style="list-style-type:circle;">
+                                    <li><b>Urban</b>: two lanes</li>
+                                    <li><b>Standard</b>: four lanes</li>
+                                    <li><b>Boulevard</b>: over six lanes</li>
+                                </ul>
+                            </p>
+
+                            <!-- Urban -->
+                            <div class="video-container w3-center">
+                                <video controls style="width:100%" loop playsinline muted>
+                                    <source src="videos/ROADTYPE_urban.mp4" type="video/mp4">
+                                    Video Demo: ROADTYPE_urban
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab w3-center" style="font-size: large; font-weight: bold;">
+                                Urban
+                            </figcaption>
+
+                            <!-- Standard -->
+                            <div class="video-container w3-center">
+                                <video controls style="width:100%" loop playsinline muted>
+                                    <source src="videos/ROADTYPE_standard.mp4" type="video/mp4">
+                                    Video Demo: ROADTYPE_standard
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab w3-center" style="font-size: large; font-weight: bold;">
+                                Standard
+                            </figcaption>
+
+                            <!-- Boulevard -->
+                            <div class="video-container w3-center">
+                                <video controls style="width:100%" loop playsinline muted>
+                                    <source src="videos/ROADTYPE_boulevard.mp4" type="video/mp4">
+                                    Video Demo: ROADTYPE_boulevard
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab w3-center" style="font-size: large; font-weight: bold;">
+                                Boulevard
+                            </figcaption>
+                        </div>
+                    </section>
+                    <!-- End of RoadType -->
+
+
+
+                    <!-- MARK: Scale -->
+                    <section id="scale">
+                        <div class="section-header">
+                            <h1 class=" w3-center"><b>Scale</b></h1>
+
+                            <!-- Description -->
+                            <p class="caption-bi-margin">
+                                <b>
+                                    CCTV cameras along routes and intersections vary in angle and height, producing bounding box sizes categorized into three scales:
+                                    <span style="color: #FF6600;">fine</span>, 
+                                    <span style="color: #FF6600;">medium</span>, and 
+                                    <span style="color: #FF6600;">coarse</span>.
+                                </b>
+
+                                <ul style="list-style-type:circle;">
+                                    <li><b>Fine</b>: near road surface, detailed object visualization</li>
+                                    <li><b>Medium</b>: elevated cameras, discernible license plates but reduced clarity</li>
+                                    <li><b>Coarse</b>: distant cameras, high vehicle count but partial visibility due to distance and occlusion</li>
+                                </ul>
+                            </p>
+
+                            <!-- Fine -->
+                            <div class="video-container w3-center">
+                                <video controls style="width:100%" loop playsinline muted>
+                                    <source src="videos/SCALE_fine.mp4" type="video/mp4">
+                                    Video Demo: SCALE_fine
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab w3-center" style="font-size: large; font-weight: bold;">
+                                Fine
+                            </figcaption>
+
+                            <!-- Medium -->
+                            <div class="video-container w3-center">
+                                <video controls style="width:100%" loop playsinline muted>
+                                    <source src="videos/SCALE_medium.mp4" type="video/mp4">
+                                    Video Demo: SCALE_medium
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab w3-center" style="font-size: large; font-weight: bold;">
+                                Medium
+                            </figcaption>
+
+                            <!-- Coarse -->
+                            <div class="video-container w3-center">
+                                <video controls style="width:100%" loop playsinline muted>
+                                    <source src="videos/SCALE_coarse.mp4" type="video/mp4">
+                                    Video Demo: SCALE_coarse
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab w3-center" style="font-size: large; font-weight: bold;">
+                                Coarse
+                            </figcaption>
+                        </div>
+                    </section>
+                    <!-- End of Scale -->
+
+
+
+                    <!-- MARK: Traffic -->
+                    <section id="traffic">
+                        <div class="section-header">
+                            <h1 class=" w3-center"><b>Traffic</b></h1>
+
+                            <!-- Description -->
+                            <p class="caption-bi-margin">
+                                <b>
+                                    Traffic flow in <span style="color: #FFCC00; font-weight: bold;">T</span><span style="color: #33CCCC; font-weight: bold;">S</span><span style="color: #FF6600; font-weight: bold;">B</span><span style="color: #6699FF; font-weight: bold;">O</span><span style="color: #FF0066; font-weight: bold;">W</span> is categorized into 
+                                    <span style="color: #FF6600;">light</span>, 
+                                    <span style="color: #FF6600;">moderate</span>, and 
+                                    <span style="color: #FF6600;">heavy</span>, based on the maximum number of bounding boxes per frame in video.
+                                </b>
+
+                                <ul style="list-style-type:circle;">
+                                    <li><b>Light</b>: less than 25 bboxes/frame</li>
+                                    <li><b>Moderate</b>: 25 to less than 50 bboxes/frame</li>
+                                    <li><b>Heavy</b>: over 50 bboxes/frame</li>
+                                </ul>
+                            </p>
+
+                            <!-- Light -->
+                            <div class="video-container w3-center">
+                                <video controls style="width:100%" loop playsinline muted>
+                                    <source src="videos/TRAFFIC_light.mp4" type="video/mp4">
+                                    Video Demo: TRAFFIC_light
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab w3-center" style="font-size: large; font-weight: bold;">
+                                Light
+                            </figcaption>
+
+                            <!-- Moderate -->
+                            <div class="video-container w3-center">
+                                <video controls style="width:100%" loop playsinline muted>
+                                    <source src="videos/TRAFFIC_moderate.mp4" type="video/mp4">
+                                    Video Demo: TRAFFIC_moderate
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab w3-center" style="font-size: large; font-weight: bold;">
+                                Moderate
+                            </figcaption>
+
+                            <!-- Heavy -->
+                            <div class="video-container w3-center">
+                                <video controls style="width:100%" loop playsinline muted>
+                                    <source src="videos/TRAFFIC_heavy.mp4" type="video/mp4">
+                                    Video Demo: TRAFFIC_heavy
+                                </video>
+                            </div>
+                            <figcaption class="caption-figtab w3-center" style="font-size: large; font-weight: bold;">
+                                Heavy
+                            </figcaption>
+                        </div>
+                    </section>
+                    <!-- End of Scale -->
+
+                    
+                    
+                    <!-- MARK: Citation -->
+                    <section id="citation" class="citation-section">
+                        <div class="section-header w3-center">
+                            <h1>Cite Our Work</h1>
+                            <p style="font-size: 1.6em; font-weight: bold;">If our research is helpful to you, please cite our paper <br> using the following BibTeX format</p>
+                        </div>
+
+                        <div class="bibtex-box">
+                            <div class="bibtex-header">
+                                <img src="icons/BibTeX.png" alt="BibTeX Icon" class="bibtex-icon">
+                                <!-- <h3>BibTeX</h3> -->
+                            </div>
+                            <pre><code>
+@article{Huynh_TSBOW_AAAI_2026,
+    title   = {TSBOW: Traffic Surveillance Benchmark for Occluded Vehicles Under Various Weather Conditions},
+    author  = {Ngoc Doan-Minh Huynh, Duong Nguyen-Ngoc Tran, Long Hoang Pham, Tai Huu-Phuong Tran, Hyung-Joon Jeon, Huy-Hung Nguyen, Duong Khac Vu, Hyung-Min Jeon, Son Hong Phan, Quoc Pham-Nam Ho, Chi Dai Tran, Trinh Le Ba Khanh, Jae Wook Jeon},
+    journal = {AAAI 2026},
+    year    = {2025}
+}</code></pre>
+                            <button class="copy-btn" onclick="copyBibtex()">📋 Copy</button>
+                        </div>
+                    </section>
+                    <!-- End of Citation -->
+
+
+                </div>
+                <!-- end paper container -->
+
+            </div>
+            <!-- End Grid -->
+        </div>
+        <!-- End Page Container -->
+
+
+
+        <!-- MARK: Footer -->
+        <footer class="footer">
+            <div class="footer-content"></div>
+                <img src="icons/TSBOW_icon_white_border.png" class="footer-icon" alt="Left Icon">
+
+                <pre class="ascii">
+ _____ ____  ____   _____        __
+|_   _/ ___|| __ ) / _ \ \      / /
+  | | \___ \|  _ \| | | \ \ /\ / / 
+  | |  ___) | |_) | |_| |\ V  V /  
+  |_| |____/|____/ \___/  \_/\_/   </pre>
+
+                <!-- <img src="icons/TSBOW_icon_white_border.png" class="footer-icon" alt="Right Icon"> -->
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </body>
+
+    <script defer src="https://unpkg.com/img-comparison-slider@7/dist/index.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"/>
+
+</html>
