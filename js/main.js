@@ -204,7 +204,8 @@ function filterScenes(attribute_name) {
         attributeValues[attribute_name].forEach(attribute_value => {
             const button = document.createElement('button');
             button.className = 'btn subvalue-btn';
-            button.style = `padding: 10px 20px; margin: 5px; background-color: ${attributeColors[attribute_name]}; color: #001F3F;`;
+            // button.style = `padding: 10px 20px; margin: 5px; background-color: ${attributeColors[attribute_name]}; color: #001F3F;`;
+            button.style = `padding: 10px 20px; margin: 5px; background-color: #000080; color: #FFFFFF;`;
             button.textContent = attributeEmojis[attribute_name] + ' ' + attribute_value.toUpperCase() + ' ' + attributeEmojis[attribute_name];
             // button.onclick = () => showVideo(attribute_name, attribute_value);
             button.onclick = () => showImage(attribute_name, attribute_value);
