@@ -322,9 +322,11 @@ By completing the form below, users acknowledge and agree that <b>the dataset wi
 - Ensure all **User Information** fields are completed.
 - Provide a description of your intended use of the dataset.
 - Check the agreement box and insert your handwritten signature.
-- Save as PDF file. Renaming as: **TSBOW_ApplicationDate_HuggingfaceUsername.pdf** (i.e. TSBOW_20260120_ngochdm.pdf)
+- Save as PDF file. Renaming as: **{TSBOW}_{Application-Date}_{Huggingface-Username}.pdf** (i.e. TSBOW_20260120_ngochdm.pdf)
 
 <b>2. Requirement Email</b>
+- The subject format: [TSBOW Access Requirement] 
+- The email body includes your HuggingFace information (username and email).
 
 </details>
 <br>
