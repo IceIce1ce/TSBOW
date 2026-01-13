@@ -1,8 +1,9 @@
 import argparse
-from huggingface_hub import hf_hub_download, snapshot_download
+from huggingface_hub import hf_hub_download, snapshot_download, login
 
 
 # MARK: Download
+
 def download_TSBOW(args):
     print("Updating...")
 
@@ -99,6 +100,7 @@ def download_TSBOW(args):
 
 
 # MARK: Args
+
 def parse_args():
     # Setup command line arguments
     parser = argparse.ArgumentParser(
@@ -135,6 +137,9 @@ def parse_args():
 
 
 # MARK: Main
+
 if __name__ == "__main__":
+    login()
+    
     args    = parse_args()
     download_TSBOW(args=args)
