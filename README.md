@@ -310,15 +310,26 @@ The source code for validating Ablation Studies are provided in [validation_abla
 
 ## 📥 Dataset Download
 
-(Upcoming) We will provide **Terms and Conditions** before downloading our **<span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>** dataset.
+The **<span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>** dataset is distributed under the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en"> Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</a> License. 
+
+By completing the form below, users acknowledge and agree that <b>the dataset will be used solely for research purposes</b>. 
 
 <details>
     <summary><b>Submission Guidelines</b></summary>
-    We will provide the guidelines soon.
+
+<b>1. TSBOW - Terms and Conditions Form</b>
+- Download and fill out the <a href="https://docs.google.com/document/d/1Mn4qV8HErCX1EMQvys6SAKbMb06dZa85nie7rzSxeGc/edit?usp=sharing"> TSBOW - Terms and Conditions</a> form. 
+- Ensure all **User Information** fields are completed.
+- Provide a description of your intended use of the dataset.
+- Check the agreement box and insert your handwritten signature.
+- Save as PDF file. Renaming as: **TSBOW_ApplicationDate_HuggingfaceUsername.pdf** (i.e. TSBOW_20260120_ngochdm.pdf)
+
+<b>2. Requirement Email</b>
+
 </details>
 <br>
 
-(Upcoming) Scripts to download **<span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>** from HuggingFace will be provided. Please refer to the [`download_TSBOW.py`](utils/download_TSBOW.py) script for more details.
+Scripts to download **<span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>** from HuggingFace are provided in [utils](utils/README.md) folder. Please refer to the [`download_TSBOW.py`](utils/download_TSBOW.py) and [`download_TSBOW.sh`](utils/download_TSBOW.sh) for more details.
 
 
 <!-- MARK: References -->
