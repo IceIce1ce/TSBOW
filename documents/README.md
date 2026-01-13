@@ -53,4 +53,9 @@ Thanks to the developers and contributors of the following open-source repositor
 **Github Repo**:
 - [X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling): An open-source tool for precise bounding box creation.
 
-Our repository is licensed under the **Apache 2.0 License**. However, if you use other components in your work, please follow their license.
+
+## Licenses
+
+Our repository on Github is licensed under the **Apache 2.0 License**. However, if you use other components in your work, please follow their license.
+
+Our dataset on HuggingFace is licensed under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International** ([cc by-nc-nd 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en)).
