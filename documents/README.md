@@ -17,7 +17,7 @@
 
 - Image Standard: jpg
 - Image Resolution: 1280 x 720
-- Images extracted from videos are named as `<video_id>_<frame_id>.jpg`. `<frame_id>` is 6 characters length.
+- Images extracted from videos are named as `<video_id>_<frame_id>.jpg`, where `<frame_id>` is 6 characters length.
 
 
 ### Ground Truth Format
@@ -37,6 +37,7 @@ where
 
 ### Metadata Format
 
+<!-- TSBOW_info.csv -->
 The [CSV file](metadata/TSBOW_info.csv) provides metadata for each videos, including: scenario, daytime, weather, scale, roadtype, video_id, total_duration, and ROI zone. 
 
 - `SCENARIO` (char): one of four values: `r` (road), `i` (intersection), `s` (special cases), `d` (disaster).
@@ -47,6 +48,15 @@ The [CSV file](metadata/TSBOW_info.csv) provides metadata for each videos, inclu
 - `VIDEO_ID` (string): video name.
 - `DURATION` (duration): total duration of whole videos (test + val + train). 
 - `ROI` (string): a list of points in polygon.
+
+
+<!-- TSBOW.yaml -->
+The [YAML file](metadata/TSBOW.yaml) provides information for training models on training and validation set.
+
+
+<!-- class.txt -->
+The [class.txt](./classes.txt) provides a list of annotated object categories. Each row is an object class indexed from 0.
+
 
 
 ### Directory Structure
