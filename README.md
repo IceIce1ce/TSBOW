@@ -88,12 +88,7 @@ __        _______ _     ____ ___  __  __ _____
 
 <br>
 
-**(UPDATING....)**
-
-(All links would be updated **on the conference day.**)
-
-Please download our Github repo to get better markdown view (i.e. Visual Code).
-
+**(UPDATING....** All links would be updated **on the conference day)**.
 
 ![TSBOW Dataset Scenes](images/Figure_All_Scenes.png)
 
@@ -102,9 +97,9 @@ Please download our Github repo to get better markdown view (i.e. Visual Code).
 
 ## 🎉 NEWS
 
-<!-- + [2026.01.20] 🎆 TSBOW dataset is available on HuggingFace. -->
 <!-- + [2025.12.31] 🔥 Our paper, code and TSBOW dataset are released! -->
 
++ [2026.01.16] 🎆 TSBOW dataset is available on HuggingFace.
 + [2025.11.16] 🔥 Our code and website are released!
 + [2025.11.08] 🎉 **<span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>** has been accepted to **AAAI 2026**!
 
@@ -115,6 +110,7 @@ Please download our Github repo to get better markdown view (i.e. Visual Code).
 
 Global warming has intensified the frequency and severity of extreme weather events, which degrade CCTV signal and video quality while disrupting traffic flow, thereby increasing traffic accident rates. Existing datasets, often limited to light haze, rain, and snow, fail to capture extreme weather conditions. To address this gap, this study introduces the **T**raffic **S**urveillance **B**enchmark for **O**ccluded Vehicles under Various **W**eather Conditions (**TSBOW**), a comprehensive dataset designed to enhance occluded vehicle detection across diverse annual weather scenarios. Comprising over **32 hours** of real-world traffic data from densely populated urban areas, TSBOW includes more than **48,000 manually annotated** and **3.2 million semi-labeled frames**; bounding boxes spanning eight traffic participant classes from large vehicles to micromobility devices and pedestrians. We establish an object detection benchmark for TSBOW, highlighting challenges posed by occlusions and adverse weather. With its varied road types, scales, and viewpoints, TSBOW serves as a critical resource for advancing Intelligent Transportation Systems. Our findings underscore the potential of CCTV-based traffic monitoring, paving the way for new research and applications. The TSBOW dataset is publicly available at the following link. <br>
 **Code** -- https://github.com/SKKUAutoLab/TSBOW
+
 
 
 <!-- MARK: Overview -->
@@ -131,7 +127,6 @@ Global warming has intensified the frequency and severity of extreme weather eve
     <p><b>Video Distribution</b></p>
 </div>
 
-
 <!-- <div align="center" style="max-width:1000px; margin: 10px auto 20px;">
     <div style="display:flex; gap:18px; justify-content:center; align-items:flex-start; flex-wrap:wrap;">
         <div style="flex:1 1 440px; max-width:51%; text-align:center;">
@@ -144,9 +139,6 @@ Global warming has intensified the frequency and severity of extreme weather eve
         </div>
     </div>
 </div> -->
-
-
-
 
 <details>
     <summary>Other Distributions</summary>
@@ -257,6 +249,7 @@ TSBOW Introduction
 <!-- The TSBOW Data Formats are described in [DataFormat.md](documents/DataFormat.md) -->
 
 
+
 <!-- MARK: Baselines -->
 
 ## 📈 Baselines
@@ -290,13 +283,14 @@ Read [Instruction](baselines/README.md) for more information.
 <details>
     <summary>Results</summary>
 
+<!-- Results -->
 <div align="center" style="background:#ffffff; padding:5px; border-radius:10px; max-width:1000px; margin: 16px auto;">
     <img src="images/Table_6.png" alt="TSBOW Comparison" style="width:100%; height:auto; border-radius:6px; display:block;">
 </div>
 <p align="center" style="margin:8px 0 0 0; font-weight:600;">Model performances after training 100 epochs and validating with imgsz=1280 on manually labeled test set. </p>
 </details>
 
-
+<!-- Validation Methods - Visualization -->
 <div align="center" style="background:#ffffff; padding:11px; border-radius:10px; max-width:1000px; margin: 16px auto;">
     <img src="images/Supp_Models_Performances.png" alt="TSBOW Experiments" style="width:100%; height:auto; border-radius:6px; display:block;">
 </div>
@@ -305,12 +299,6 @@ Read [Instruction](baselines/README.md) for more information.
 
 <!-- Ablation Study -->
 The source code for validating Ablation Studies are provided in [validation_ablation.sh](baselines/validation_ablation.sh). Please read the [Instruction](baselines/README.md) for the experiment results and more information.
-
-
-
-
-
-
 
 
 
@@ -364,6 +352,7 @@ Thanks to the developers and contributors of the following open-source repositor
 - [YOLOv12](https://github.com/sunsmarterjie/yolov12): A model for object detection.
 
 Our repository is licensed under the **Apache 2.0 License**. However, if you use other components in your work, please follow their license.
+
 
 
 <!-- MARK: Citation -->
