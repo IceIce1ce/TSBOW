@@ -35,6 +35,33 @@ where
 - `width`, `height` (double): box width, height
 
 
+### Metadata Format
+
+The [CSV file](metadata/TSBOW_info.csv) provides metadata for each videos, including: scenario, daytime, weather, scale, roadtype, video_id, total_duration, and ROI zone. 
+
+- `SCENARIO` (char): one of four values: `r` (road), `i` (intersection), `s` (special cases), `d` (disaster).
+- `DAYTIME` (char): `d` (day), `n` (night).
+- `WEATHER` (char): one of four values: `n` (normal), `h` (haze), `r` (rain), `s` (snow).
+- `SCALE` (char): one of three values: `f` (fine), `m` (medium), `c` (coarse).
+- `ROADTYPE` (char): one of three values: `u` (urban), `s` (standard), `b` (boulevard).
+- `VIDEO_ID` (string): video name.
+- `DURATION` (duration): total duration of whole videos (test + val + train). 
+- `ROI` (string): a list of points in polygon.
+
+
+### Directory Structure
+
+- **Train/Val/Test_Public**: 
+    - `videos.zip`: video files. 
+    - `annotations.zip`: annotations include images and labels.
+    - `semilabels.zip`: semi-labeled annotations include labels only. You can extract frames from videos.
+    - Notes for Test_Public: In the first publication, we only public annotations of the last 30% of test set. The remaining files will be public in the future.
+
+- **Others**:
+    - `comparison.zip`: annotations of datasets' comparison in Experiment section, include images and labels.
+    - `TSBOW_info.csv`: metadata file.
+
+
 
 <!-- MARK: Datasets -->
 
