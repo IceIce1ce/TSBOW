@@ -335,9 +335,10 @@ By completing the form below, users acknowledge and agree that <b>the dataset wi
 <b>2. Requirement Email</b>
 - The subject format: [TSBOW Access Requirement] {Your Name} - {Affiliation}
 - The email body includes your HuggingFace information (username and email).
+- Send email to our address: <b>automation.skku@gmail.com</b>
 
 <b>3. Send Request on HuggingFace</b>
-- Press "Agree and send request to access repo" button in <a href="https://huggingface.co/datasets/SKKUAutoLab/TSBOW">TSBOW on HuggingFace</a>. Our team may take 2-3 days to process your request.
+- Press "Agree and send request to access TSBOW" button <a href="https://huggingface.co/datasets/SKKUAutoLab/TSBOW">on HuggingFace</a>. Our team may take 2-3 days to process your request.
 
 </details>
 <br>
