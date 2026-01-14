@@ -51,7 +51,11 @@ The [CSV file](metadata/TSBOW_info.csv) provides metadata for each videos, inclu
 
 
 <!-- TSBOW.yaml -->
-The [YAML file](metadata/TSBOW.yaml) provides information for training models on training and validation set.
+The [YAML file](metadata/TSBOW.yaml) provides information for training models on training and validation set. 
+
+- `path` (string): path to dataset.
+- `train`, `val`, `test` (string): name of txt file containing list of train/val/test images.
+- `names`: a list of object categories and their indexes. The order of class list is according to the order of class name in `class.txt`.
 
 
 <!-- class.txt -->
