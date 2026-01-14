@@ -5,7 +5,34 @@
 
 ## 🚗 TSBOW on HuggingFace
 
+### Video Format
 
+- Video Standard: mp4 (H.265)
+- Video Resolution: 1280 x 720
+- Video Frame Rate: varied from 20 to 30 FPS
+- Videos are named as `<video_id>.mp4`
+
+
+### Image Format
+
+- Image Standard: jpg
+- Image Resolution: 1280 x 720
+- Images extracted from videos are named as `<video_id>_<frame_id>.jpg`. `<frame_id>` is 6 characters length.
+
+
+### Ground Truth Format
+
+Annotations are provided in YOLO format with one *.txt file per image. If there are no objects in an image, no *.txt file is required.
+Each line in text file are the bounding box information of an object:
+
+```
+<class_id> <x_center> <y_center> <width> <height>
+```
+
+where
+- `<class_id>` (int): class index starting from 0
+- `x_center`, `y_center` (double): box coordinates normalized xywh format (from 0 to 1)
+- `width`, `height` (double): box width, height
 
 
 
