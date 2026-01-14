@@ -7,7 +7,7 @@ from huggingface_hub import hf_hub_download, snapshot_download, login
 def download_TSBOW(args):
     print("Updating...")
 
-    repo_id = f"SKKUAutoLab/{args.repo_id}"
+    repo_id = f"SKKUAutoLab/{args.repo_id}"  #f"SKKUAutoLab/TSBOW/{args.repo_id}"
 
 
     # Download csv metadata
@@ -18,6 +18,12 @@ def download_TSBOW(args):
 
             # VideoID for each attribute
             # f"metadata/{args.repo_id}_listID.json"
+
+            # YAML and TXT files for training
+            f"metadata/{args.repo_id}.yaml",
+            f"metadata/train.txt",
+            f"metadata/val.txt",
+            f"metadata/test_public.txt",
         ]
 
         for hub_path in hub_paths:
