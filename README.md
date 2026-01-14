@@ -237,17 +237,17 @@ Global warming has intensified the frequency and severity of extreme weather eve
 
 ## 📊 Benchmark Datasets
 
-The comparison between different datasets are described in [Datasets](documents/README.md#-datasets) section.
 
-TSBOW Introduction
+**TSBOW** Introduction
 - *<span style="color: #FFCC00">Hardware</span>*: CCTV system + color camera. 
 - *<span style="color: #33CCCC">Tasks</span>:* object detection. 
 - *<span style="color: #FF6600">Position</span>:* South Korea. 
 - *<span style="color: #6699FF">Weather</span>:* sunny/cloudy, haze, rain, snow. 
 - *<span style="color: #FF0066">Time</span>:* day.
 
-<!-- The TSBOW Data Formats are described in [DataFormat.md](documents/DataFormat.md) -->
+Our data formats are described in [TSBOW on HuggingFace](documents/README.md#-tsbow-on-huggingface) section.
 
+The comparison between different datasets are described in [Datasets](documents/README.md#-datasets) section.
 
 
 <!-- MARK: Baselines -->
