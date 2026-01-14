@@ -334,7 +334,7 @@ By completing the form below, users acknowledge and agree that <b>the dataset wi
 
 <b>2. Requirement Email</b>
 - The subject format: [TSBOW Access Requirement] {Your Name} - {Affiliation}
-- The email body includes your HuggingFace information (username and email).
+- The email body includes your <b>HuggingFace account information</b> (username and email). We will verify this information against the access requirements on Hugging Face before approval.
 - Send email to our address: <b>automation.skku@gmail.com</b>
 
 <b>3. Send Request on HuggingFace</b>
