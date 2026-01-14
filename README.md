@@ -65,7 +65,7 @@ __        _______ _     ____ ___  __  __ _____
 <div align='center'>
     <b>Corresponding Author</b>: jwjeon@skku.edu
     <br>
-    <b>Contact for Dataset</b>: {ngochdm, duongtran, phlong}@skku.edu
+    <b>Contact for Dataset</b>: jwjeon@skku.edu, ngochdm@skku.edu, automation.skku@gmail.com
 </div>
 
 
