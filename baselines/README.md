@@ -218,6 +218,32 @@ done
 
 
 
+<!-- MARK: Structures 🗃️-->
+
+## 🗜️ Directory Structures for training models
+
+```
+TSBOW/
+├─ train/
+│  ├─ images/
+│  ├─ labels/
+│
+├─ val/
+│  ├─ images/
+│  ├─ labels/
+│
+├─ test_public/
+│  ├─ images/
+│  ├─ labels/
+│
+├─ TSBOW.yaml
+├─ class.txt
+├─ train.txt
+├─ val.txt
+├─ test_public.txt
+```
+
+
 <!-- MARK: References -->
 
 ## 📚 References
