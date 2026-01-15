@@ -13,7 +13,7 @@ def download_TSBOW(args):
     # Download csv metadata
     if args.type == "metadata":
         hub_paths = [
-            # VIDEO_ID, SCENARIO, DAYTIME, WEATHER, SCALE, ROADTYPE, DURATION, FPS, ROI_DET, ROI_TRACK
+            # SCENARIO, DAYTIME, WEATHER, SCALE, ROADTYPE, VIDEO_ID, DURATION, ROI
             f"metadata/{args.repo_id}_info.csv",
 
             # VideoID for each attribute
