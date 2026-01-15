@@ -38,7 +38,7 @@ where
 ### Metadata Format
 
 <!-- TSBOW_info.csv -->
-The [CSV file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/tree/main/metadata/TSBOW_info.csv) provides metadata for each videos, including: scenario, daytime, weather, scale, roadtype, video_id, total_duration, and ROI zone. 
+The [CSV file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/blob/main/metadata/TSBOW_info.csv) provides metadata for each videos, including: scenario, daytime, weather, scale, roadtype, video_id, total_duration, and ROI zone. 
 
 - `SCENARIO` (char): one of four values: `r` (road), `i` (intersection), `s` (special cases), `d` (disaster).
 - `DAYTIME` (char): `d` (day), `n` (night).
@@ -51,10 +51,10 @@ The [CSV file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/tree/main/metad
 
 
 <!-- TSBOW.yaml -->
-The [YAML file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/tree/main/metadata/TSBOW.yaml) provides information for training models on training and validation set. 
+The [YAML file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/blob/main/metadata/TSBOW.yaml) provides information for training models on training and validation set. 
 
 - `path` (string): path to dataset.
-- `train`, `val`, `test` (string): name of txt file containing list of train/val/test images.
+- `train`, `val`, `test` (string): name of txt file containing list of train/val/test images. These files are also provided in [metadata](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/tree/main/metadata) folder.
 - `names`: a list of object categories and their indexes. The order of class list is according to the order of class name in `class.txt`.
 
 
