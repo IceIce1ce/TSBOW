@@ -5,6 +5,9 @@
 
 ## 🚗 TSBOW on HuggingFace
 
+Comprehensive, annotated dataset for object detection. This dataset consists of over 32 hours of real-world traffic data across 71 CCTV and 1 additional color cameras, spanning annual weather conditions. 
+The demo videos for each attribute are provided in [TSBOW_scenes](https://skkuautolab.github.io/TSBOW/TSBOW_scenes.html) website.
+
 ### Video Format
 
 - Video Standard: mp4 (H.265)
