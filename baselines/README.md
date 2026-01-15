@@ -236,7 +236,7 @@ TSBOW/
 │  ├─ images/
 │  └─ labels/
 │
-├─ class.txt
+├─ classes.txt
 ├─ train.txt
 ├─ val.txt
 ├─ test_public.txt

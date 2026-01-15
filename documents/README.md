@@ -61,10 +61,6 @@ The [YAML file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/blob/main/meta
 - `names`: a list of object categories and their indexes. The order of class list is according to the order of class name in `class.txt`.
 
 
-<!-- class.txt -->
-The [class.txt](./classes.txt) provides a list of annotated object categories. Each row is an object class indexed from 0.
-
-
 
 ### Directory Structure
 
@@ -77,6 +73,7 @@ The [class.txt](./classes.txt) provides a list of annotated object categories. E
 - **Others**:
     - `comparison.zip`: annotations of datasets' comparison in Experiment section, include images and labels.
     - `TSBOW_info.csv`: metadata file.
+    - `classes.txt`: a list of annotated object categories.
 
 
 
