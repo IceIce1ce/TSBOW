@@ -226,21 +226,21 @@ done
 TSBOW/
 ├─ train/
 │  ├─ images/
-│  ├─ labels/
+│  └─ labels/
 │
 ├─ val/
 │  ├─ images/
-│  ├─ labels/
+│  └─ labels/
 │
 ├─ test_public/
 │  ├─ images/
-│  ├─ labels/
+│  └─ labels/
 │
-├─ TSBOW.yaml
 ├─ class.txt
 ├─ train.txt
 ├─ val.txt
 ├─ test_public.txt
+└─ TSBOW.yaml
 ```
 
 
