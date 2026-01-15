@@ -19,11 +19,8 @@ def download_TSBOW(args):
             # VideoID for each attribute
             # f"metadata/{args.repo_id}_listID.json"
 
-            # YAML and TXT files for training
+            # YAML file
             f"metadata/{args.repo_id}.yaml",
-            f"metadata/train.txt",
-            f"metadata/val.txt",
-            f"metadata/test_public.txt",
         ]
 
         for hub_path in hub_paths:
@@ -68,7 +65,10 @@ def download_TSBOW(args):
     # Download annotations
     elif args.type == "annotations":
         # annotation.zip contains images/ and labels/ folders
-        hub_paths = ["train/annotations.zip", "val/annotations.zip", "test_public/annotations.zip"]
+        hub_paths = [
+            "train/annotations.zip", "val/annotations.zip", "test_public/annotations.zip",
+            "metadata/train.txt", "metadata/val.txt", "metadata/test_public.txt",
+        ]
 
         for hub_path in hub_paths:
             hf_hub_download(
