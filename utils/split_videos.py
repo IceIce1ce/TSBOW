@@ -2,6 +2,10 @@ import os
 import shlex
 import subprocess
 
+"""
+CONVERT TSBOW_info.csv to JSON format before using these functions.
+"""
+
 
 # Split 1 video into 3 parts: test - val - train
 def split_video_to_test_val_train(input_directory, video_metadata, video_name, train_vid_path, val_vid_path, test_vid_path):
@@ -27,7 +31,6 @@ def split_video_to_test_val_train(input_directory, video_metadata, video_name, t
             data4video = data
             break 
 
-    # print(video_id)
     video_duration = data4video["DURATION"]
     
     if video_duration > 480:

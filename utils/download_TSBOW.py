@@ -15,12 +15,11 @@ def download_TSBOW(args):
         hub_paths = [
             # SCENARIO, DAYTIME, WEATHER, SCALE, ROADTYPE, VIDEO_ID, DURATION, ROI
             f"metadata/{args.repo_id}_info.csv",
-
-            # VideoID for each attribute
-            # f"metadata/{args.repo_id}_listID.json"
-
             # YAML file
             f"metadata/{args.repo_id}.yaml",
+
+            # VideoID for each attribute
+            # f"metadata/{args.repo_id}_listID.json"            
         ]
 
         for hub_path in hub_paths:
