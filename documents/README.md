@@ -72,7 +72,7 @@ The [YAML file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/blob/main/meta
 - **Others**:
     - `comparison.zip`: annotations of datasets' comparison in Experiment section, include images and labels.
     - `TSBOW_info.csv`: metadata file.
-    - `classes.txt`: a list of annotated object categories.
+    - `classes.txt`: a list of annotated object categories. Class definition is mentioned in [TSBOW_Class_Definition](TSBOW_Class_Definition.pdf).
 
 
 ### Duration splits
