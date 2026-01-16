@@ -7,6 +7,7 @@
 
 Comprehensive, annotated dataset for object detection. This dataset consists of over 32 hours of real-world traffic data across 71 CCTV and 1 additional color cameras, spanning annual weather conditions ([See Demo Videos](https://skkuautolab.github.io/TSBOW/TSBOW_scenes.html)).
 
+
 ### Video Format
 
 - Video Standard: mp4 (H.265)
@@ -60,7 +61,6 @@ The [YAML file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/blob/main/meta
 - `names`: a list of object categories and their indexes. The order of class list is according to the order of class name in `class.txt`.
 
 
-
 ### Directory Structure
 
 - **Train/Val/Test_Public**: 
@@ -73,6 +73,15 @@ The [YAML file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/blob/main/meta
     - `comparison.zip`: annotations of datasets' comparison in Experiment section, include images and labels.
     - `TSBOW_info.csv`: metadata file.
     - `classes.txt`: a list of annotated object categories.
+
+
+### Duration splits
+
+| Total Duration    | Test      | Val       | Train     | #videos   |
+| :---:             | :---:     | :---:     | :---:     | :---:     |
+| 8 - 10 minutes    | 5 mins    | 2 mins    | <= 3 mins |   |
+| 6 - 8 minutes     | 4 mins    | 1.5 mins  | <= 2.5mins| |
+| shorter 6 minutes | 3 mins    | 1 mins    | <= 2 mins | |
 
 
 
