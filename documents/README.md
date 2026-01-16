@@ -79,9 +79,9 @@ The [YAML file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/blob/main/meta
 
 | Total Duration    | Test      | Val       | Train     | #videos   |
 | :---:             | :---:     | :---:     | :---:     | :---:     |
-| 8 - 10 minutes    | 5 mins    | 2 mins    | <= 3 mins |   |
-| 6 - 8 minutes     | 4 mins    | 1.5 mins  | <= 2.5mins| |
-| shorter 6 minutes | 3 mins    | 1 mins    | <= 2 mins | |
+| 8 - 10 minutes    | 5 mins    | 2 mins    | <= 3 mins | 188       |
+| 6 - 8 minutes     | 4 mins    | 1.5 mins  | <= 2.5mins| 7         |
+| shorter 6 minutes | 3 mins    | 1 mins    | <= 2 mins | 3         |
 
 
 
