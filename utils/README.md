@@ -32,5 +32,12 @@ or run the [bash file](download_TSBOW.sh):
 bash download_TSBOW.sh
 ```
 
+**Library requirement**: `huggingface_hub`
+
+```
+!pip install huggingface_hub
+```
+
+
 **Notes:** 
 The first public version, we only provide 30% of the test set.
