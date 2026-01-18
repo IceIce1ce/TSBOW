@@ -88,7 +88,6 @@ __        _______ _     ____ ___  __  __ _____
 
 <br>
 
-**(UPDATING....** All links would be updated **on the conference day)**.
 
 ![TSBOW Dataset Scenes](images/Figure_All_Scenes.png)
 
