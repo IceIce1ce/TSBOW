@@ -147,7 +147,7 @@ python validation.py \
     -r "EVALUATION/yolov12x_1280"
 ```
 
-
+<!-- Results -->
 Model performances after training 100 epochs and validating with imgsz=1280 on manually labeled test set.
 | Method     | Precision | Recall   | mAP50     | mAP50–95  |
 |:----------:|:---------:|:--------:|:---------:|:---------:|
