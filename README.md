@@ -351,12 +351,17 @@ Our repository is licensed under the **Apache 2.0 License**. However, if you use
 
 **If our research is helpful to you, please cite our paper using the following BibTeX format**
 
+We will update the citation again after the AAAI-26 proceedings publication.
+
 ```bibtex
-@article{Huynh_TSBOW_AAAI_2026,
-    title   = {TSBOW: Traffic Surveillance Benchmark for Occluded Vehicles Under Various Weather Conditions},
-    author  = {Ngoc Doan-Minh Huynh, Duong Nguyen-Ngoc Tran, Long Hoang Pham, Tai Huu-Phuong Tran, Hyung-Joon Jeon, Huy-Hung Nguyen, Duong Khac Vu, Hyung-Min Jeon, Son Hong Phan, Quoc Pham-Nam Ho, Chi Dai Tran, Trinh Le Ba Khanh, Jae Wook Jeon},
-    journal = {AAAI 2026},
-    year    = {2025}
+@misc{huynh2026tsbowtrafficsurveillancebenchmark,
+      title={TSBOW: Traffic Surveillance Benchmark for Occluded Vehicles Under Various Weather Conditions}, 
+      author={Ngoc Doan-Minh Huynh and Duong Nguyen-Ngoc Tran and Long Hoang Pham and Tai Huu-Phuong Tran and Hyung-Joon Jeon and Huy-Hung Nguyen and Duong Khac Vu and Hyung-Min Jeon and Son Hong Phan and Quoc Pham-Nam Ho and Chi Dai Tran and Trinh Le Ba Khanh and Jae Wook Jeon},
+      year={2026},
+      eprint={2602.05414},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2602.05414}, 
 }
 ```
 
