@@ -84,6 +84,14 @@ Please visit their installation guides for more detailed setup options.
 3. For manually labels, we use the [X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling) tools. 
 The installation and guideline are mentioned in [Documents](../documents/Document_XAnylabeling_ObjectDetection.pdf).
 
+<details>
+    <summary> Quick Installation </summary>
+
+    ```bash
+    bash install_Xanylabeling.sh
+    ```
+</details>
+
 
 
 <!-- MARK: Training -->
