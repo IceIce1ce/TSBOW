@@ -259,6 +259,7 @@ The comparison between different datasets are described in [Datasets](documents/
 | 2024  |  arXiV  | YOLOv11: An Overview of the Key Architectural Enhancements | [paper](https://arxiv.org/abs/2410.17725) | YOLOv11 |
 | 2024  |  CVPR   | DETRs Beat YOLOs on Real-time Object Detection | [paper](https://openaccess.thecvf.com/content/CVPR2024/html/Zhao_DETRs_Beat_YOLOs_on_Real-time_Object_Detection_CVPR_2024_paper.html) | RT-DETR |
 | 2025  |  arXiV  | A Breakdown of the Key Architectural Features | [paper](https://arxiv.org/abs/2502.14740) | YOLOv12 |
+| 2025  |  arXiV  | YOLO26: Key Architectural Enhancements and Performance Benchmarking for Real-Time Object Detection | [paper](https://arxiv.org/abs/2509.25164) | YOLO26 |
 
 
 The source codes for baseline models are provided in [Baselines](baselines/) folder. 
