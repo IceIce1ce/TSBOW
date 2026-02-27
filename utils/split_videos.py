@@ -3,7 +3,7 @@ import shlex
 import subprocess
 
 """
-CONVERT TSBOW_info.csv to JSON format before using these functions.
+Notes: CONVERT TSBOW_info.csv to JSON format before using these functions.
 """
 
 
@@ -60,6 +60,7 @@ def split_video_to_test_val_train(input_directory, video_metadata, video_name, t
                     " -c copy " + val_vid_path + video_name
         ffmpeg_test  = "ffmpeg -ss 00:00:00 -to 00:03:00 -i " + input_directory + video_name + \
                     " -c copy " + test_vid_path + video_name
+    
     return [ffmpeg_train, ffmpeg_val, ffmpeg_test]
 
 
@@ -69,7 +70,7 @@ def split_videos_3_parts(input_directory, output_directory, video_metadata):
     Split all videos into 3 subsets: train, val, test
 
     Parameters:
-        input_directory     (string): path to raw videos (10 mins)
+        input_directory     (string): path to raw videos (<= 10 mins)
         output_directory    (string): path to dataset folder
         video_metadata      (json)  : metadata for videos in json format
     """
