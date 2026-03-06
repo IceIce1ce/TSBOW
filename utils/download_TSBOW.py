@@ -5,8 +5,6 @@ from huggingface_hub import hf_hub_download, snapshot_download, login
 # MARK: Download
 
 def download_TSBOW(args):
-    print("Updating...")
-
     repo_id = f"SKKUAutoLab/{args.repo_id}"  #f"SKKUAutoLab/TSBOW/{args.repo_id}"
 
 
