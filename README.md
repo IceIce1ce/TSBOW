@@ -373,10 +373,10 @@ We will update the citation again after the AAAI-26 proceedings publication.
 
 <!-- ![](https://img.shields.io/github/downloads/SKKUAutoLab/TSBOW/total.svg?style=for-the-badge) -->
 
-<div style="position: relative; display: inline-block;">
+<!-- <div style="position: relative; display: inline-block;">
   <img src="https://api.star-history.com/svg?repos=SKKUAutoLab/TSBOW&type=Date" alt="Star History Graph">
   <img src="icons/TSBOW_icon_white_BG.png" style="position: absolute; top: 10px; left: 310px; width: 30px; height: 30px;" alt="Custom Avatar">
-</div>
+</div> -->
 
 <div align="center"><a href="#top">🔝 Back to Top</a></div>
 
