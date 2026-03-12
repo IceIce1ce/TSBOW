@@ -83,6 +83,7 @@ Please visit their installation guides for more detailed setup options.
 
 3. For manually labels, we use the [X-AnyLabeling](https://github.com/CVHub520/X-AnyLabeling) tools. 
 The installation and guideline are mentioned in [Documents](../documents/Document_XAnylabeling_ObjectDetection.pdf).
+The document uses X-Anylabeling version 3.3.8. If you use other versions, please follow their guideline in [X-AnyLabeling/get_started.md](https://github.com/CVHub520/X-AnyLabeling/blob/main/docs/en/get_started.md).
 
 <details>
     <summary> Quick Installation </summary>
