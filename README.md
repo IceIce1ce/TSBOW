@@ -354,9 +354,22 @@ Our repository is licensed under the **Apache 2.0 License**. However, if you use
 
 **If our research is helpful to you, please cite our paper using the following BibTeX format**
 
-We will update the citation again after the AAAI-26 proceedings publication.
-
 ```bibtex
+@article{Huynh2026TSBOW, 
+    title={TSBOW – Traffic Surveillance Benchmark for Occluded Vehicles Under Various Weather Conditions}, 
+    volume={40}, 
+    url={https://ojs.aaai.org/index.php/AAAI/article/view/37439}, 
+    DOI={10.1609/aaai.v40i7.37439}, 
+    number={7}, 
+    journal={Proceedings of the AAAI Conference on Artificial Intelligence}, 
+    author={Huynh, Ngoc Doan-Minh and Tran, Duong Nguyen-Ngoc and Pham, Long Hoang and Tran, Tai Huu-Phuong and Jeon, Hyung-Joon and Nguyen, Huy-Hung and Khac Vu, Duong and Jeon, Hyung-Min and Phan, Son Hong and Pham-Nam Ho, Quoc and Tran, Chi Dai and Khanh, Trinh Le Ba and Jeon, Jae Wook}, 
+    year={2026}, 
+    month={Mar.}, 
+    pages={5239-5247} 
+}
+```
+
+<!-- ```bibtex
 @misc{huynh2026tsbowtrafficsurveillancebenchmark,
       title={TSBOW: Traffic Surveillance Benchmark for Occluded Vehicles Under Various Weather Conditions}, 
       author={Ngoc Doan-Minh Huynh and Duong Nguyen-Ngoc Tran and Long Hoang Pham and Tai Huu-Phuong Tran and Hyung-Joon Jeon and Huy-Hung Nguyen and Duong Khac Vu and Hyung-Min Jeon and Son Hong Phan and Quoc Pham-Nam Ho and Chi Dai Tran and Trinh Le Ba Khanh and Jae Wook Jeon},
@@ -366,7 +379,7 @@ We will update the citation again after the AAAI-26 proceedings publication.
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2602.05414}, 
 }
-```
+``` -->
 
 
 <!-- MARK: Git Stats -->
