@@ -248,7 +248,7 @@ Our data formats are described in [TSBOW on HuggingFace](documents/README.md#-ts
 
 The comparison between different datasets are described in [Datasets](documents/README.md#-datasets) section.
 
-The **demo videos** are provided in [TSBOW Scenes](https://skkuautolab.github.io/TSBOW/TSBOW_scenes.html).
+The demo videos are provided in [TSBOW Scenes](https://skkuautolab.github.io/TSBOW/TSBOW_scenes.html). The UI for filtering scenes is provided in [Releases: TSBOW-Filter-Scenes_v1.1](https://github.com/SKKUAutoLab/TSBOW/releases/tag/FS_v1.1) on this repo.
 
 
 <!-- MARK: Baselines -->
