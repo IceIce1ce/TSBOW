@@ -356,7 +356,7 @@ Our repository is licensed under the **Apache 2.0 License**. However, if you use
 
 ```bibtex
 @article{Huynh2026TSBOW, 
-    title={TSBOW – Traffic Surveillance Benchmark for Occluded Vehicles Under Various Weather Conditions}, 
+    title={TSBOW: Traffic Surveillance Benchmark for Occluded Vehicles Under Various Weather Conditions}, 
     volume={40}, 
     url={https://ojs.aaai.org/index.php/AAAI/article/view/37439}, 
     DOI={10.1609/aaai.v40i7.37439}, 
