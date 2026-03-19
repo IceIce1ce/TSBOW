@@ -78,7 +78,7 @@ __        _______ _     ____ ___  __  __ _____
 
 <div align="center">
   <a href="https://skkuautolab.github.io/TSBOW/"><img src="https://img.shields.io/static/v1?label=TSBOW&message=Website&color=9a33fc&logo=githubpages" style="height: 25px;"></a>  
-  <a href="https://ojs.aaai.org/index.php/AAAI/issue/view/688#aaai-technical-track-on-computer-vision-iv"><img src="https://img.shields.io/static/v1?label=Proceedings&message=AAAI&color=green" style="height: 25px;"></a>  
+  <a href="https://ojs.aaai.org/index.php/AAAI/article/view/37439"><img src="https://img.shields.io/static/v1?label=Proceedings&message=AAAI&color=green" style="height: 25px;"></a>  
   <a href="https://arxiv.org/abs/2602.05414"><img src="https://img.shields.io/static/v1?label=Supplementary&message=arXiv&color=FF0066&logo=arxiv" style="height: 25px;"></a>  
   <br>
   <!-- <a href="https://docs.google.com/presentation/d/1Wd2alQk565YBZjTaoVdSrdDacb_ILhlXTOzTTP_tTt4/edit?usp=sharing"><img src="https://img.shields.io/static/v1?label=Slides&message=Presentation&color=fa9f1b&logo=googleslides" style="height: 25px;"></a>    -->
