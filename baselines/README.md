@@ -286,3 +286,25 @@ Thanks to the developers and contributors of the following open-source repositor
 - [YOLOv12](https://github.com/sunsmarterjie/yolov12): A model for object detection.
 
 Our repository is licensed under the **Apache 2.0 License**. However, if you use other components in your work, please follow their license.
+
+
+<!-- MARK: Citation -->
+
+## 🏅 Citation
+
+**If our research is helpful to you, please cite our paper using the following BibTeX format**
+
+```bibtex
+@article{Huynh2026TSBOW, 
+    title={TSBOW: Traffic Surveillance Benchmark for Occluded Vehicles Under Various Weather Conditions}, 
+    author={Huynh, Ngoc Doan-Minh and Tran, Duong Nguyen-Ngoc and Pham, Long Hoang and Tran, Tai Huu-Phuong and Jeon, Hyung-Joon and Nguyen, Huy-Hung and Khac Vu, Duong and Jeon, Hyung-Min and Phan, Son Hong and Pham-Nam Ho, Quoc and Tran, Chi Dai and Khanh, Trinh Le Ba and Jeon, Jae Wook}, 
+    journal={Proceedings of the AAAI Conference on Artificial Intelligence}, 
+    volume={40}, 
+    number={7}, 
+    url={https://ojs.aaai.org/index.php/AAAI/article/view/37439}, 
+    DOI={10.1609/aaai.v40i7.37439}, 
+    year={2026}, 
+    month={Mar.}, 
+    pages={5239-5247} 
+}
+```
