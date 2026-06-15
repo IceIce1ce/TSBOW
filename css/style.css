@@ -396,7 +396,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px; /* space between elements */
+  gap: 16px;
 }
 
 .footer-icon {
