@@ -10,6 +10,8 @@ Neon Palettes
     Neon Yellow	#FFCC00 
     Neon Orange	#FF6600 
     Neon Red	#FF0066
+    Green       #66FF33
+    Background  #041F30
 
 
 Navy Palettes (Ocean Depths)
@@ -22,7 +24,7 @@ Navy Palettes (Ocean Depths)
     Vibrant Green   #2ECC40
 
 
-Light Colors in Figure Background
+Light Colors (Figure Background)
     Alto            #d9d9d9
     Apricot Peach   #f8cbad
     Cadet Blue      #adb9ca
