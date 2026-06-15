@@ -3,109 +3,109 @@
 // MARK: Title - Synchronize hover 
 document.addEventListener('DOMContentLoaded', function() 
 {
-  const t1_T = document.querySelector('#tsbow-title .sync-tsbowT');
-  const t2_T = document.querySelector('#titleText .sync-tsbowT');
-  if (t1_T && t2_T) 
-  {
-    function addHighlight() 
+    const t1_T = document.querySelector('#tsbow-title .sync-tsbowT');
+    const t2_T = document.querySelector('#titleText .sync-tsbowT');
+    if (t1_T && t2_T) 
     {
-      t1_T.classList.add('highlight');
-      t2_T.classList.add('highlight');
+        function addHighlight() 
+        {
+            t1_T.classList.add('highlight');
+            t2_T.classList.add('highlight');
+        }
+        function removeHighlight() 
+        {
+            t1_T.classList.remove('highlight');
+            t2_T.classList.remove('highlight');
+        }
+        t1_T.addEventListener('mouseenter', addHighlight);
+        t1_T.addEventListener('mouseleave', removeHighlight);
+        t2_T.addEventListener('mouseenter', addHighlight);
+        t2_T.addEventListener('mouseleave', removeHighlight);
     }
-    function removeHighlight() 
-    {
-      t1_T.classList.remove('highlight');
-      t2_T.classList.remove('highlight');
-    }
-    t1_T.addEventListener('mouseenter', addHighlight);
-    t1_T.addEventListener('mouseleave', removeHighlight);
-    t2_T.addEventListener('mouseenter', addHighlight);
-    t2_T.addEventListener('mouseleave', removeHighlight);
-  }
 
-  const t1_S = document.querySelector('#tsbow-title .sync-tsbowS');
-  const t2_S = document.querySelector('#titleText .sync-tsbowS');
-  if (t1_S && t2_S) 
-  {
-    function addHighlight() 
+    const t1_S = document.querySelector('#tsbow-title .sync-tsbowS');
+    const t2_S = document.querySelector('#titleText .sync-tsbowS');
+    if (t1_S && t2_S) 
     {
-      t1_S.classList.add('highlight');
-      t2_S.classList.add('highlight');
+        function addHighlight() 
+        {
+            t1_S.classList.add('highlight');
+            t2_S.classList.add('highlight');
+        }
+        function removeHighlight() 
+        {
+            t1_S.classList.remove('highlight');
+            t2_S.classList.remove('highlight');
+        }
+        t1_S.addEventListener('mouseenter', addHighlight);
+        t1_S.addEventListener('mouseleave', removeHighlight);
+        t2_S.addEventListener('mouseenter', addHighlight);
+        t2_S.addEventListener('mouseleave', removeHighlight);
     }
-    function removeHighlight() 
-    {
-      t1_S.classList.remove('highlight');
-      t2_S.classList.remove('highlight');
+    
+    const t1_B = document.querySelector('#tsbow-title .sync-tsbowB');
+    const t2_B = document.querySelector('#titleText .sync-tsbowB');
+    if (t1_B && t2_B) {
+        function addHighlight() {
+            t1_B.classList.add('highlight');
+            t2_B.classList.add('highlight');
+        }
+        function removeHighlight() {
+            t1_B.classList.remove('highlight');
+            t2_B.classList.remove('highlight');
+        }
+        t1_B.addEventListener('mouseenter', addHighlight);
+        t1_B.addEventListener('mouseleave', removeHighlight);
+        t2_B.addEventListener('mouseenter', addHighlight);
+        t2_B.addEventListener('mouseleave', removeHighlight);
     }
-    t1_S.addEventListener('mouseenter', addHighlight);
-    t1_S.addEventListener('mouseleave', removeHighlight);
-    t2_S.addEventListener('mouseenter', addHighlight);
-    t2_S.addEventListener('mouseleave', removeHighlight);
-  }
-  
-  const t1_B = document.querySelector('#tsbow-title .sync-tsbowB');
-  const t2_B = document.querySelector('#titleText .sync-tsbowB');
-  if (t1_B && t2_B) {
-    function addHighlight() {
-      t1_B.classList.add('highlight');
-      t2_B.classList.add('highlight');
+    
+    const t1_O = document.querySelector('#tsbow-title .sync-tsbowO');
+    const t2_O = document.querySelector('#titleText .sync-tsbowO');
+    if (t1_O && t2_O) {
+        function addHighlight() {
+            t1_O.classList.add('highlight');
+            t2_O.classList.add('highlight');
+        }
+        function removeHighlight() {
+            t1_O.classList.remove('highlight');
+            t2_O.classList.remove('highlight');
+        }
+        t1_O.addEventListener('mouseenter', addHighlight);
+        t1_O.addEventListener('mouseleave', removeHighlight);
+        t2_O.addEventListener('mouseenter', addHighlight);
+        t2_O.addEventListener('mouseleave', removeHighlight);
     }
-    function removeHighlight() {
-      t1_B.classList.remove('highlight');
-      t2_B.classList.remove('highlight');
+    
+    const t1_W = document.querySelector('#tsbow-title .sync-tsbowW');
+    const t2_W = document.querySelector('#titleText .sync-tsbowW');
+    if (t1_W && t2_W) {
+        function addHighlight() {
+            t1_W.classList.add('highlight');
+            t2_W.classList.add('highlight');
+        }
+        function removeHighlight() {
+            t1_W.classList.remove('highlight');
+            t2_W.classList.remove('highlight');
+        }
+        t1_W.addEventListener('mouseenter', addHighlight);
+        t1_W.addEventListener('mouseleave', removeHighlight);
+        t2_W.addEventListener('mouseenter', addHighlight);
+        t2_W.addEventListener('mouseleave', removeHighlight);
     }
-    t1_B.addEventListener('mouseenter', addHighlight);
-    t1_B.addEventListener('mouseleave', removeHighlight);
-    t2_B.addEventListener('mouseenter', addHighlight);
-    t2_B.addEventListener('mouseleave', removeHighlight);
-  }
-  
-  const t1_O = document.querySelector('#tsbow-title .sync-tsbowO');
-  const t2_O = document.querySelector('#titleText .sync-tsbowO');
-  if (t1_O && t2_O) {
-    function addHighlight() {
-      t1_O.classList.add('highlight');
-      t2_O.classList.add('highlight');
-    }
-    function removeHighlight() {
-      t1_O.classList.remove('highlight');
-      t2_O.classList.remove('highlight');
-    }
-    t1_O.addEventListener('mouseenter', addHighlight);
-    t1_O.addEventListener('mouseleave', removeHighlight);
-    t2_O.addEventListener('mouseenter', addHighlight);
-    t2_O.addEventListener('mouseleave', removeHighlight);
-  }
-  
-  const t1_W = document.querySelector('#tsbow-title .sync-tsbowW');
-  const t2_W = document.querySelector('#titleText .sync-tsbowW');
-  if (t1_W && t2_W) {
-    function addHighlight() {
-      t1_W.classList.add('highlight');
-      t2_W.classList.add('highlight');
-    }
-    function removeHighlight() {
-      t1_W.classList.remove('highlight');
-      t2_W.classList.remove('highlight');
-    }
-    t1_W.addEventListener('mouseenter', addHighlight);
-    t1_W.addEventListener('mouseleave', removeHighlight);
-    t2_W.addEventListener('mouseenter', addHighlight);
-    t2_W.addEventListener('mouseleave', removeHighlight);
-  }
 
-  // Highlight all title letters when hovering the main page logo
-  const pageLogo = document.querySelector('img[src*="TSBOW_icon_white_BG.png"]');
-  const letterSelectors = '.sync-tsbowT, .sync-tsbowS, .sync-tsbowB, .sync-tsbowO, .sync-tsbowW';
-  if (pageLogo) {
-    const letters = document.querySelectorAll(letterSelectors);
-    pageLogo.addEventListener('mouseenter', () => {
-      letters.forEach(el => el.classList.add('highlight'));
-    });
-    pageLogo.addEventListener('mouseleave', () => {
-      letters.forEach(el => el.classList.remove('highlight'));
-    });
-  }
+    // Highlight all title letters when hovering the main page logo
+    const pageLogo = document.querySelector('img[src*="TSBOW_icon_white_BG.png"]');
+    const letterSelectors = '.sync-tsbowT, .sync-tsbowS, .sync-tsbowB, .sync-tsbowO, .sync-tsbowW';
+    if (pageLogo) {
+        const letters = document.querySelectorAll(letterSelectors);
+        pageLogo.addEventListener('mouseenter', () => {
+            letters.forEach(el => el.classList.add('highlight'));
+        });
+        pageLogo.addEventListener('mouseleave', () => {
+            letters.forEach(el => el.classList.remove('highlight'));
+        });
+    }
 });
 
 
