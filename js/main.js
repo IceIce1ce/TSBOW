@@ -284,20 +284,19 @@ window.addEventListener("scroll", () => {
 // MARK: Theme
 
 const themeToggle = document.getElementById("themeToggle");
-const themeIcon = document.getElementById("themeIcon");
 
 function setTheme(theme) {
-    document.body.classList.toggle("theme-night", theme === "night");
-    localStorage.setItem("theme", theme);
+    const isNight = theme === "night";
 
-    themeIcon.src = theme === "night"
-        ? "icons/theme_day.png"
-        : "icons/theme_night.png";
+    document.body.classList.toggle("theme-night", isNight);
+    localStorage.setItem("theme", theme);
 
     themeToggle.setAttribute(
         "aria-label",
-        theme === "night" ? "Switch to day theme" : "Switch to night theme"
+        isNight ? "Switch to day theme" : "Switch to night theme"
     );
+
+    themeToggle.setAttribute("aria-pressed", String(isNight));
 }
 
 const savedTheme = localStorage.getItem("theme") || "day";
