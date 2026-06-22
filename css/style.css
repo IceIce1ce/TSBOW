@@ -621,5 +621,21 @@ body.theme-night .theme-accent-text {
   color: #AFCBFF;
 }
 
+/* day: .datasets-comparison-details */
+body.theme-night .datasets-comparison-details {
+  background-color: #0f1b2d;
+  border-color: #24364f;
+  color: #eaf2ff;
+}
+
+body.theme-night .datasets-comparison-details[open] {
+  background-color: #0f1b2d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+body.theme-night .datasets-comparison-details summary {
+  color: #eaf2ff;
+}
+
 
 /* End of style.css */
