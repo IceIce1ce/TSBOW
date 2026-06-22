@@ -637,5 +637,10 @@ body.theme-night .datasets-comparison-details summary {
   color: #eaf2ff;
 }
 
+body.theme-night .datasets-comparison-details .w3-white {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
 
 /* End of style.css */
