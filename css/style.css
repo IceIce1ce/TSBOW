@@ -364,15 +364,25 @@ body {
 }
 
 .header-left .title {
-  margin: 11px;
-  margin-top: 30px;
-  /* padding: 0; */
+  margin: 0 0 0 10px;
   font-size: 45px;
   font-weight: bold;
   line-height: 45px;
   display: flex;
   align-items: center;
   height: 45px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+#scrollHeader nav {
+  display: flex;
+  align-items: center;
 }
 
 
