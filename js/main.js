@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function()
     }
 
     // Highlight all title letters when hovering the main page logo
-    const pageLogo = document.querySelector('img[src*="TSBOW_icon_white_BG.png"]');
+    const pageLogo = document.querySelector('img[src*="TSBOW_icon_no_BG_white_border.png"]');
     const letterSelectors = '.sync-tsbowT, .sync-tsbowS, .sync-tsbowB, .sync-tsbowO, .sync-tsbowW';
     if (pageLogo) {
         const letters = document.querySelectorAll(letterSelectors);
