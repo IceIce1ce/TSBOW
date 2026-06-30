@@ -34,7 +34,10 @@ def download_TSBOW(args):
     # Download videos
     elif args.type == "videos":
         # FOLDER: videos/
-        # hub_paths = ["train/videos/", "val/videos/"]
+        # hub_paths = [
+        #     "v1.0.0_official_release/train/videos/", 
+        #     "v1.0.0_official_release/val/videos/"
+        # ]
         
         # for hub_path in hub_paths:
         #     snapshot_download(
@@ -46,7 +49,10 @@ def download_TSBOW(args):
         #     print(f"Downloaded directory '{hub_path}' from {repo_id} to {args.output_dir}")
 
         # FILE: videos.zip
-        hub_paths = ["train/videos.zip", "val/videos.zip"]
+        hub_paths = [
+            "v1.0.0_official_release/train/videos.zip", 
+            "v1.0.0_official_release/val/videos.zip"
+        ]
 
         for hub_path in hub_paths:
             hf_hub_download(
@@ -63,8 +69,13 @@ def download_TSBOW(args):
     elif args.type == "annotations":
         # annotation.zip contains images/ and labels/ folders
         hub_paths = [
-            "train/annotations.zip", "val/annotations.zip", "test_public/annotations.zip",
-            "metadata/train.txt", "metadata/val.txt", "metadata/test_public.txt",
+            "v1.0.0_official_release/train/annotations.zip", 
+            "v1.0.0_official_release/val/annotations.zip", 
+            "v1.0.0_official_release/test_public/annotations.zip",
+
+            "v1.0.0_official_release/train.txt", 
+            "v1.0.0_official_release/val.txt", 
+            "v1.0.0_official_release/test_public.txt",
         ]
 
         for hub_path in hub_paths:
@@ -80,7 +91,10 @@ def download_TSBOW(args):
 
     # Download semi-labels
     elif args.type == "semilabels":
-        hub_paths = ["train/semilabels.zip", "val/semilabels.zip"]
+        hub_paths = [
+            "v1.0.0_official_release/train/semilabels.zip", 
+            "v1.0.0_official_release/val/semilabels.zip"
+        ]
 
         for hub_path in hub_paths:
             hf_hub_download(
@@ -136,9 +150,9 @@ def parse_args():
     parser.add_argument(
         "--type",
         type=str,
-        choices=["videos", "annotations", "metadata", "semilabels", "comparison", "all"],
+        choices=["videos", "annotations", "metadata", "semilabels", "comparison", "official_release", "all"],
         required=True,
-        help="Type of data to download (videos, annotations, metadata, semilabels, comparison, all)",
+        help="Type of data to download (videos, annotations, metadata, semilabels, comparison, official_release, all)",
     )
 
     parser.add_argument(
