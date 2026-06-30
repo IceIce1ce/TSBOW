@@ -120,6 +120,27 @@ def download_TSBOW(args):
         print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
 
+    # Download official_release set
+    elif args.type == "official_release":
+        other_version_list = [
+            "v1.0.1_camera_held_out/"
+        ]
+
+        ignore_patterns = [
+            f"{folder_name}/*"
+            for folder_name in other_version_list
+        ]
+
+        snapshot_download(
+            repo_id         = repo_id,
+            repo_type       = "dataset",
+            local_dir       = args.output_dir,
+            ignore_patterns = ignore_patterns,
+            resume_download = True,
+        )
+        print(f"Downloaded official release version from {repo_id} to {args.output_dir}")
+    
+
     # Download entire dataset
     elif args.type == "all":
         snapshot_download(
