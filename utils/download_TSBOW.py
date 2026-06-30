@@ -22,11 +22,11 @@ def download_TSBOW(args):
 
         for hub_path in hub_paths:
             hf_hub_download(
-                repo_id=repo_id,
-                repo_type="dataset",
-                filename=hub_path,
-                local_dir=args.output_dir,
-                resume_download=True,
+                repo_id         = repo_id,
+                repo_type       = "dataset",
+                filename        = hub_path,
+                local_dir       = args.output_dir,
+                resume_download = True,
             )
             print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
@@ -56,11 +56,11 @@ def download_TSBOW(args):
 
         for hub_path in hub_paths:
             hf_hub_download(
-                repo_id=repo_id,
-                repo_type="dataset",
-                filename=hub_path,
-                local_dir=args.output_dir,
-                resume_download=True,
+                repo_id         = repo_id,
+                repo_type       = "dataset",
+                filename        = hub_path,
+                local_dir       = args.output_dir,
+                resume_download = True,
             )
             print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
@@ -80,11 +80,11 @@ def download_TSBOW(args):
 
         for hub_path in hub_paths:
             hf_hub_download(
-                repo_id=repo_id,
-                repo_type="dataset",
-                filename=hub_path,
-                local_dir=args.output_dir,
-                resume_download=True,
+                repo_id         = repo_id,
+                repo_type       = "dataset",
+                filename        = hub_path,
+                local_dir       = args.output_dir,
+                resume_download = True,
             )
             print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
@@ -98,11 +98,11 @@ def download_TSBOW(args):
 
         for hub_path in hub_paths:
             hf_hub_download(
-                repo_id=repo_id,
-                repo_type="dataset",
-                filename=hub_path,
-                local_dir=args.output_dir,
-                resume_download=True,
+                repo_id         = repo_id,
+                repo_type       = "dataset",
+                filename        = hub_path,
+                local_dir       = args.output_dir,
+                resume_download = True,
             )
             print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
@@ -111,11 +111,11 @@ def download_TSBOW(args):
     elif args.type == "comparison":
         hub_path = "v1.0.0_official_release/comparison.zip"
         hf_hub_download(
-                repo_id=repo_id,
-                repo_type="dataset",
-                filename=hub_path,
-                local_dir=args.output_dir,
-                resume_download=True,
+                repo_id         = repo_id,
+                repo_type       = "dataset",
+                filename        = hub_path,
+                local_dir       = args.output_dir,
+                resume_download = True,
             )
         print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
@@ -123,10 +123,10 @@ def download_TSBOW(args):
     # Download entire dataset
     elif args.type == "all":
         snapshot_download(
-            repo_id=repo_id,
-            repo_type="dataset",
-            local_dir=args.output_dir,
-            resume_download=True,
+            repo_id         = repo_id,
+            repo_type       = "dataset",
+            local_dir       = args.output_dir,
+            resume_download = True,
         )
         print(f"Downloaded entire dataset from {repo_id} to {args.output_dir}")
     
