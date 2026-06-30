@@ -1,13 +1,14 @@
-######################################
-############ INSTRUCTIONS ############
-######################################
-# Select the data type that you need #
-#  - videos: .mp4 files              #
-#  - annotations: images & labels    #
-#  - metadata: json file             #
-#  - semilabels: semi-labels         #
-#  - all: all files and folders      #
-######################################
+####################################################################
+########################### INSTRUCTIONS ###########################
+####################################################################
+# Select the data type that you need                               #
+#  - videos: .mp4 files                                            #
+#  - annotations: images & labels                                  #
+#  - metadata: json file                                           #
+#  - semilabels: semi-labels                                       #
+#  - official_release: split set according to frame_id             #
+#  - all: all files and folders                                    #
+####################################################################
 
 # If lib:huggingface_hub is missing, run the command below to download `huggingface_hub` 
 # !pip install huggingface_hub
@@ -15,8 +16,8 @@
 REPO_ID='TSBOW'
 OUT_DIR='NGOCHDM/Dataset/TSBOW/'
 
-# Select one of types: videos, annotations, metadata, semilabels, comparison, all
-DATA_TYPE='all'
+# Select one of types: videos, annotations, metadata, semilabels, comparison, official_release, all
+DATA_TYPE='official_release'
 
 python download_TSBOW.py        \
     --repo_id       $REPO_ID    \
