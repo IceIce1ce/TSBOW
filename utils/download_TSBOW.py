@@ -109,7 +109,7 @@ def download_TSBOW(args):
 
     # Download comparison set (4 scenes in [Experiments] datasets' comparison)
     elif args.type == "comparison":
-        hub_path = "comparison.zip"
+        hub_path = "v1.0.0_official_release/comparison.zip"
         hf_hub_download(
                 repo_id=repo_id,
                 repo_type="dataset",
