@@ -106,6 +106,7 @@ def download_TSBOW(args):
             )
             print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
+
     # Download comparison set (4 scenes in [Experiments] datasets' comparison)
     elif args.type == "comparison":
         hub_path = "comparison.zip"
@@ -117,6 +118,7 @@ def download_TSBOW(args):
                 resume_download=True,
             )
         print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
+
 
     # Download entire dataset
     elif args.type == "all":
