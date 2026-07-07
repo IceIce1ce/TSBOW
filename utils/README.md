@@ -12,11 +12,13 @@ The [download_TSBOW.py](download_TSBOW.py) provides the python source code for d
 
 The download options are: *videos*, *annotations*, *metadata*, *semilabels*, *comparison*, *all*.
 You can select one of them to download the data type.
-- *videos*: &emsp;&emsp; &emsp;             the .mp4 files
-- *annotations*:&emsp;         the manually labeled images and annotations
-- *metadata*:&emsp;&emsp;                  the json file storing metadata
-- *semilabels*: &emsp;&ensp;       the semi-labeled annotations (txt files)
-- *comparison*:&emsp;         the manually labeled images and annotations for Datasets' Comparison in Experiments
+- *videos*: &emsp;&emsp; &emsp; the .mp4 files (official_release version)
+- *annotations*:&emsp;          the manually labeled images and annotations (official_release version)
+- *metadata*:&emsp;&emsp;       the json file storing metadata (official_release version)
+- *semilabels*: &emsp;&ensp;    the semi-labeled annotations (txt files)
+- *comparison*:&emsp;           the manually labeled images and annotations for Datasets' Comparison in Experiments
+- *official_release*:&emsp;     the official release version (according to the AAAI-26 paper)
+- *camera_held_out*:&emsp;      the camera_held_out version
 - *all*: &emsp;&emsp;&emsp;&emsp;&emsp; all files and folders
 <!-- &nbsp; 1 space     &ensp; 2 spaces -->
 <!-- &emsp; 4 spaces     -->
@@ -26,7 +28,7 @@ The [download_TSBOW.py](download_TSBOW.py) can be executed via command:
 python download_TSBOW.py                        \
     --repo_id       'TSBOW'                     \
     --output_dir    'NGOCHDM/Dataset/TSBOW/'    \
-    --type          'all'
+    --type          'official_release'
 ```
 
 or run the [bash file](download_TSBOW.sh):
