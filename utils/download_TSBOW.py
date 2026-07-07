@@ -135,7 +135,8 @@ def download_TSBOW(args):
 
     # Download camera_held_out set
     elif args.type == "camera_held_out":
-        hub_path = f"{DATASET_VERSIONS["camera_held_out"]}/"
+        data_version_name = DATASET_VERSIONS["camera_held_out"]
+        hub_path = f"{data_version_name}/"
 
         snapshot_download(
             repo_id         = repo_id,
@@ -162,8 +163,9 @@ def download_TSBOW(args):
 
     # Download official_release set
     elif args.type == "official_release":
+        data_version_name = DATASET_VERSIONS["camera_held_out"]
         other_version_list = [
-            f"{DATASET_VERSIONS["camera_held_out"]}/"
+            f"{data_version_name}/"
         ]
 
         ignore_patterns = [
