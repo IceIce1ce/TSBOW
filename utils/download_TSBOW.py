@@ -7,12 +7,21 @@ DATASET_VERSIONS = {
 }
 
 
-# MARK: Download
+def get_ignore_versions(data_version):
+    ignore_list = []
+    for version_name, version_full_name in DATASET_VERSIONS:
+        if version_name != data_version:
+            ignore_list.append(version_full_name)
+    return ignore_list
+
+
+# MARK: DOWNLOAD
 
 def download_TSBOW(args):
     repo_id = f"SKKUAutoLab/{args.repo_id}"  #f"SKKUAutoLab/TSBOW/{args.repo_id}"
 
 
+    # MARK: metadata
     # Download csv metadata
     if args.type == "metadata":
         hub_paths = [
@@ -36,6 +45,7 @@ def download_TSBOW(args):
             print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
 
+    # MARK: videos
     # Download videos
     elif args.type == "videos":
         # FOLDER: videos/
@@ -72,6 +82,7 @@ def download_TSBOW(args):
             print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
 
+    # MARK: annotations
     # Download annotations
     elif args.type == "annotations":
         # annotation.zip contains images/ and labels/ folders
@@ -99,6 +110,7 @@ def download_TSBOW(args):
             print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
 
+    # MARK: semi-labels
     # Download semi-labels
     elif args.type == "semilabels":
         data_version_name = DATASET_VERSIONS["official_release"]
@@ -119,6 +131,7 @@ def download_TSBOW(args):
             print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
 
+    # MARK: comp.
     # Download comparison set (4 scenes in [Experiments] datasets' comparison)
     elif args.type == "comparison":
         data_version_name = DATASET_VERSIONS["official_release"]
@@ -133,6 +146,7 @@ def download_TSBOW(args):
         print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
 
+    # MARK: camera_held_out
     # Download camera_held_out set
     elif args.type == "camera_held_out":
         data_version_name = DATASET_VERSIONS["camera_held_out"]
@@ -161,11 +175,12 @@ def download_TSBOW(args):
             print(f"Downloaded file '{hub_file_path}' from {repo_id} to {args.output_dir}")
     
 
+    # MARK: official_release
     # Download official_release set
     elif args.type == "official_release":
-        data_version_name = DATASET_VERSIONS["camera_held_out"]
         other_version_list = [
-            f"{data_version_name}/"
+            f"{ignore_item}/"
+            for ignore_item in get_ignore_versions(data_version="official_release")
         ]
 
         ignore_patterns = [
@@ -183,6 +198,7 @@ def download_TSBOW(args):
         print(f"Downloaded official release version from {repo_id} to {args.output_dir}")
     
 
+    # MARK: all
     # Download entire dataset
     elif args.type == "all":
         snapshot_download(
@@ -195,7 +211,7 @@ def download_TSBOW(args):
     
 
 
-# MARK: Args
+# MARK: ARGUMENTS
 
 def parse_args():
     # Setup command line arguments
@@ -232,7 +248,7 @@ def parse_args():
 
 
 
-# MARK: Main
+# MARK: MAIN
 
 if __name__ == "__main__":
     # More details about login: https://huggingface.co/docs/huggingface_hub/quick-start#login
