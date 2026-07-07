@@ -2,11 +2,12 @@
 ########################### INSTRUCTIONS ###########################
 ####################################################################
 # Select the data type that you need                               #
-#  - videos: .mp4 files                                            #
-#  - annotations: images & labels                                  #
-#  - metadata: json file                                           #
-#  - semilabels: semi-labels                                       #
+#  - videos: .mp4 files                 (official_release version) #
+#  - annotations: images & labels       (official_release version) #
+#  - metadata: json file                (official_release version) #
+#  - semilabels: semi-labels            (official_release version) #
 #  - official_release: split set according to frame_id             #
+#  - camera_held_out: split set according to video_id              #
 #  - all: all files and folders                                    #
 ####################################################################
 
@@ -16,7 +17,11 @@
 REPO_ID='TSBOW'
 OUT_DIR='NGOCHDM/Dataset/TSBOW/'
 
-# Select one of types: videos, annotations, metadata, semilabels, comparison, official_release, all
+
+# Select one of types: 
+##### (official_release)    videos, annotations, metadata, semilabels, comparison 
+##### (data versions)       official_release, camera_held_out, all
+
 DATA_TYPE='official_release'
 
 python download_TSBOW.py        \
