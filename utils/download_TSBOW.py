@@ -48,8 +48,9 @@ def download_TSBOW(args):
     # MARK: videos
     # Download videos
     elif args.type == "videos":
+        data_version_name = DATASET_VERSIONS["official_release"]
+        
         # FOLDER: videos/
-        # data_version_name = DATASET_VERSIONS["official_release"]
         # hub_paths = [
         #     f"{data_version_name}/train/videos/", 
         #     f"{data_version_name}/val/videos/"
@@ -65,7 +66,6 @@ def download_TSBOW(args):
         #     print(f"Downloaded directory '{hub_path}' from {repo_id} to {args.output_dir}")
 
         # FILE: videos.zip
-        data_version_name = DATASET_VERSIONS["official_release"]
         hub_paths = [
             f"{data_version_name}/train/videos.zip", 
             f"{data_version_name}/val/videos.zip"
