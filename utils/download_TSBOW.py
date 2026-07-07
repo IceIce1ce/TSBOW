@@ -3,6 +3,7 @@ from huggingface_hub import hf_hub_download, snapshot_download, login
 
 DATASET_VERSIONS = {
     "official_release"  : "v1.0.0_official_release",
+    "camera_held_out"   : "v1.1.0_camera_held_out",
 }
 
 
@@ -127,10 +128,37 @@ def download_TSBOW(args):
         print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
 
+    # Download camera_held_out set
+    elif args.type == "camera_held_out":
+        hub_path = f"{DATASET_VERSIONS["camera_held_out"]}/"
+
+        snapshot_download(
+            repo_id         = repo_id,
+            repo_type       = "dataset",
+            local_dir       = args.output_dir,
+            allow_patterns  = [f"{hub_path}*"],
+            resume_download = True,
+        )
+        print(f"Downloaded directory '{hub_path}' from {repo_id} to {args.output_dir}")
+
+        hub_file_paths = [
+            "classes.txt",
+        ]
+        for hub_file_path in hub_file_paths:
+            hf_hub_download(
+                repo_id         = repo_id,
+                repo_type       = "dataset",
+                filename        = hub_file_path,
+                local_dir       = args.output_dir,
+                resume_download = True,
+            )
+            print(f"Downloaded file '{hub_file_path}' from {repo_id} to {args.output_dir}")
+    
 
     # Download official_release set
     elif args.type == "official_release":
         other_version_list = [
+            f"{DATASET_VERSIONS["camera_held_out"]}/"
         ]
 
         ignore_patterns = [
