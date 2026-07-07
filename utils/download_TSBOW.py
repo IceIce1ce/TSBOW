@@ -1,6 +1,10 @@
 import argparse
 from huggingface_hub import hf_hub_download, snapshot_download, login
 
+DATASET_VERSIONS = {
+    "official_release"  : "v1.0.0_official_release",
+}
+
 
 # MARK: Download
 
@@ -35,8 +39,8 @@ def download_TSBOW(args):
     elif args.type == "videos":
         # FOLDER: videos/
         # hub_paths = [
-        #     "v1.0.0_official_release/train/videos/", 
-        #     "v1.0.0_official_release/val/videos/"
+        #     f"{DATASET_VERSIONS["official_release"]}/train/videos/", 
+        #     f"{DATASET_VERSIONS["official_release"]}/val/videos/"
         # ]
         
         # for hub_path in hub_paths:
@@ -50,8 +54,8 @@ def download_TSBOW(args):
 
         # FILE: videos.zip
         hub_paths = [
-            "v1.0.0_official_release/train/videos.zip", 
-            "v1.0.0_official_release/val/videos.zip"
+            f"{DATASET_VERSIONS["official_release"]}/train/videos.zip", 
+            f"{DATASET_VERSIONS["official_release"]}/val/videos.zip"
         ]
 
         for hub_path in hub_paths:
@@ -69,13 +73,15 @@ def download_TSBOW(args):
     elif args.type == "annotations":
         # annotation.zip contains images/ and labels/ folders
         hub_paths = [
-            "v1.0.0_official_release/train/annotations.zip", 
-            "v1.0.0_official_release/val/annotations.zip", 
-            "v1.0.0_official_release/test_public/annotations.zip",
+            f"{DATASET_VERSIONS["official_release"]}/train/annotations.zip", 
+            f"{DATASET_VERSIONS["official_release"]}/val/annotations.zip", 
+            f"{DATASET_VERSIONS["official_release"]}/test_public/annotations.zip",
 
-            "v1.0.0_official_release/train.txt", 
-            "v1.0.0_official_release/val.txt", 
-            "v1.0.0_official_release/test_public.txt",
+            f"{DATASET_VERSIONS["official_release"]}/train.txt", 
+            f"{DATASET_VERSIONS["official_release"]}/val.txt", 
+            f"{DATASET_VERSIONS["official_release"]}/test_public.txt",
+
+            "classes.txt",
         ]
 
         for hub_path in hub_paths:
@@ -92,8 +98,9 @@ def download_TSBOW(args):
     # Download semi-labels
     elif args.type == "semilabels":
         hub_paths = [
-            "v1.0.0_official_release/train/semilabels.zip", 
-            "v1.0.0_official_release/val/semilabels.zip"
+            "classes.txt",
+            f"{DATASET_VERSIONS["official_release"]}/train/semilabels.zip", 
+            f"{DATASET_VERSIONS["official_release"]}/val/semilabels.zip"
         ]
 
         for hub_path in hub_paths:
@@ -109,7 +116,7 @@ def download_TSBOW(args):
 
     # Download comparison set (4 scenes in [Experiments] datasets' comparison)
     elif args.type == "comparison":
-        hub_path = "v1.0.0_official_release/comparison.zip"
+        hub_path = f"{DATASET_VERSIONS["official_release"]}/comparison.zip"
         hf_hub_download(
                 repo_id         = repo_id,
                 repo_type       = "dataset",
@@ -120,10 +127,10 @@ def download_TSBOW(args):
         print(f"Downloaded file '{hub_path}' from {repo_id} to {args.output_dir}")
 
 
+
     # Download official_release set
     elif args.type == "official_release":
         other_version_list = [
-            "v1.0.1_camera_held_out/"
         ]
 
         ignore_patterns = [
@@ -173,9 +180,9 @@ def parse_args():
     parser.add_argument(
         "--type",
         type=str,
-        choices=["videos", "annotations", "metadata", "semilabels", "comparison", "official_release", "all"],
+        choices=["videos", "annotations", "metadata", "semilabels", "comparison", "official_release", "camera_held_out", "all"],
         required=True,
-        help="Type of data to download (videos, annotations, metadata, semilabels, comparison, official_release, all)",
+        help="Type of data to download (videos, annotations, metadata, semilabels, comparison, official_release, camera_held_out, all)",
     )
 
     parser.add_argument(
