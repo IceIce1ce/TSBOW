@@ -9,7 +9,7 @@ DATASET_VERSIONS = {
 
 def get_ignore_versions(data_version):
     ignore_list = []
-    for version_name, version_full_name in DATASET_VERSIONS:
+    for version_name, version_full_name in DATASET_VERSIONS.items():
         if version_name != data_version:
             ignore_list.append(version_full_name)
     return ignore_list
@@ -251,8 +251,10 @@ def parse_args():
 # MARK: MAIN
 
 if __name__ == "__main__":
-    # More details about login: https://huggingface.co/docs/huggingface_hub/quick-start#login
-    login()
-
     args    = parse_args()
+
+    # More details about login: 
+    # https://huggingface.co/docs/huggingface_hub/quick-start#login
+    login()
+    
     download_TSBOW(args=args)
