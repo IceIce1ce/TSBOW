@@ -39,9 +39,10 @@ def download_TSBOW(args):
     # Download videos
     elif args.type == "videos":
         # FOLDER: videos/
+        # data_version_name = DATASET_VERSIONS["official_release"]
         # hub_paths = [
-        #     f"{DATASET_VERSIONS["official_release"]}/train/videos/", 
-        #     f"{DATASET_VERSIONS["official_release"]}/val/videos/"
+        #     f"{data_version_name}/train/videos/", 
+        #     f"{data_version_name}/val/videos/"
         # ]
         
         # for hub_path in hub_paths:
@@ -54,9 +55,10 @@ def download_TSBOW(args):
         #     print(f"Downloaded directory '{hub_path}' from {repo_id} to {args.output_dir}")
 
         # FILE: videos.zip
+        data_version_name = DATASET_VERSIONS["official_release"]
         hub_paths = [
-            f"{DATASET_VERSIONS["official_release"]}/train/videos.zip", 
-            f"{DATASET_VERSIONS["official_release"]}/val/videos.zip"
+            f"{data_version_name}/train/videos.zip", 
+            f"{data_version_name}/val/videos.zip"
         ]
 
         for hub_path in hub_paths:
@@ -73,14 +75,15 @@ def download_TSBOW(args):
     # Download annotations
     elif args.type == "annotations":
         # annotation.zip contains images/ and labels/ folders
+        data_version_name = DATASET_VERSIONS["official_release"]
         hub_paths = [
-            f"{DATASET_VERSIONS["official_release"]}/train/annotations.zip", 
-            f"{DATASET_VERSIONS["official_release"]}/val/annotations.zip", 
-            f"{DATASET_VERSIONS["official_release"]}/test_public/annotations.zip",
+            f"{data_version_name}/train/annotations.zip", 
+            f"{data_version_name}/val/annotations.zip", 
+            f"{data_version_name}/test_public/annotations.zip",
 
-            f"{DATASET_VERSIONS["official_release"]}/train.txt", 
-            f"{DATASET_VERSIONS["official_release"]}/val.txt", 
-            f"{DATASET_VERSIONS["official_release"]}/test_public.txt",
+            f"{data_version_name}/train.txt", 
+            f"{data_version_name}/val.txt", 
+            f"{data_version_name}/test_public.txt",
 
             "classes.txt",
         ]
@@ -98,10 +101,11 @@ def download_TSBOW(args):
 
     # Download semi-labels
     elif args.type == "semilabels":
+        data_version_name = DATASET_VERSIONS["official_release"]
         hub_paths = [
             "classes.txt",
-            f"{DATASET_VERSIONS["official_release"]}/train/semilabels.zip", 
-            f"{DATASET_VERSIONS["official_release"]}/val/semilabels.zip"
+            f"{data_version_name}/train/semilabels.zip", 
+            f"{data_version_name}/val/semilabels.zip"
         ]
 
         for hub_path in hub_paths:
@@ -117,7 +121,8 @@ def download_TSBOW(args):
 
     # Download comparison set (4 scenes in [Experiments] datasets' comparison)
     elif args.type == "comparison":
-        hub_path = f"{DATASET_VERSIONS["official_release"]}/comparison.zip"
+        data_version_name = DATASET_VERSIONS["official_release"]
+        hub_path = f"{data_version_name}/comparison.zip"
         hf_hub_download(
                 repo_id         = repo_id,
                 repo_type       = "dataset",
