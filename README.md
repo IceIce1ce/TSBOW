@@ -98,9 +98,10 @@ __        _______ _     ____ ___  __  __ _____
 
 <!-- + [2025.12.31] 🔥 Our paper, code and TSBOW dataset are released! -->
 
-+ [2026.01.16] 🎆 TSBOW dataset is available on HuggingFace.
-+ [2025.11.16] 🔥 Our code and website are released!
-+ [2025.11.08] 🎉 **<span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>** has been accepted to **AAAI 2026**!
++ [2026.07.15] 🧩 A camera_held_out subset is available on HuggingFace.
++ [2026.01.16] 📦 TSBOW dataset is available on HuggingFace.
++ [2025.11.16] 💻 Our code and website are released!
++ [2025.11.08] 🏆 **<span style="color: #FFCC00">T</span><span style="color: #33CCCC">S</span><span style="color: #FF6600">B</span><span style="color: #6699FF">O</span><span style="color: #FF0066">W</span>** has been accepted to **AAAI 2026**!
 
 
 <!-- MARK: Abstract -->
