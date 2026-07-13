@@ -854,5 +854,150 @@ body.theme-night .datasets-comparison-details .w3-white {
   color: inherit !important;
 }
 
+/* day: download-section */
+body.theme-night .download-group--subsets {
+    border-top-color: #2d405a;
+}
+
+body.theme-night .download-group-label {
+    color: #9eb6ff;
+}
+
+body.theme-night .download-group-header h2 {
+    color: #ffd84d !important;
+}
+
+body.theme-night .download-group-header p {
+    color: #b9c9dc !important;
+}
+
+
+/* Download cards */
+
+body.theme-night .download-item {
+    color: #eaf2ff;
+    border-color: #324866;
+    background: #0f1b2d;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+body.theme-night .download-item:hover {
+    border-color: #8fbaff;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Main dataset card */
+
+body.theme-night .download-item--main {
+    border-color: #4f91cc;
+    background:
+        linear-gradient(
+            135deg,
+            #102a49 0%,
+            #0f1b2d 75%
+        );
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.42);
+}
+
+body.theme-night .download-item--main:hover {
+    border-color: #ffd84d;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.58);
+}
+
+
+/* Versioned subset cards */
+
+body.theme-night .download-item--subset {
+    border-color: #3a506d;
+    background: #0b1728;
+}
+
+body.theme-night .download-item--subset:hover {
+    border-color: #9aaaff;
+    background: #101f35;
+}
+
+
+/* Card headings */
+
+body.theme-night .download-item h3 {
+    color: #eaf2ff !important;
+}
+
+body.theme-night .download-item--main h3 {
+    color: #ffd84d !important;
+}
+
+
+/* Card descriptions */
+
+body.theme-night .download-item .download-desc {
+    color: #c6d4e5 !important;
+}
+
+
+/* Metadata */
+
+body.theme-night .download-item .dataset-meta li {
+    color: #b9c9dc !important;
+}
+
+body.theme-night .download-item .dataset-meta strong {
+    color: #ffffff !important;
+}
+
+
+/* Main-set badge */
+
+body.theme-night .dataset-badge--main {
+    border-color: #8fc5ff;
+    background: #173d64;
+    color: #ffffff !important;
+}
+
+
+/* Subset badge */
+
+body.theme-night .dataset-badge--subset {
+    border-color: #9aaaff;
+    background: #1b2d50;
+    color: #cbd5ff !important;
+}
+
+
+/* Complete collection label */
+
+body.theme-night .dataset-status {
+    border: 1px solid #527bb2;
+    background: #203c65;
+    color: #ffffff !important;
+}
+
+
+/* Download buttons */
+
+body.theme-night .download-item .btn,
+body.theme-night .download-item .btn:visited {
+    border: 1px solid #1688e8;
+    background-color: #0879d1;
+    color: #ffffff !important;
+}
+
+body.theme-night .download-item .btn span {
+    color: inherit !important;
+}
+
+body.theme-night .download-item .btn:hover {
+    border-color: #8fbaff;
+    background-color: #315ee8;
+    color: #ffffff !important;
+}
+
+body.theme-night .download-item .btn:focus-visible {
+    outline: 3px solid #ffd84d;
+    outline-offset: 3px;
+}
+
 
 /* End of style.css */
