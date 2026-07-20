@@ -77,6 +77,8 @@ The [YAML file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/blob/main/meta
 
 ### Duration splits
 
+#### Official Release -- v1.0.0
+
 The python source code for spliting videos are provided in [split_videos.py](../utils/split_videos.py). You should convert `TSBOW_info.csv` to json format before using these functions.
 
 | Total Duration    | Test      | Val       | Train     | #videos   |
