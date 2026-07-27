@@ -8,6 +8,7 @@
 Comprehensive, annotated dataset for object detection. This dataset consists of over 32 hours of real-world traffic data across 71 CCTV and 1 additional color cameras, spanning annual weather conditions ([See Demo Videos](https://skkuautolab.github.io/TSBOW/TSBOW_scenes.html)).
 
 
+<!-- MARK: video -->
 ### Video Format
 
 - Video Standard: mp4 (H.265)
@@ -16,6 +17,7 @@ Comprehensive, annotated dataset for object detection. This dataset consists of 
 - Videos are named as `<video_id>.mp4`
 
 
+<!-- MARK: image -->
 ### Image Format
 
 - Image Standard: jpg
@@ -23,6 +25,7 @@ Comprehensive, annotated dataset for object detection. This dataset consists of 
 - Images extracted from videos are named as `<video_id>_<frame_id>.jpg`, where `<frame_id>` is 6 characters length.
 
 
+<!-- MARK: gt -->
 ### Ground Truth Format
 
 Annotations are provided in YOLO format with one *.txt file per image. If there are no objects in an image, no *.txt file is required.
@@ -38,6 +41,7 @@ where
 - `width`, `height` (double): box width, height
 
 
+<!-- MARK: metadata -->
 ### Metadata Format
 
 <!-- TSBOW_info.csv -->
@@ -61,6 +65,7 @@ The [YAML file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/blob/main/meta
 - `names`: a list of object categories and their indexes. The order of class list is according to the order of class name in `class.txt`.
 
 
+<!-- MARK: directory -->
 ### Directory Structure
 
 - **Train/Val/Test_Public**: 
@@ -75,6 +80,7 @@ The [YAML file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/blob/main/meta
     - `classes.txt`: a list of annotated object categories. Class definition is mentioned in [TSBOW_Class_Definition](TSBOW_Class_Definition.pdf).
 
 
+<!-- MARK: duration -->
 ### Duration splits
 
 #### Official Release -- v1.0.0
