@@ -1,7 +1,7 @@
 # Documents
 
 
-<!-- MARK: HF -->
+<!-- MARK: 🚗 HF -->
 
 ## 🚗 TSBOW on HuggingFace
 
@@ -99,7 +99,7 @@ The dataset is partitioned into three mutually exclusive subsets—training, val
 
 
 
-<!-- MARK: Datasets -->
+<!-- MARK: 📊 Datasets -->
 
 ## 📊 Datasets
 
@@ -134,7 +134,7 @@ The dataset is partitioned into three mutually exclusive subsets—training, val
 <!-- UA-DETRAC new website: (https://sites.google.com/view/daweidu/projects/ua-detrac?authuser=0) -->
 
 
-<!-- MARK: References -->
+<!-- MARK: 📚 References -->
 
 ## 📚 References
 
@@ -151,7 +151,7 @@ Thanks to the developers and contributors of the following open-source repositor
 
 
 
-<!-- MARK: License -->
+<!-- MARK: 🔑 License -->
 
 ## 🔑 Licenses
 
