@@ -9,6 +9,7 @@ Comprehensive, annotated dataset for object detection. This dataset consists of 
 
 
 <!-- MARK: video -->
+
 ### Video Format
 
 - Video Standard: mp4 (H.265)
@@ -18,6 +19,7 @@ Comprehensive, annotated dataset for object detection. This dataset consists of 
 
 
 <!-- MARK: image -->
+
 ### Image Format
 
 - Image Standard: jpg
@@ -26,6 +28,7 @@ Comprehensive, annotated dataset for object detection. This dataset consists of 
 
 
 <!-- MARK: gt -->
+
 ### Ground Truth Format
 
 Annotations are provided in YOLO format with one *.txt file per image. If there are no objects in an image, no *.txt file is required.
@@ -42,6 +45,7 @@ where
 
 
 <!-- MARK: metadata -->
+
 ### Metadata Format
 
 <!-- TSBOW_info.csv -->
@@ -66,6 +70,7 @@ The [YAML file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/blob/main/meta
 
 
 <!-- MARK: directory -->
+
 ### Directory Structure
 
 - **Train/Val/Test_Public**: 
@@ -81,6 +86,7 @@ The [YAML file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/blob/main/meta
 
 
 <!-- MARK: duration -->
+
 ### Duration splits
 
 #### Official Release -- v1.0.0
