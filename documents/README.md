@@ -99,6 +99,7 @@ The python source code for spliting videos are provided in [split_videos.py](../
 | 6 - 8 minutes     | 4 mins    | 1.5 mins  | <= 2.5mins| 7         |
 | shorter 6 minutes | 3 mins    | 1 mins    | <= 2 mins | 3         |
 
+
 #### Camera Held Out -- v1.1.0
 
 The dataset is partitioned into three mutually exclusive subsets—training, validation, and test—to facilitate camera-held-out evaluation. Each video, identified by its name, is assigned to exactly one subset. Before partitioning, videos and their corresponding annotations from the original training and validation sets are consolidated by video name.
