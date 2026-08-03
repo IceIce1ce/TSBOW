@@ -175,7 +175,7 @@ python validation.py \
 ```
 
 <!-- Results -->
-Model performances after training 100 epochs and validating with imgsz=1280 on manually labeled test set.
+Model performances after training 300 epochs and validating with imgsz=1280 on manually labeled test set.
 | Method     | Precision | Recall    | mAP50     | mAP50–95  |
 |:----------:|:---------:|:---------:|:---------:|:---------:|
 | YOLOv8x    | 0.783     | 0.705     | 0.733     | 0.609     |
