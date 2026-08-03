@@ -4,10 +4,6 @@ set -euo pipefail
 # How to run:
 # bash browse_tsbow_offline.sh
 # bash browse_tsbow_offline.sh 8080
-#
-# Do NOT open index.html by double-clicking it: js/main.js is an ES module,
-# and modules are blocked by CORS on file:// URLs, so the title highlight,
-# header, theme and scene filters stay dead. Serve it over http instead.
 
 PORT="${1:-8000}"
 HTML_FILE="index.html"
