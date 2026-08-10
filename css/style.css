@@ -653,23 +653,23 @@ body {
 /* -- TSBOW name: Traffic Surveillance... */
 /* Synchronized highlight for T in title and subtitle */
 .sync-tsbowT.highlight, .sync-tsbowT:hover {
-  filter: drop-shadow(0 0 8px #FFCC00) brightness(1.1);
+  filter: drop-shadow(0 0 9px #FFCC00) brightness(1.1);
   transition: filter 0.2s;
 }
 .sync-tsbowS.highlight, .sync-tsbowS:hover {
-  filter: drop-shadow(0 0 8px #33CCCC) brightness(1.1);
+  filter: drop-shadow(0 0 9px #33CCCC) brightness(1.1);
   transition: filter 0.2s;
 }
 .sync-tsbowB.highlight, .sync-tsbowB:hover {
-  filter: drop-shadow(0 0 8px #FF6600) brightness(1.1);
+  filter: drop-shadow(0 0 9px #FF6600) brightness(1.1);
   transition: filter 0.2s;
 }
 .sync-tsbowO.highlight, .sync-tsbowO:hover {
-  filter: drop-shadow(0 0 8px #6699FF) brightness(1.1);
+  filter: drop-shadow(0 0 9px #6699FF) brightness(1.1);
   transition: filter 0.2s;
 }
 .sync-tsbowW.highlight, .sync-tsbowW:hover {
-  filter: drop-shadow(0 0 8px #FF0066) brightness(1.1);
+  filter: drop-shadow(0 0 9px #FF0066) brightness(1.1);
   transition: filter 0.2s;
 }
 
