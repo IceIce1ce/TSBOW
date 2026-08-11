@@ -76,7 +76,7 @@ The [YAML file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/blob/main/meta
 - **Train/Val/Test_Public**: 
     - `videos.zip`: video files. 
     - `annotations.zip`: annotations include images and labels.
-    - `semilabels.zip`: semi-labeled annotations include labels only. You can extract frames from videos.
+    - `semilabels.zip`: semi-labeled annotations include labels only. You can extract frames from videos (only in `v1.0.0_official_release/`).
     - Notes for Test_Public: In the first publication, we only public annotations of the last 30% of test set. The remaining files will be public in the future.
 
 - **Others**:
