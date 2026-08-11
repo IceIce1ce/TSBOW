@@ -183,7 +183,7 @@ Model performances after training 300 epochs and validating with imgsz=1280 on m
 | YOLOv12    | x-large      | **0.806** | 0.662     | **0.744** | **0.615** |
 | YOLO26 	 | x-large      | 0.792     | 0.705     | 0.736	    | 0.613     |
 | RT-DETR    | x-large      | 0.731     | **0.740** | 0.718     | 0.552     |
-| RF-DETR    | 2x-large     | 0.800     | 0.724     | 0.655     | 0.517     |
+| RF-DETR    | 2x-large     | 0.801     | 0.724     | 0.655     | 0.517     |
 
 
 <!-- Comparison with other datasets -->
