@@ -65,7 +65,7 @@ The [CSV file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/blob/main/metad
 The [YAML file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/blob/main/v1.0.0_official_release/TSBOW.yaml) provides information for training models on training and validation set. 
 
 - `path` (string): path to dataset.
-- `train`, `val`, `test` (string): name of txt file containing list of train/val/test images. These files are also provided in [metadata](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/tree/main/metadata) folder.
+- `train`, `val`, `test` (string): name of txt file containing list of train/val/test images. These files are also provided in [official_release](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/tree/main/v1.0.0_official_release) and [camera_held_out](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/tree/main/v1.1.0_camera_held_out) folders.
 - `names`: a list of object categories and their indexes. The order of class list is according to the order of class name in `class.txt`.
 
 
