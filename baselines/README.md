@@ -176,14 +176,14 @@ python validation.py \
 
 <!-- Results -->
 Model performances after training 300 epochs and validating with imgsz=1280 on manually labeled test set.
-| Method     | Precision | Recall    | mAP50     | mAP50–95  |
-|:----------:|:---------:|:---------:|:---------:|:---------:|
-| YOLOv8x    | 0.783     | 0.705     | 0.733     | 0.609     |
-| YOLO11x    | 0.786     | 0.696     | 0.734     | 0.614     |
-| YOLOv12x   | **0.806** | 0.662     | **0.744** | **0.615** |
-| YOLO26x	 | 0.792     | 0.705     | 0.736	 | 0.613     |
-| RTDETR-x   | 0.731     | **0.740** | 0.718     | 0.552     |
-| RFDETR-2xl | 0.800     | 0.724     | 0.655     | 0.517     |
+| Method     | Variant      | Precision | Recall    | mAP50     | mAP50–95  |
+|:----------:|:------------:|:---------:|:---------:|:---------:|:---------:|
+| YOLOv8     | x-large      | 0.783     | 0.705     | 0.733     | 0.609     |
+| YOLO11     | x-large      | 0.786     | 0.696     | 0.734     | 0.614     |
+| YOLOv12    | x-large      | **0.806** | 0.662     | **0.744** | **0.615** |
+| YOLO26 	 | x-large      | 0.792     | 0.705     | 0.736	    | 0.613     |
+| RT-DETR    | x-large      | 0.731     | **0.740** | 0.718     | 0.552     |
+| RF-DETR    | 2x-large     | 0.800     | 0.724     | 0.655     | 0.517     |
 
 
 <!-- Comparison with other datasets -->
