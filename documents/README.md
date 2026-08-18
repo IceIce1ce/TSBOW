@@ -73,16 +73,17 @@ The [YAML file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/blob/main/v1.0
 
 ### Directory Structure
 
-- **Train/Val/Test_Public**: 
-    - `videos.zip`: video files. 
-    - `annotations.zip`: annotations include images and labels.
-    - `semilabels.zip`: semi-labeled annotations include labels only. You can extract frames from videos (only in `v1.0.0_official_release/`).
-    - Notes for Test_Public: In the first publication, we only public annotations of the last 30% of test set. The remaining files will be public in the future.
+- **v1.0.0_official_release**
+    - *Train/Val/Test_Public*: 
+        - `videos.zip`: video files. 
+        - `annotations.zip`: annotations include images and labels.
+        - `semilabels.zip`: semi-labeled annotations include labels only. You can extract frames from videos.
+        - Notes for Test_Public: In the first publication, we only public annotations of the last 30% of test set. The remaining files will be public in the future.
 
-- **Others**:
-    - `comparison.zip`: annotations of datasets' comparison in Experiment section, include images and labels.
-    - `TSBOW_info.csv`: metadata file.
-    - `classes.txt`: a list of annotated object categories. Class definition is mentioned in [TSBOW_Class_Definition](TSBOW_Class_Definition.pdf).
+    - *Others*:
+        - `comparison.zip`: annotations of the comparison subset in Experiment section, include images and labels.
+        - `TSBOW_info.csv`: metadata file.
+        - `classes.txt`: a list of annotated object categories. Class definition is mentioned in [TSBOW_Class_Definition](TSBOW_Class_Definition.pdf).
 
 
 <!-- MARK: duration -->
