@@ -85,6 +85,13 @@ The [YAML file](https://huggingface.co/datasets/SKKUAutoLab/TSBOW/blob/main/v1.0
         - `TSBOW_info.csv`: metadata file.
         - `classes.txt`: a list of annotated object categories. Class definition is mentioned in [TSBOW_Class_Definition](TSBOW_Class_Definition.pdf).
 
+- **v1.1.0_camera_held_out**
+    - *Train/Val/Test*: 
+        - `videos.zip`: video files. 
+        - `annotations.zip`: annotations include images and labels.
+        - Notes: In this subset, we merge **train** and **val** sets from `official_release`.
+
+
 
 <!-- MARK: duration -->
 
